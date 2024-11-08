@@ -1,0 +1,104 @@
+/* Fondo negro para toda la página */
+body {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco para buena visibilidad */
+}
+
+/* Fondo amarillo para la barra de navegación */
+.navbar {
+    background-color: #FFC107; /* Fondo amarillo */
+}
+
+/* Estilos de texto en la barra de navegación */
+.navbar-dark .navbar-brand,
+.navbar-dark .nav-link {
+    color: #000 !important; /* Texto negro en la navbar */
+}
+
+.navbar-dark .nav-link:hover {
+    color: #333 !important; /* Texto gris oscuro al pasar el cursor */
+}
+
+/* Botón de Carrito con fondo negro y texto blanco */
+.btn-cart {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    display: inline-flex;
+    align-items: center;
+    font-weight: bold;
+    border: 2px solid #FFC107; /* Borde amarillo para resaltar */
+}
+
+.btn-cart i {
+    margin-right: 0.5rem; /* Espacio entre el icono y el texto */
+}
+
+.btn-cart:hover {
+    background-color: #333; /* Fondo gris oscuro al pasar el cursor */
+    color: #fff; /* Mantener el texto blanco */
+}
+
+/* Estilos de la sección de puntos */
+.points-section {
+    background-color: #333; /* Fondo gris oscuro para contraste */
+    color: #fff; /* Texto blanco */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Barra de progreso en negro */
+.progress-bar {
+    background-color: #FFC107; /* Barra de progreso amarilla */
+    transition: width 1s ease-in-out;
+}
+
+/* Estilos de las tarjetas de recompensa */
+.card {
+    background-color: #444; /* Fondo gris oscuro en las tarjetas */
+    color: #fff; /* Texto blanco */
+    border: 1px solid #555; /* Borde gris */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Botones dentro de las tarjetas */
+.btn-dark {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    border: none;
+}
+
+.btn-dark:hover {
+    background-color: #333; /* Fondo gris oscuro */
+    color: #fff;
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #111; /* Fondo negro oscuro */
+    color: #fff;
+    padding: 2rem 0;
+    border-top: 1px solid #333;
+}
+
+footer a {
+    color: #FFC107;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer .bi {
+    font-size: 1.5rem;
+    color: #FFC107;
+}
+
+footer .bi:hover {
+    color: #fff;
+}
