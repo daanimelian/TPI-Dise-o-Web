@@ -6,6 +6,8 @@
     <title>Hamburguesería</title>
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+    
     <!-- bxSlider CSS -->
     <link href="../home/vendors/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -13,55 +15,58 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="bg-light text-white p-3">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
-                <a class="navbar-brand" href="#">
-                    <img src="../home/img/1.png" alt="Logo" style="width: 80px;"> <!-- Ajusta el tamaño del logo -->
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link text-primary" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-primary" href="#">Menu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-primary" href="#">Promociones</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-primary" href="#">Pedidos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-primary" href="#">Mi perfil</a>
-                        </li>
-                    </ul>
-    
-                    <!-- User Controls: Dropdown for Login -->
-                    <div class="navbar-nav">
-                        <div class="nav-item dropdown">
-                            <a class="btn btn-outline-primary dropdown-toggle mr-2" href="#" id="loginDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Login
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="loginDropdown">
-                                <a class="dropdown-item" href="#">Iniciar Sesión</a>
-                                <a class="dropdown-item" href="#">Registrarse</a>
-                            </div>
-                        </div>
-                        <a class="btn btn-outline-primary mr-2" href="#">Carrito</a>
-                    </div>
-                </div>
-            </nav>
-    
-            <!-- jQuery and Bootstrap JS -->
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-        </div>
-    </header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+          <a class="navbar-brand" href="#">
+            <img src="../header/logo.png" alt="Logo" style="width: 80px" />
+            <!-- Ajusta el tamaño del logo -->
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="#">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="#">Promociones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="#">Pedidos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="#">Mi perfil</a>
+              </li>
+            </ul>
+            <!-- User Controls: Dropdown for Login -->
+            <div class="navbar-nav">
+              <div class="nav-item dropdown">
+                  <a class="btn btn-outline-primary dropdown-toggle mr-2" href="#" id="loginDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Login
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="loginDropdown">
+                      <a class="dropdown-item" href="#">Iniciar Sesión</a>
+                      <a class="dropdown-item" href="#">Registrarse</a>
+                  </div>
+              </div>
+              <a class="btn btn-outline-primary mr-2" href="#">Carrito</a>
+          </div>
+          </div>
+        </nav>
+      </header>
+      
     
     <!-- Main Content -->
     <main class="container my-5">
@@ -96,7 +101,7 @@
             <div class="row align-items-center justify-content-center text-center">
                 <!-- Logo de la marca -->
                 <div class="col-md-4 mb-3">
-                    <img src="../home/img/1.png" alt="Logo" class="footer-logo">
+                    <img src="../home/img/1.png" alt="Logo" class="footer-logo" style="width: 50%;">
                 </div>
     
                 <!-- Información de contacto -->
@@ -122,6 +127,7 @@
         </div>
     </footer>
 
+
     <!-- jQuery (solo una vez) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     
@@ -133,7 +139,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!-- Google Maps Script -->
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhMkTfU-i3F6l9H1TdLQjT-6DKibnmKas&callback=initMap"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=mi_key&callback=initMap"></script>
     <script src="scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
     

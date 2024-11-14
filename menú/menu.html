@@ -52,10 +52,19 @@
               <a class="nav-link text-primary" href="#">Mi perfil</a>
             </li>
           </ul>
+          <!-- User Controls: Dropdown for Login -->
           <div class="navbar-nav">
-            <a class="btn btn-outline-primary mr-2" href="#">Login</a>
+            <div class="nav-item dropdown">
+                <a class="btn btn-outline-primary dropdown-toggle mr-2" href="#" id="loginDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Login
+                </a>
+                <div class="dropdown-menu" aria-labelledby="loginDropdown">
+                    <a class="dropdown-item" href="#">Iniciar Sesión</a>
+                    <a class="dropdown-item" href="#">Registrarse</a>
+                </div>
+            </div>
             <a class="btn btn-outline-primary mr-2" href="#">Carrito</a>
-          </div>
+        </div>
         </div>
       </nav>
     </header>
