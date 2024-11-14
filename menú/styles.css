@@ -1,0 +1,132 @@
+#filtro-busqueda {
+  margin: 13px;
+}
+
+#separador-hamburguesas {
+  background-color: #f5762c;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+
+  margin-bottom: 10px;
+  padding: 0;
+}
+#hamburguesas-carrusel {
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+#hamburguesas-carrusel .card {
+  justify-content: center;
+  align-items: center;
+}
+#hamburguesas-carrusel img {
+  max-width: 550px;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton-agregar {
+  margin-bottom: 10px;
+}
+#hamburguesas h2 {
+  color: #6b8bc8;
+  font-weight: bold;
+}
+
+#veggie h2 {
+  color: #6b8bc8;
+  font-weight: bold;
+}
+
+#veggie {
+  margin-top: 60px;
+}
+
+#bebidas {
+  margin-top: 60px;
+}
+
+#bebidas h2 {
+  color: #6b8bc8;
+  font-weight: bold;
+}
+
+.card {
+  margin-bottom: 2px;
+  margin-left: 2px;
+  margin-top: 0;
+}
+
+.boton-ver-mas {
+  margin-bottom: 10px;
+  margin-left: 3px;
+  margin-top: 15px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000 !important;
+}
+
+.extra-card {
+  border: 1px solid #ddd; /* Opcional: borde para darle un efecto de tarjeta */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  transition: transform 0.2s; /* Animación de hover */
+}
+.card-column {
+  min-width: 200px; /* Ancho mínimo para evitar que se achiquen mucho */
+  max-width: 500px;
+}
+.extra-card:hover {
+  transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+}
+
+.extra-card img {
+  padding-top: 5px;
+  min-width: 150px; /* Tamaño máximo de la imagen */
+  height: auto;
+  margin-bottom: 10px;
+}
+.footer-section {
+  background-color: #ebebeb; /* Fondo claro */
+  color: #fff; /* Color de texto blanco */
+  padding: 20px 0;
+}
+
+.footer-logo {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.footer-section p {
+  margin: 5px 0;
+  color: black;
+}
+
+.footer-section a {
+  color: #ff7a0d; /* Color dorado para enlaces */
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.bi-instagram {
+  font-size: 1.5rem;
+  color: #ff7a0d; /* Color dorado */
+}
+
+.bi-facebook {
+  font-size: 1.5rem;
+  color: #ff7a0d; /* Color dorado */
+}
+
+.bi-twitter {
+  font-size: 1.5rem;
+  color: #ff7a0d; /* Color dorado */
+}
