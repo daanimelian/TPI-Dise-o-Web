@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburguesería</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bxSlider CSS -->
+    <link href="../home/vendors/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-dark text-white p-3">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="logo">
+                    <h1 class="h4">Logo</h1>
+                </div>
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link text-white" href="#">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#">Menú</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#">Promociones</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#">Pedidos</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#">Mi perfil</a></li>
+                    </ul>
+                </nav>
+                <div class="user-controls">
+                    <button id="login-button" class="btn btn-outline-light btn-sm">Login</button>
+                    <button id="cart-button" class="btn btn-outline-light btn-sm">Carrito</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- Intro Section -->
+        <section class="intro text-center mb-5">
+            <h2>Somos la mejor hamburguesería</h2>
+            <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad potent delectus delicata usu.</p>
+            <div class="image-placeholder bg-light my-3 p-5">
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery mb-5">
+            <h3 class="text-center">Imágenes hamburguesas</h3>
+            <ul class="bxslider">
+                <li><img src="../home/img/img_01.png" alt="Imagen 1" /></li>
+                <li><img src="../home/img/img_02.png" alt="Imagen 2" /></li>
+                <li><img src="../home/img/amnesiac.jpg" alt="Imagen 3" /></li>
+            </ul>
+        </section>
+
+        <!-- Google Maps Section -->
+        <section class="map-section mb-5">
+            <h4 class="text-center">Nuestra Ubicación</h4>
+            <div id="map" class="bg-light" style="height: 300px;"></div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-4">
+        <div class="container">
+            <!-- Contenido del footer -->
+        </div>
+    </footer>
+
+    <!-- jQuery (solo una vez) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- bxSlider Plugin -->
+    <script src="../home/vendors/jquery.bxslider/jquery.bxslider.js"></script>
+    
+    <!-- Bootstrap JS, Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Google Maps Script -->
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVpd262Ty0ODRNVc6Wfxlynw2vT-n-HJc&callback=initMap"></script>
+    <script src="scripts.js"></script>
+    
+    <!-- Inicialización del carrusel -->
+    <script>
+        $(document).ready(function () {
+            $(".bxslider").bxSlider({
+                mode: "vertical",
+                randomStart: true,
+                keyboardEnabled: true,
+            });
+        });
+    </script>
+</body>
+</html>
+
