@@ -32,7 +32,26 @@ body {
     font-size: 1rem; /* Tamaño de texto uniforme en la navbar */
 }
 
-/* Secciones y textos */
+.nav-link {
+    font-weight: bold;
+  }
+  
+  .navbar .btn-outline-primary {
+    border-color: #007bff;
+    color: #007bff;
+  }
+  
+  .navbar .btn-outline-primary:hover {
+    background-color: #FF7A0D;
+    color: #fff;
+  }
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000 !important;
+  }
+
 
 /* Encabezados principales */
 h2 {

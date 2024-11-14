@@ -9,31 +9,37 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="1.png" alt="Logo" width="30" class="me-2">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-3 me-auto">
-                    <li class="nav-item"><a class="nav-link text-dark" href="#">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark" href="#">Menú</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark" href="#">Promociones</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark" href="#">Tus puntos</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark" href="#">Pedidos</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark" href="#">Mi perfil</a></li>
-                </ul>
-                <div class="d-flex align-items-center">
-                    <span class="me-3 text-dark">Bienvenido, Luciano</span>
-                    <a href="#" class="text-dark"><i class="bi bi-cart3" style="font-size: 1.5rem;"></i></a>
-                </div>
-            </div>
-        </div>
-    </nav>
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+  <a class="navbar-brand" href="#">
+    <img src="1.png" alt="Logo" style="width: 100px;"> <!-- Ajusta el tamaño del logo -->
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item">
+        <a class="nav-link text-primary" href="#">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-primary" href="#">Menú</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-primary" href="#">Promociones</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-primary" href="#">Pedidos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-primary" href="#">Mi perfil</a>
+      </li>
+    </ul>
+    <div class="navbar-nav">
+      <a class="btn btn-outline-primary mr-2" href="#">Login</a>
+      <a class="btn btn-outline-primary mr-2" href="#">Carrito</a>
+    </div>
+  </div>
+</nav>
 
     <!-- Sección principal -->
     <section class="container my-5 points-section">
