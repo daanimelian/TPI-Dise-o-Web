@@ -67,10 +67,33 @@ p {
 }
 
 .user-info p {
-    font-size: 1rem;
+    font-size: 1.20rem;
     color: #555;
     margin: 5px 0;
     line-height: 1.5;
+}
+
+/* Estilos para la barra de progreso personalizada */
+.progress {
+    height: 30px; /* Aumenta la altura de la barra */
+    background-color: #f3f3f3; /* Color de fondo de la barra */
+    border-radius: 15px; /* Bordes redondeados */
+    overflow: hidden; /* Esconde los elementos que sobresalen */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2); /* Añade una sombra interna */
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, #ff7a0d, #f5a715); /* Gradiente de color para la barra */
+    height: 30px;
+    transition: width 0.5s ease; /* Animación de la barra */
+    border-radius: 15px 0 0 15px; /* Bordes redondeados solo en el lado izquierdo */
+    height: 100%; /* Asegura que la altura sea completa dentro del contenedor */
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #fff; /* Color del texto en la barra */
 }
 
 /* Contenedor de perfil con fondo claro */
@@ -78,13 +101,22 @@ p {
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade sombra para destacar */
+    box-shadow: 0 4px 8px rgba(1, 0, 0, 0.1); /* Añade sombra para destacar */
+}
+
+.fixed-size-container {
+    min-width: 45%; /* Ajusta el ancho mínimo deseado */
+    height: 450px; /* Ajusta la altura automática */
+    background-color: #f9f9f9; /* Fondo claro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
 }
 
 /* Tarjetas de recompensas */
 .card {
     width: 180px; /* Define un ancho fijo para todas las tarjetas */
-    height: 250px;
+    height: 230px;
     padding: 1rem;
     border: 2px solid #0f0e0e;
     border-radius: 10px;
@@ -105,7 +137,7 @@ p {
 /* Imágenes en tarjetas */
 .card img {
     display: block;
-    margin: 0 auto 10px auto;
+    margin: 0 auto 15px auto;
 }
 
 /* Botones uniformes */
@@ -134,8 +166,8 @@ p {
 
 /* Imagen de perfil */
 .profile-img {
-    width: 130px; /* Ajusta el tamaño según tus preferencias */
-    height: 130px;
+    width: 140px; /* Ajusta el tamaño según tus preferencias */
+    height: 160px;
     object-fit: cover;
     border: 2px solid #ddd;
     padding: 5px;
@@ -164,24 +196,73 @@ p {
     background-color: var(--secondary-color); /* Fondo naranja */
     color: var(--text-color);
     position: relative;
-    padding-bottom: 0; /* Quitar padding inferior */
-    margin-bottom: 0; /* Quitar margen inferior */
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.obtener-puntos-contenedor {
+    height: 520px;
+    width: 1300px;
+    max-width: 1300px;
+    padding: 20px;
+}
+
+/* Título y subtítulos */
+.obtener-puntos-section h2 {
+    font-size: 2.5rem; /* Aumenta el tamaño del título */
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+.obtener-puntos-section p {
+    font-size: 1.25rem; /* Tamaño del texto principal */
+    color: #003eb1;
+    margin-bottom: 1.5rem;
+}
+
+.title-black {
+    color: #000000;
+}
+
+/* Texto en secciones */
+.texto-seccion h5 {
+    font-size: 1.5rem; /* Tamaño de subtítulos de las secciones */
+    color: #333; /* Color de los títulos */
+    margin-top: 1rem;
+}
+
+.texto-seccion p {
+    font-size: 1.2rem; /* Tamaño de texto en las secciones */
+    color: #000; /* Color del texto */
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+/* Fondo e imagen */
+.bg-light {
+    padding: 2rem; /* Incrementa el padding para agrandar la caja */
+    margin: 1rem auto; /* Centra la imagen */
+    background-color: #3a1717d7; 
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .bg-light img {
+    max-width: 100%; /* Asegura que la imagen ocupe todo el ancho de la caja */
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar la imagen */
 }
 
+/* Guarda en la parte superior de la sección */
 .guarda {
     background-image: url('guarda_desktop.svg'); /* Ruta del SVG de la guarda */
-    height: 40px; /* Ajusta según el tamaño de la guarda */
+    height: 40px;
     background-size: contain;
     background-repeat: repeat-x;
     width: 100%;
 }
 
-/* Guarda en la parte superior de la sección */
 .guarda-top {
     position: absolute;
     top: 0;
@@ -195,57 +276,42 @@ p {
     left: 0;
 }
 
-/* Estilo de textos y contenido */
-.title-black {
-
-    color: #000000; /* Color negro */
-}
-
-.obtener-puntos-section h2
-{
-
-    color: #000000; /* Texto en blanco para resaltar sobre el fondo naranja */
-}
-.obtener-puntos-section p {
-    color: #003eb1; /* Texto en blanco para resaltar sobre el fondo naranja */
-}
-
-.obtener-puntos-section .bg-light {
-    background-color: #fff; /* Fondo blanco para el área de imagen ilustrativa */
-    border-radius: 5px;
-}
-
-/* Footer */
+/* Ajustes para el footer */
 .footer-section {
-    background-color: var(--background-color);
+    background-color: #ebebeb; /* Fondo claro */
+    color: #fff; /* Color de texto blanco */
     padding: 20px 0;
-    margin-top: 0; /* Quitar margen superior */
 }
 
-.footer-section h6, .footer-section p, .footer-section a {
-    color: var(--text-color);
+.footer-logo {
+    max-width: 200px;
+    margin: 0 auto;
 }
 
-.text-center-footer {
-    text-align: center;
-    color: var(--text-color);
-    margin-top: 2rem;
+.footer-section p {
+    margin: 5px 0;
 }
 
-.footer-section .d-flex a {
-    color: var(--text-color);
+.footer-section a {
+    color: #FF7A0D; /* Color dorado para enlaces */
+    text-decoration: none;
 }
 
-.footer-logo img {
-    width: 200px; /* Ajusta el tamaño del logo según necesites */
-    display: block;
-    margin-bottom: 10px; /* Espacio debajo del logo */
+.footer-section a:hover {
+    text-decoration: underline;
 }
 
-.footer-section .row {
-    margin-top: 30px; /* Agrega un margen superior a las columnas */
+.bi-instagram {
+    font-size: 1.5rem;
+    color: #FF7A0D; /* Color dorado */
 }
 
-.footer-section .col-md-3 {
-    padding-top: 30px; /* Agrega un padding superior a cada columna */
+.bi-facebook {
+    font-size: 1.5rem;
+    color: #FF7A0D; /* Color dorado */
+}
+
+.bi-twitter {
+    font-size: 1.5rem;
+    color: #FF7A0D; /* Color dorado */
 }
