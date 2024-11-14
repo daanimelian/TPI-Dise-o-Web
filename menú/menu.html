@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menú</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../vendors/jquery.owlcarousel/dist/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="../vendors/jquery.owlcarousel/dist/assets/owl.theme.default.css">
+    
+    
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+        <a class="navbar-brand" href="#">
+          <img src="../header/logo.png" alt="Logo" style="width: 80px" />
+          <!-- Ajusta el tamaño del logo -->
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#">Promociones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#">Pedidos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#">Mi perfil</a>
+            </li>
+          </ul>
+          <div class="navbar-nav">
+            <a class="btn btn-outline-primary mr-2" href="#">Login</a>
+            <a class="btn btn-outline-primary mr-2" href="#">Carrito</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section
+        id="filtro-busqueda"
+        class="search-filters d-flex justify-content-between align-items-center my-3 flex-wrap"
+      >
+        <!-- Barra de búsqueda a la izquierda -->
+        <form class="d-flex me-3" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Buscar"
+            aria-label="Buscar"
+          />
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+
+        <!-- Filtros a la derecha -->
+        <select
+          class="form-select ms-3"
+          aria-label="Filtros"
+          style="max-width: 200px"
+        >
+          <option selected>Filtros</option>
+          <option value="1">Filtro 1</option>
+          <option value="2">Filtro 2</option>
+          <option value="3">Filtro 3</option>
+        </select>
+      </section>
+      <section id="hamburguesas">
+        <div class="container-fluid px-0">
+          <div id="separador-hamburguesas" class="row">
+            <div class="col-12 px-0">
+              <div class="text-center py-4">
+                <h2>Hamburguesas</h2>
+              </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div id="hamburguesas-carrusel" class="row align-items-center ">
+                <div class="col-12 px-0">
+                   <div class="owl-carousel owl-theme ">
+                     
+                         <div class="card py-0">
+                            <img src="imgs/1.png" width="100px" alt="">
+                            <h3>Super 8086</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat ut praesentium ea consequuntur a exercitationem fugit perspiciatis, sequi natus, saepe unde! Voluptas odio voluptatibus iure quidem quis maxime fugit.</p>
+                            <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                        </div>
+                        <div class="card">
+                            <img src="imgs/1.png" width="100px" alt="">
+                            <h3>La SOLID</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat ut praesentium ea consequuntur a exercitationem fugit perspiciatis, sequi natus, saepe unde! Voluptas odio voluptatibus iure quidem quis maxime fugit.</p>
+                            <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                        </div>
+                        <div class="card">
+                            <img src="imgs/1.png" width="100px" alt="">
+                            <h3>Big Compilada</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat ut praesentium ea consequuntur a exercitationem fugit perspiciatis, sequi natus, saepe unde! Voluptas odio voluptatibus iure quidem quis maxime fugit.</p>
+                            <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                        </div>
+
+                        
+                    
+                     
+                   </div>
+                   <button id="boton-ver-mas" type="button" class="btn btn-primary">Ver más</button>
+
+                </div>
+
+            </div>
+
+        
+        
+      </section>
+      <section id="hamburguesas">
+        <div class="container-fluid px-0">
+          <div id="separador-hamburguesas" class="row">
+            <div class="col-12 px-0">
+              <div class="text-center py-4">
+                <h2>Veggie</h2>
+              </div>
+            </div>
+        </div>
+        <div class="container-fluid ali">
+            <div id="hamburguesas-carrusel" class="row align-items-center ">
+                <div class="col-12 px-0">
+                   <div class="owl-carousel">
+                     
+                    <div class="card">
+                        <img src="imgs/veggie.png" width="100px" alt="">
+                        <h3>Super Kernel</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat ut praesentium ea consequuntur a exercitationem fugit perspiciatis, sequi natus, saepe unde! Voluptas odio voluptatibus iure quidem quis maxime fugit.</p>
+                        <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                    </div>
+                    <div class="card">
+                        <img src="imgs/veggie.png" width="100px" alt="">
+                        <h3>Super Kernel</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat ut praesentium ea consequuntur a exercitationem fugit perspiciatis, sequi natus, saepe unde! Voluptas odio voluptatibus iure quidem quis maxime fugit.</p>
+                        <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                    </div>
+                    <div class="card">
+                        <img src="imgs/veggie.png" width="100px" alt="">
+                        <h3>Super Kernel</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat ut praesentium ea consequuntur a exercitationem fugit perspiciatis, sequi natus, saepe unde! Voluptas odio voluptatibus iure quidem quis maxime fugit.</p>
+                        <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                    </div>
+                    
+                     
+                   </div>
+                   <button id="boton-ver-mas" type="button" class="btn btn-primary">Ver más</button>
+
+                </div>
+
+            </div>
+
+        
+        
+      </section>
+      <section id="hamburguesas">
+        <div class="container-fluid px-0">
+          <div id="separador-hamburguesas" class="row">
+            <div class="col-12 px-0">
+              <div class="text-center py-4">
+                <h2>Bebidas</h2>
+              </div>
+            </div>
+        </div>
+        <div class="container-fluid ali">
+            <div id="hamburguesas-carrusel" class="row align-items-center ">
+                <div class="col-12 px-0">
+                   <div class="owl-carousel">
+                     
+                    <div class="card">
+                        <img src="imgs/coca-cola.webp" width="100px" alt="">
+                        <h3>Super Kernel</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat ut praesentium ea consequuntur a exercitationem fugit perspiciatis, sequi natus, saepe unde! Voluptas odio voluptatibus iure quidem quis maxime fugit.</p>
+                        <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                    </div>
+                    <div class="card">
+                        <img src="imgs/coca-cola.webp" width="100px" alt="">
+                        <h3>Super Kernel</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat ut praesentium ea consequuntur a exercitationem fugit perspiciatis, sequi natus, saepe unde! Voluptas odio voluptatibus iure quidem quis maxime fugit.</p>
+                        <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                    </div>
+                    <div class="card">
+                        <img src="imgs/coca-cola.webp" width="100px" alt="">
+                        <h3>Super Kernel</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat ut praesentium ea consequuntur a exercitationem fugit perspiciatis, sequi natus, saepe unde! Voluptas odio voluptatibus iure quidem quis maxime fugit.</p>
+                        <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                    </div>
+                    
+                    
+                     
+                   </div>
+                   <button id="boton-ver-mas" type="button" class="btn btn-primary">Ver más</button>
+
+                </div>
+
+            </div>
+
+        
+        
+      </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendors/jquery.owlcarousel/dist/owl.carousel.js"></script>
+    <script src="funciones.js" >
+        
+    </script>
+  </body>
+</html>

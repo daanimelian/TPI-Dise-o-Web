@@ -1,0 +1,24 @@
+#filtro-busqueda {
+  margin: 13px;
+}
+
+#separador-hamburguesas {
+  background-color: #f5762c;
+  margin-bottom: 0;
+}
+
+#hamburguesas h2 {
+  color: #6b8bc8;
+  font-weight: bold;
+}
+
+.card {
+  margin-bottom: 2px;
+  margin-left: 2px;
+  margin-top: 0;
+}
+
+#boton-ver-mas {
+  margin-bottom: 4px;
+  margin-left: 2px;
+}
