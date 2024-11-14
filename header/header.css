@@ -1,24 +1,13 @@
-header {
-    background-color: white;
-    color: #6B8BC8;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+.nav-link {
+  font-weight: bold;
 }
 
-header .logo img {
-    height: 40px;
+.navbar .btn-outline-primary {
+  border-color: #007bff;
+  color: #007bff;
 }
 
-header nav a {
-    color: #6B8BC8;
-    margin: 0 10px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-header nav a:hover {
-    text-decoration: underline;
+.navbar .btn-outline-primary:hover {
+  background-color: #FF7A0D;
+  color: #fff;
 }
