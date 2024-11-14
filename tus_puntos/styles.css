@@ -1,13 +1,15 @@
 /* Colores de la paleta */
 :root {
-    --primary-color: #003366; /* Color azul del header */
-    --secondary-color: #ff6600; /* Ejemplo de color secundario */
-    --background-color: #f1ead0; /* Color crema de fondo */
+    --primary-color: #003eb1; /* Color azul del header */
+    --secondary-color: #FF7A0D; /* Naranja para fondo de la sección */
+    --background-color: #ebebeb; /* Color crema de fondo */
+    --button-color: #1d54b9; /* Azul de los botones */
     --text-color: #000000; /* Color de texto negro */
 }
 
 /* Estilo global para el color de texto y fondo */
 body {
+    font-family: 'Roboto', sans-serif;
     color: var(--text-color);
     background-color: var(--background-color);
 }
@@ -15,7 +17,7 @@ body {
 /* Navbar */
 .navbar {
     background-color: var(--primary-color);
-    padding: 0.0005rem 4.1rem; /* Reducir tamaño de la barra sin afectar el logo y texto */
+    padding: 0rem 4.1rem; /* Ajuste de padding para la barra */
 }
 
 .navbar .navbar-brand, .navbar-nav .nav-link {
@@ -31,41 +33,125 @@ body {
 }
 
 /* Secciones y textos */
-h2, h4, h5, p, .card, .footer-section {
-    color: var(--text-color);
+
+/* Encabezados principales */
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+/* Subtítulos y textos secundarios */
+p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Texto de información de usuario */
+.user-info h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.user-info p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+/* Contenedor de perfil con fondo claro */
+.background-light {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade sombra para destacar */
 }
 
 /* Tarjetas de recompensas */
 .card {
+    width: 180px; /* Define un ancho fijo para todas las tarjetas */
+    height: 250px;
     padding: 1rem;
-    border: 1px solid #ddd;
+    border: 2px solid #0f0e0e;
+    border-radius: 10px;
     margin-top: 1rem;
     background-color: var(--secondary-color);
     text-align: center; /* Centrar el contenido de las tarjetas */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade sombra */
+    transition: transform 0.2s, box-shadow 0.2s; /* Transiciones para efectos */
 }
 
+.reward-cards .col-4 {
+    min-width: 100px; /* Ajuste de tamaño mínimo para uniformar las tarjetas */
+}
+
+/* Imágenes en tarjetas */
 .card img {
     display: block;
-    margin: 0 auto 10px auto; /* Centrar la imagen */
+    margin: 0 auto 10px auto;
 }
 
 /* Botones uniformes */
 .btn {
-    width: 100%; /* Hacer que los botones ocupen el ancho completo del contenedor */
-    max-width: 150px; /* Tamaño máximo para mantener consistencia */
-    padding: 10px; /* Tamaño uniforme de los botones */
+    max-width: 100%; /* Hacer que los botones ocupen el ancho completo del contenedor */
+    margin-top: 5px;
+    max-width: 150px; /* Tamaño máximo */
+    border: 1px solid #0f0e0e;
+    border-radius: 10px;
+    padding: 10px;
     font-size: 1rem;
-}
-
-.btn-secondary {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
+    background-color: var(--button-color); /* Color azul personalizado */
     color: #fff;
 }
 
-.btn-secondary:hover {
-    background-color: var(--secondary-color);
-    border-color: var(--secondary-color);
+.btn:hover {
+    background-color: #3b73d7; /* Ajuste de hover para un tono más claro */
+}
+
+/* Tamaño uniforme de botones para perfil */
+.profile-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Espacio entre los botones */
+}
+
+/* Imagen de perfil */
+.profile-img {
+    width: 130px; /* Ajusta el tamaño según tus preferencias */
+    height: 130px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    padding: 5px;
+}
+.profile-buttons .btn {
+    max-width: 200px;
+    font-weight: 500;
+    background-color: var(--button-color);
+    color: #fff;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.profile-buttons .btn:hover {
+    background-color: #FF7A0D; /* Efecto hover en naranja */
 }
 
 /* Progreso */
@@ -73,11 +159,67 @@ h2, h4, h5, p, .card, .footer-section {
     background-color: var(--secondary-color);
 }
 
+/* Sección ¿Cómo obtener puntos? */
+.obtener-puntos-section {
+    background-color: var(--secondary-color); /* Fondo naranja */
+    color: var(--text-color);
+    position: relative;
+    padding-bottom: 0; /* Quitar padding inferior */
+    margin-bottom: 0; /* Quitar margen inferior */
+}
+
+.bg-light img {
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar la imagen */
+}
+
+.guarda {
+    background-image: url('guarda_desktop.svg'); /* Ruta del SVG de la guarda */
+    height: 40px; /* Ajusta según el tamaño de la guarda */
+    background-size: contain;
+    background-repeat: repeat-x;
+    width: 100%;
+}
+
+/* Guarda en la parte superior de la sección */
+.guarda-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Guarda en la parte inferior de la sección */
+.guarda-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* Estilo de textos y contenido */
+.title-black {
+
+    color: #000000; /* Color negro */
+}
+
+.obtener-puntos-section h2
+{
+
+    color: #000000; /* Texto en blanco para resaltar sobre el fondo naranja */
+}
+.obtener-puntos-section p {
+    color: #003eb1; /* Texto en blanco para resaltar sobre el fondo naranja */
+}
+
+.obtener-puntos-section .bg-light {
+    background-color: #fff; /* Fondo blanco para el área de imagen ilustrativa */
+    border-radius: 5px;
+}
+
 /* Footer */
 .footer-section {
     background-color: var(--background-color);
     padding: 20px 0;
-    margin-top: 2rem;
+    margin-top: 0; /* Quitar margen superior */
 }
 
 .footer-section h6, .footer-section p, .footer-section a {
@@ -92,4 +234,18 @@ h2, h4, h5, p, .card, .footer-section {
 
 .footer-section .d-flex a {
     color: var(--text-color);
+}
+
+.footer-logo img {
+    width: 200px; /* Ajusta el tamaño del logo según necesites */
+    display: block;
+    margin-bottom: 10px; /* Espacio debajo del logo */
+}
+
+.footer-section .row {
+    margin-top: 30px; /* Agrega un margen superior a las columnas */
+}
+
+.footer-section .col-md-3 {
+    padding-top: 30px; /* Agrega un padding superior a cada columna */
 }

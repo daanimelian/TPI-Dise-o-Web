@@ -9,145 +9,166 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navbar horizontal con logo y menú a la izquierda -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="1.png" alt="Logo" width="40" class="me-2"> <!-- Ajuste de tamaño del logo -->
+                <img src="1.png" alt="Logo" width="30" class="me-2"> <!-- Ajuste de tamaño del logo -->
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-3">
+                <ul class="navbar-nav ms-3 me-auto">
                     <li class="nav-item"><a class="nav-link text-dark" href="#">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link text-dark" href="#">Menú</a></li>
                     <li class="nav-item"><a class="nav-link text-dark" href="#">Promociones</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Tus puntos</a></li>
                     <li class="nav-item"><a class="nav-link text-dark" href="#">Pedidos</a></li>
                     <li class="nav-item"><a class="nav-link text-dark" href="#">Mi perfil</a></li>
                 </ul>
+                <div class="d-flex align-items-center">
+                    <span class="me-3 text-dark">Bienvenido, Luciano</span>
+                    <a href="#" class="text-dark"><i class="bi bi-cart3" style="font-size: 1.5rem;"></i></a>
+                </div>
             </div>
         </div>
     </nav>
 
-    <!-- Sección principal -->
-    <section class="container my-5 points-section">
-        <div class="row">
-            <!-- Columna izquierda: Puntos acumulados -->
-            <div class="col-md-6 text-center border-end">
-                <h2 class="text-center text-dark">Tus puntos acumulados:</h2>
-                <p class="text-center fs-3 text-dark">500/10.000</p>
-                <div class="progress mb-4 mx-auto" style="width: 50%;">
-                    <div class="progress-bar bg-dark" role="progressbar" style="width: 5%;" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <div class="row reward-cards">
-                    <div class="col-4">
-                        <div class="card p-2 text-center">
-                            <h6 class="text-dark">Canjear en envío gratis</h6>
-                            <img src="delivery-bike.png" alt="Envío Gratis" width="50" class="my-2"> <!-- Ícono de envío gratis -->
-                            <p class="text-dark">800 pts</p>
-                            <button class="btn btn-secondary">Button</button>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card p-2 text-center">
-                            <h6 class="text-dark">Canjear en descuento en compra</h6>
-                            <img src="tag.png" alt="Descuento" width="50" class="my-2"> <!-- Ícono de descuento -->
-                            <p class="text-dark">1000 pts</p>
-                            <button class="btn btn-secondary">Button</button>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card p-2 text-center">
-                            <h6 class="text-dark">Canjear en bebida gratis</h6>
-                            <img src="soda.png" alt="Bebida Gratis" width="50" class="my-2"> <!-- Ícono de bebida gratis -->
-                            <p class="text-dark">1200 pts</p>
-                            <button class="btn btn-secondary">Button</button>
-                        </div>
-                    </div>
-                </div>
+<!-- Sección principal -->
+<section class="container my-5 points-section">
+    <div class="row d-flex justify-content-between align-items-start">
+        <!-- Columna izquierda: Puntos acumulados -->
+        <div class="col-lg-6 col-md-12 text-center mb-4">
+            <h2 class="text-center text-dark">Tus puntos acumulados:</h2>
+            <p class="text-center fs-3 text-dark">500/10.000</p>
+            <div class="progress mb-4 mx-auto" style="width: 50%;">
+                <div class="progress-bar bg-dark" role="progressbar" style="width: 5%;" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
-
-            <!-- Columna derecha: Perfil del usuario -->
-            <div class="col-md-6 text-center">
-                <h4 class="text-dark">Luciano Perrella</h4>
-                <p class="text-dark">Puntos Disponibles: 500</p>
-                <p class="text-dark">Dirección: Avenida balbastro 653</p>
-                <p class="text-dark">Email: lucianoperrella@gmail.com</p>
-                <p class="text-dark">Celular: 1231234</p>
-                <button class="btn btn-secondary mb-2">Cambiar foto de perfil</button>
-                <button class="btn btn-secondary">Asociar medios de pago</button>
+            <div class="d-flex flex-wrap justify-content-center gap-3 reward-cards">
+                <div class="card p-3 text-center" style="width: 180px;">
+                    <h6 class="text-dark">Canjear en envío rápido gratis</h6>
+                    <img src="delivery-bike.png" alt="Envío Gratis" width="50" class="my-2">
+                    <p class="text-dark">800 pts</p>
+                    <button class="btn btn-secondary">Button</button>
+                </div>
+                <div class="card p-3 text-center" style="width: 180px;">
+                    <h6 class="text-dark">Canjear descuento en compra</h6>
+                    <img src="tag.png" alt="Descuento" width="50" class="my-2">
+                    <p class="text-dark">1000 pts</p>
+                    <button class="btn btn-secondary">Button</button>
+                </div>
+                <div class="card p-3 text-center" style="width: 180px;">
+                    <h6 class="text-dark">Canjear en bebida gratis</h6>
+                    <img src="soda.png" alt="Bebida Gratis" width="50" class="my-2">
+                    <p class="text-dark">1200 pts</p>
+                    <button class="btn btn-secondary">Button</button>
+                </div>
             </div>
         </div>
-    </section>
+
+        <!-- Columna derecha: Perfil del usuario -->
+        <div class="col-lg-5 col-md-12 text-center user-info background-light p-4">
+            <div class="row align-items-center">
+                <!-- Imagen de perfil -->
+                <div class="col-12 text-center mb-3">
+                    <img src="pexels-artempodrez-4728849.jpg" alt="Imagen de Perfil" class="img-fluid rounded-circle profile-img">
+                </div>
+                <!-- Información del usuario -->
+                <div class="col-12 text-center">
+                    <h4 class="text-dark">Luciano Perrella</h4>
+                    <p class="text-dark"><strong>Puntos Disponibles:</strong> 500</p>
+                    <p class="text-dark"><strong>Dirección:</strong> Avenida balbastro 653</p>
+                    <p class="text-dark"><strong>Email:</strong> lucianoperrella@gmail.com</p>
+                    <p class="text-dark"><strong>Celular:</strong> 1231234</p>
+                    <div class="profile-buttons d-flex justify-content-center gap-3 mt-3">
+                        <button class="btn btn-secondary">Cambiar foto de perfil</button>
+                        <button class="btn btn-secondary">Asociar medios de pago</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- ¿Cómo obtener puntos? -->
-    <section class="container my-5">
-        <h2 class="text-dark">¿Cómo obtener puntos?</h2>
-        <p class="text-dark">Lorem ipsum dolor sit amet et delectus accommodare.</p>
-        <div class="row">
-            <div class="col-md-4 text-center">
-                <div class="bg-light p-5">
-                    <span class="text-dark">Imagen ilustrativa de puntos</span>
+    <section class="obtener-puntos-section text-light py-5">
+        <!-- Guarda superior -->
+        <div class="guarda guarda-top"></div>
+    
+        <div class="container">
+            <h2>¿Cómo obtener puntos?</h2>
+            <p>Acumular puntos es fácil y te permite acceder a recompensas exclusivas. Aquí te mostramos algunas maneras de ganar puntos en nuestra plataforma:</p>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <!-- Imagen ilustrativa de puntos -->
+                    <div class="bg-light p-3 text-dark rounded">
+                        <img src="pexels-zurielescobedo-10771116.jpg" alt="Imagen ilustrativa de puntos" class="img-fluid rounded" style="max-width: 100%; height: auto;">
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <h5 class="title-black">Hacer un Pedido:</h5>
+                    <p>Cada vez que realices un pedido en nuestra tienda, acumularás puntos que se sumarán automáticamente a tu cuenta.</p>
+                    
+                    <h5 class="title-black">Invitar a un Amigo:</h5>
+                    <p>Por cada amigo que invites y realice su primer pedido, recibirás puntos adicionales. ¡No hay límite en las invitaciones!</p>
+                    
+                    <h5 class="title-black">Días Especiales:</h5>
+                    <p>En tu cumpleaños o durante eventos especiales, obtén puntos extra como un regalo de nuestra parte.</p>
                 </div>
             </div>
-            <div class="col-md-8">
-                <h5 class="text-dark">Medium length headline</h5>
-                <p class="text-dark">Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos.</p>
-                
-                <h5 class="text-dark">Medium length headline</h5>
-                <p class="text-dark">Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos.</p>
-                
-                <h5 class="text-dark">Medium length headline</h5>
-                <p class="text-dark">Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos.</p>
-            </div>
         </div>
+    
+        <!-- Guarda inferior -->
+        <div class="guarda guarda-bottom"></div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-light footer-section">
+    <footer class="footer-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <h5 class="text-dark">Logo</h5>
-                    <p class="text-dark"><strong>Address:</strong><br>123 Main Street, City<br>State Province, Country</p>
+                    <div class="footer-logo">
+                        <img src="2.png" alt="Kernel Burger Logo">
+                    </div>
+                    <p><strong>Dirección:</strong><br>Av. Alvarez Jonte 1500, Paternal City<br>Capital Federal, Argentina</p>
                     <div class="d-flex gap-3">
-                        <a href="#" class="text-dark"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="text-dark"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="text-dark"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <h6 class="text-dark">Column one</h6>
+                    <h6>Información</h6>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-dark">Link one</a></li>
-                        <li><a href="#" class="text-dark">Link two</a></li>
-                        <li><a href="#" class="text-dark">Link three</a></li>
-                        <li><a href="#" class="text-dark">Link four</a></li>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
-                    <h6 class="text-dark">Column two</h6>
+                    <h6>Ayuda</h6>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-dark">Link five</a></li>
-                        <li><a href="#" class="text-dark">Link six</a></li>
-                        <li><a href="#" class="text-dark">Link seven</a></li>
-                        <li><a href="#" class="text-dark">Link eight</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Guía de Puntos</a></li>
+                        <li><a href="#">Soporte al Cliente</a></li>
+                        <li><a href="#">Envíos y Devoluciones</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
-                    <h6 class="text-dark">Column three</h6>
+                    <h6>Programa de Recompensas</h6>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-dark">Link nine</a></li>
-                        <li><a href="#" class="text-dark">Link ten</a></li>
-                        <li><a href="#" class="text-dark">Link eleven</a></li>
-                        <li><a href="#" class="text-dark">Link twelve</a></li>
+                        <li><a href="#">Cómo Ganar Puntos</a></li>
+                        <li><a href="#">Beneficios de los Puntos</a></li>
+                        <li><a href="#">Ofertas Exclusivas</a></li>
+                        <li><a href="#">Programa de Referidos</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="text-center-footer text-dark">
+            <div class="text-center-footer">
                 <p class="small">&copy; 2024 Your Website. All rights reserved.</p>
-                <a href="#" class="text-dark">Privacy Policy</a> | <a href="#" class="text-dark">Terms of Service</a>
+                <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
             </div>
         </div>
     </footer>
