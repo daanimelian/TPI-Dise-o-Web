@@ -1,7 +1,24 @@
 #filtro-busqueda {
   margin: 13px;
 }
-
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /* Aumentar tamaño del texto de la flecha */
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 15px; /* Aumentar padding para agrandar el botón */
+  border-radius: 100%;
+  cursor: pointer;
+}
+.owl-prev {
+  left: -40px; /* Ajusta según el espacio que necesites */
+}
+.owl-next {
+  right: -40px; /* Ajusta según el espacio que necesites */
+}
 #separador-hamburguesas {
   background-color: #f5762c;
   height: 50px;
