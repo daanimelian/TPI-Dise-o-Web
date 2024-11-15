@@ -103,399 +103,476 @@
               <div class="text-center py-0">
                 
                 <h2>Hamburguesas</h2>
-                
+
               </div>
             </div>
-        </div>
-        <div class="container-fluid">
-            <div id="hamburguesas-carrusel" class="row align-items-center ">
+          </nav>
+        </header>
+        <main>
+          <section
+            id="filtro-busqueda"
+            class="search-filters d-flex justify-content-between align-items-center my-3 flex-wrap"
+          >
+            <!-- Barra de búsqueda a la izquierda -->
+            <form class="d-flex me-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Buscar"
+              />
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+        
+            <!-- Filtros a la derecha -->
+            <select
+              class="form-select ms-3"
+              aria-label="Filtros"
+              style="max-width: 200px"
+            >
+              <option selected>Filtros</option>
+              <option value="1">Filtro 1</option>
+              <option value="2">Filtro 2</option>
+              <option value="3">Filtro 3</option>
+            </select>
+          </section>
+          <section id="hamburguesas">
+            <div class="container-fluid px-0">
+              <div id="separador-hamburguesas" class="row">
                 <div class="col-12 px-0">
-                   <div class="owl-carousel owl-theme ">
-                     
-                         <div class="card py-0">
-                            <img src="imgs/1.png" width="100px" alt="">
-                            <h3>Super 8086</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat ut praesentium ea consequuntur a exercitationem fugit perspiciatis, sequi natus, saepe unde! Voluptas odio voluptatibus iure quidem quis maxime fugit.</p>
-                            <button type="button" class="btn btn-primary boton-agregar">Agregar al carrito</button>
-                        </div>
-                        <div class="card">
-                            <img src="imgs/1.png" width="100px" alt="">
-                            <h3>La SOLID</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat ut praesentium ea consequuntur a exercitationem fugit perspiciatis, sequi natus, saepe unde! Voluptas odio voluptatibus iure quidem quis maxime fugit.</p>
-                            <button type="button" class="btn btn-primary boton-agregar">Agregar al carrito</button>
-                        </div>
-                        <div class="card">
-                            <img src="imgs/1.png" width="100px" alt="">
-                            <h3>Big Compilada</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat ut praesentium ea consequuntur a exercitationem fugit perspiciatis, sequi natus, saepe unde! Voluptas odio voluptatibus iure quidem quis maxime fugit.</p>
-                            <button type="button" class="btn btn-primary boton-agregar">Agregar al carrito</button>
-                        </div>
-
-                        
+                  <div class="text-center py-0">
                     
-                     
-                   </div>
-                   <button  type="button" class="btn boton-ver-mas btn-primary">Ver más</button>
-                   <div class="row align-items-center" id="extra-cards" style="display: none;">
-                    <!-- Más tarjetas de productos aquí -->
-                    <div class="container my-5">
-                        <div class="row justify-content-center" id="product-cards">
-                            <!-- Tarjeta 1 -->
-                            <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-column">
-                                <div class="extra-card text-center h-100">
-                                    <img src="imgs/1.png" class="card-img-top mx-auto" alt="Producto 1" style="width: 100px; height: auto;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Super 8086</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolores quis reiciendis quod odio minima tempore exercitationem aut dolor mollitia, nostrum eum provident natus! Quia aliquid deleniti a ratione non?</p>
-                                        <button type="button" class="btn btn-primary btn-sm">Agregar al carrito</button>
-                                    </div>
-                                </div>
-                            </div>
+                    <h2>Hamburguesas</h2>
                     
-                            <!-- Tarjeta 2 -->
-                            <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-column">
-                                <div class="extra-card text-center h-100">
-                                    <img src="imgs/1.png" class="card-img-top mx-auto" alt="Producto 2" style="width: 100px; height: auto;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">La SOLID</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolores quis reiciendis quod odio minima tempore exercitationem aut dolor mollitia, nostrum eum provident natus! Quia aliquid deleniti a ratione non?</p>
-                                        <button type="button" class="btn btn-primary btn-sm">Agregar al carrito</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-column">
-                                <div class="extra-card text-center h-100">
-                                    <img src="imgs/1.png" class="card-img-top mx-auto" alt="Producto 3" style="width: 100px; height: auto;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Big Compilada</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolores quis reiciendis quod odio minima tempore exercitationem aut dolor mollitia, nostrum eum provident natus! Quia aliquid deleniti a ratione non?</p>
-                                        <button type="button" class="btn btn-primary btn-sm">Agregar al carrito</button>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                           
-                            <!-- Tarjeta 1 -->
-                            <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-column">
-                                <div class="extra-card text-center h-100">
-                                    <img src="imgs/1.png" class="card-img-top mx-auto" alt="Producto 1" style="width: 100px; height: auto;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Super 8086</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolores quis reiciendis quod odio minima tempore exercitationem aut dolor mollitia, nostrum eum provident natus! Quia aliquid deleniti a ratione non?</p>
-                                        <button type="button" class="btn btn-primary btn-sm">Agregar al carrito</button>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                            <!-- Tarjeta 2 -->
-                            <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-column">
-                                <div class="extra-card text-center h-100">
-                                    <img src="imgs/1.png" class="card-img-top mx-auto" alt="Producto 2" style="width: 100px; height: auto;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">La SOLID</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolores quis reiciendis quod odio minima tempore exercitationem aut dolor mollitia, nostrum eum provident natus! Quia aliquid deleniti a ratione non?</p>
-                                        <button type="button" class="btn btn-primary btn-sm">Agregar al carrito</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-column">
-                                <div class="extra-card text-center h-100">
-                                    <img src="imgs/1.png" class="card-img-top mx-auto" alt="Producto 3" style="width: 100px; height: auto;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Big Compilada</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolores quis reiciendis quod odio minima tempore exercitationem aut dolor mollitia, nostrum eum provident natus! Quia aliquid deleniti a ratione non?</p>
-                                        <button type="button" class="btn btn-primary btn-sm">Agregar al carrito</button>
-                                    </div>
-                                </div>
-                            </div>
-                        
-
-                   </div>
-
+                  </div>
                 </div>
-
             </div>
-
+            <div class="container-fluid">
+                <div id="hamburguesas-carrusel" class="row align-items-center ">
+                    <div class="col-12 px-0">
+                       <div class="owl-carousel owl-theme ">
+                         
+                             <div class="card py-0">
+                                <img src="imgs/1.png" width="100px" alt="">
+                                <h3>Super 8086</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat ut praesentium ea consequuntur a exercitationem fugit perspiciatis, sequi natus, saepe unde! Voluptas odio voluptatibus iure quidem quis maxime fugit.</p>
+                                <button type="button" class="btn btn-primary boton-agregar">Agregar al carrito</button>
+                            </div>
+                            <div class="card">
+                                <img src="imgs/1.png" width="100px" alt="">
+                                <h3>La SOLID</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat ut praesentium ea consequuntur a exercitationem fugit perspiciatis, sequi natus, saepe unde! Voluptas odio voluptatibus iure quidem quis maxime fugit.</p>
+                                <button type="button" class="btn btn-primary boton-agregar">Agregar al carrito</button>
+                            </div>
+                            <div class="card">
+                                <img src="imgs/1.png" width="100px" alt="">
+                                <h3>Big Compilada</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat ut praesentium ea consequuntur a exercitationem fugit perspiciatis, sequi natus, saepe unde! Voluptas odio voluptatibus iure quidem quis maxime fugit.</p>
+                                <button type="button" class="btn btn-primary boton-agregar">Agregar al carrito</button>
+                            </div>
+                            <div class="card">
+                                <img src="imgs/1.png" width="100px" alt="">
+                                <h3>Big Compilada</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat ut praesentium ea consequuntur a exercitationem fugit perspiciatis, sequi natus, saepe unde! Voluptas odio voluptatibus iure quidem quis maxime fugit.</p>
+                                <button type="button" class="btn btn-primary boton-agregar">Agregar al carrito</button>
+                            </div>
+                            <div class="card">
+                                <img src="imgs/1.png" width="100px" alt="">
+                                <h3>Big Compilada</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat ut praesentium ea consequuntur a exercitationem fugit perspiciatis, sequi natus, saepe unde! Voluptas odio voluptatibus iure quidem quis maxime fugit.</p>
+                                <button type="button" class="btn btn-primary boton-agregar">Agregar al carrito</button>
+                            </div>
         
+                            
+                        
+                         
+                       </div>
+                       <button  type="button" class="btn boton-ver-mas btn-primary">Ver más</button>
+                       <div class="row align-items-center" id="extra-cards" style="display: none;">
+                        <!-- Más tarjetas de productos aquí -->
+                        <div class="container my-5">
+                            <div class="row justify-content-center" id="product-cards">
+                                <!-- Tarjeta 1 -->
+                                <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-column">
+                                    <div class="extra-card text-center h-100">
+                                        <img src="imgs/1.png" class="card-img-top mx-auto" alt="Producto 1" style="width: 100px; height: auto;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Super 8086</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolores quis reiciendis quod odio minima tempore exercitationem aut dolor mollitia, nostrum eum provident natus! Quia aliquid deleniti a ratione non?</p>
+                                            <button type="button" class="btn btn-primary btn-sm">Agregar al carrito</button>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <!-- Tarjeta 2 -->
+                                <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-column">
+                                    <div class="extra-card text-center h-100">
+                                        <img src="imgs/1.png" class="card-img-top mx-auto" alt="Producto 2" style="width: 100px; height: auto;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">La SOLID</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolores quis reiciendis quod odio minima tempore exercitationem aut dolor mollitia, nostrum eum provident natus! Quia aliquid deleniti a ratione non?</p>
+                                            <button type="button" class="btn btn-primary btn-sm">Agregar al carrito</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-column">
+                                    <div class="extra-card text-center h-100">
+                                        <img src="imgs/1.png" class="card-img-top mx-auto" alt="Producto 3" style="width: 100px; height: auto;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Big Compilada</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolores quis reiciendis quod odio minima tempore exercitationem aut dolor mollitia, nostrum eum provident natus! Quia aliquid deleniti a ratione non?</p>
+                                            <button type="button" class="btn btn-primary btn-sm">Agregar al carrito</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                               
+                                <!-- Tarjeta 1 -->
+                                <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-column">
+                                    <div class="extra-card text-center h-100">
+                                        <img src="imgs/1.png" class="card-img-top mx-auto" alt="Producto 1" style="width: 100px; height: auto;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Super 8086</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolores quis reiciendis quod odio minima tempore exercitationem aut dolor mollitia, nostrum eum provident natus! Quia aliquid deleniti a ratione non?</p>
+                                            <button type="button" class="btn btn-primary btn-sm">Agregar al carrito</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <!-- Tarjeta 2 -->
+                                <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-column">
+                                    <div class="extra-card text-center h-100">
+                                        <img src="imgs/1.png" class="card-img-top mx-auto" alt="Producto 2" style="width: 100px; height: auto;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">La SOLID</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolores quis reiciendis quod odio minima tempore exercitationem aut dolor mollitia, nostrum eum provident natus! Quia aliquid deleniti a ratione non?</p>
+                                            <button type="button" class="btn btn-primary btn-sm">Agregar al carrito</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-column">
+                                    <div class="extra-card text-center h-100">
+                                        <img src="imgs/1.png" class="card-img-top mx-auto" alt="Producto 3" style="width: 100px; height: auto;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Big Compilada</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolores quis reiciendis quod odio minima tempore exercitationem aut dolor mollitia, nostrum eum provident natus! Quia aliquid deleniti a ratione non?</p>
+                                            <button type="button" class="btn btn-primary btn-sm">Agregar al carrito</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            
         
-      </section>
-      <section id="veggie">
-        <div class="container-fluid px-0">
-          <div id="separador-hamburguesas" class="row">
-            <div class="col-12 px-0">
-              <div class="text-center py-0">
-                
-                <h2>Veggie</h2>
-                
-              </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div id="hamburguesas-carrusel" class="row align-items-center ">
+                       </div>
+        
+                    </div>
+        
+                </div>
+        
+            
+            
+          </section>
+          <section id="veggie">
+            <div class="container-fluid px-0">
+              <div id="separador-hamburguesas" class="row">
                 <div class="col-12 px-0">
-                   <div class="owl-carousel owl-theme ">
-                     
-                         <div class="card py-0">
-                            <img src="imgs/veggie.png" width="100px" alt="">
-                            <h3>Super 8086</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat ut praesentium ea consequuntur a exercitationem fugit perspiciatis, sequi natus, saepe unde! Voluptas odio voluptatibus iure quidem quis maxime fugit.</p>
-                            <button type="button" class="btn btn-primary boton-agregar">Agregar al carrito</button>
-                        </div>
-                        <div class="card">
-                            <img src="imgs/veggie.png" width="100px" alt="">
-                            <h3>La SOLID</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat ut praesentium ea consequuntur a exercitationem fugit perspiciatis, sequi natus, saepe unde! Voluptas odio voluptatibus iure quidem quis maxime fugit.</p>
-                            <button type="button" class="btn btn-primary boton-agregar">Agregar al carrito</button>
-                        </div>
-                        <div class="card">
-                            <img src="imgs/veggie.png" width="100px" alt="">
-                            <h3>Big Compilada</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat ut praesentium ea consequuntur a exercitationem fugit perspiciatis, sequi natus, saepe unde! Voluptas odio voluptatibus iure quidem quis maxime fugit.</p>
-                            <button type="button" class="btn btn-primary boton-agregar">Agregar al carrito</button>
-                        </div>
-
-                        
+                  <div class="text-center py-0">
                     
-                     
-                   </div>
-                   <button  type="button" class="btn boton-ver-mas btn-primary">Ver más</button>
-                   <div class="row align-items-center" id="extra-cards" style="display: none;">
-                    <!-- Más tarjetas de productos aquí -->
-                    <div class="container my-5">
-                        <div class="row justify-content-center" id="product-cards">
-                            <!-- Tarjeta 1 -->
-                            <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-column">
-                                <div class="extra-card text-center h-100">
-                                    <img src="imgs/veggie.png" class="card-img-top mx-auto" alt="Producto 1" style="width: 100px; height: auto;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Super 8086</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolores quis reiciendis quod odio minima tempore exercitationem aut dolor mollitia, nostrum eum provident natus! Quia aliquid deleniti a ratione non?</p>
-                                        <button type="button" class="btn btn-primary btn-sm">Agregar al carrito</button>
-                                    </div>
-                                </div>
-                            </div>
+                    <h2>Veggie</h2>
                     
-                            <!-- Tarjeta 2 -->
-                            <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-column">
-                                <div class="extra-card text-center h-100">
-                                    <img src="imgs/veggie.png" class="card-img-top mx-auto" alt="Producto 2" style="width: 100px; height: auto;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">La SOLID</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolores quis reiciendis quod odio minima tempore exercitationem aut dolor mollitia, nostrum eum provident natus! Quia aliquid deleniti a ratione non?</p>
-                                        <button type="button" class="btn btn-primary btn-sm">Agregar al carrito</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-column">
-                                <div class="extra-card text-center h-100">
-                                    <img src="imgs/veggie.png" class="card-img-top mx-auto" alt="Producto 3" style="width: 100px; height: auto;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Big Compilada</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolores quis reiciendis quod odio minima tempore exercitationem aut dolor mollitia, nostrum eum provident natus! Quia aliquid deleniti a ratione non?</p>
-                                        <button type="button" class="btn btn-primary btn-sm">Agregar al carrito</button>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                           
-                            <!-- Tarjeta 1 -->
-                            <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-column">
-                                <div class="extra-card text-center h-100">
-                                    <img src="imgs/veggie.png" class="card-img-top mx-auto" alt="Producto 1" style="width: 100px; height: auto;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Super 8086</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolores quis reiciendis quod odio minima tempore exercitationem aut dolor mollitia, nostrum eum provident natus! Quia aliquid deleniti a ratione non?</p>
-                                        <button type="button" class="btn btn-primary btn-sm">Agregar al carrito</button>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                            <!-- Tarjeta 2 -->
-                            <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-column">
-                                <div class="extra-card text-center h-100">
-                                    <img src="imgs/veggie.png" class="card-img-top mx-auto" alt="Producto 2" style="width: 100px; height: auto;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">La SOLID</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolores quis reiciendis quod odio minima tempore exercitationem aut dolor mollitia, nostrum eum provident natus! Quia aliquid deleniti a ratione non?</p>
-                                        <button type="button" class="btn btn-primary btn-sm">Agregar al carrito</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-column">
-                                <div class="extra-card text-center h-100">
-                                    <img src="imgs/veggie.png" class="card-img-top mx-auto" alt="Producto 3" style="width: 100px; height: auto;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Big Compilada</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolores quis reiciendis quod odio minima tempore exercitationem aut dolor mollitia, nostrum eum provident natus! Quia aliquid deleniti a ratione non?</p>
-                                        <button type="button" class="btn btn-primary btn-sm">Agregar al carrito</button>
-                                    </div>
-                                </div>
-                            </div>
-                        
-
-                   </div>
-
+                  </div>
                 </div>
-
-
-        
-        
-      </section>
-      <section id="bebidas">
-        <div class="container-fluid px-0">
-          <div id="separador-hamburguesas" class="row">
-            <div class="col-12 px-0">
-              <div class="text-center py-0">
-                
-                <h2>Bebidas</h2>
-                
-              </div>
             </div>
-        </div>
-        <div class="container-fluid">
-            <div id="hamburguesas-carrusel" class="row align-items-center ">
+            <div class="container-fluid">
+                <div id="hamburguesas-carrusel" class="row align-items-center ">
+                    <div class="col-12 px-0">
+                       <div class="owl-carousel owl-theme ">
+                         
+                             <div class="card py-0">
+                                <img src="imgs/veggie.png" width="100px" alt="">
+                                <h3>Super 8086</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat ut praesentium ea consequuntur a exercitationem fugit perspiciatis, sequi natus, saepe unde! Voluptas odio voluptatibus iure quidem quis maxime fugit.</p>
+                                <button type="button" class="btn btn-primary boton-agregar">Agregar al carrito</button>
+                            </div>
+                            <div class="card">
+                                <img src="imgs/veggie.png" width="100px" alt="">
+                                <h3>La SOLID</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat ut praesentium ea consequuntur a exercitationem fugit perspiciatis, sequi natus, saepe unde! Voluptas odio voluptatibus iure quidem quis maxime fugit.</p>
+                                <button type="button" class="btn btn-primary boton-agregar">Agregar al carrito</button>
+                            </div>
+                            <div class="card">
+                                <img src="imgs/veggie.png" width="100px" alt="">
+                                <h3>Big Compilada</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat ut praesentium ea consequuntur a exercitationem fugit perspiciatis, sequi natus, saepe unde! Voluptas odio voluptatibus iure quidem quis maxime fugit.</p>
+                                <button type="button" class="btn btn-primary boton-agregar">Agregar al carrito</button>
+                            </div>
+                            <div class="card">
+                                <img src="imgs/veggie.png" width="100px" alt="">
+                                <h3>Big Compilada</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat ut praesentium ea consequuntur a exercitationem fugit perspiciatis, sequi natus, saepe unde! Voluptas odio voluptatibus iure quidem quis maxime fugit.</p>
+                                <button type="button" class="btn btn-primary boton-agregar">Agregar al carrito</button>
+                            </div>
+                            <div class="card">
+                                <img src="imgs/veggie.png" width="100px" alt="">
+                                <h3>Big Compilada</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat ut praesentium ea consequuntur a exercitationem fugit perspiciatis, sequi natus, saepe unde! Voluptas odio voluptatibus iure quidem quis maxime fugit.</p>
+                                <button type="button" class="btn btn-primary boton-agregar">Agregar al carrito</button>
+                            </div>
+        
+                            
+                        
+                         
+                       </div>
+                       <button  type="button" class="btn boton-ver-mas btn-primary">Ver más</button>
+                       <div class="row align-items-center" id="extra-cards" style="display: none;">
+                        <!-- Más tarjetas de productos aquí -->
+                        <div class="container my-5">
+                            <div class="row justify-content-center" id="product-cards">
+                                <!-- Tarjeta 1 -->
+                                <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-column">
+                                    <div class="extra-card text-center h-100">
+                                        <img src="imgs/veggie.png" class="card-img-top mx-auto" alt="Producto 1" style="width: 100px; height: auto;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Super 8086</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolores quis reiciendis quod odio minima tempore exercitationem aut dolor mollitia, nostrum eum provident natus! Quia aliquid deleniti a ratione non?</p>
+                                            <button type="button" class="btn btn-primary btn-sm">Agregar al carrito</button>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <!-- Tarjeta 2 -->
+                                <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-column">
+                                    <div class="extra-card text-center h-100">
+                                        <img src="imgs/veggie.png" class="card-img-top mx-auto" alt="Producto 2" style="width: 100px; height: auto;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">La SOLID</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolores quis reiciendis quod odio minima tempore exercitationem aut dolor mollitia, nostrum eum provident natus! Quia aliquid deleniti a ratione non?</p>
+                                            <button type="button" class="btn btn-primary btn-sm">Agregar al carrito</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-column">
+                                    <div class="extra-card text-center h-100">
+                                        <img src="imgs/veggie.png" class="card-img-top mx-auto" alt="Producto 3" style="width: 100px; height: auto;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Big Compilada</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolores quis reiciendis quod odio minima tempore exercitationem aut dolor mollitia, nostrum eum provident natus! Quia aliquid deleniti a ratione non?</p>
+                                            <button type="button" class="btn btn-primary btn-sm">Agregar al carrito</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                               
+                                <!-- Tarjeta 1 -->
+                                <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-column">
+                                    <div class="extra-card text-center h-100">
+                                        <img src="imgs/veggie.png" class="card-img-top mx-auto" alt="Producto 1" style="width: 100px; height: auto;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Super 8086</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolores quis reiciendis quod odio minima tempore exercitationem aut dolor mollitia, nostrum eum provident natus! Quia aliquid deleniti a ratione non?</p>
+                                            <button type="button" class="btn btn-primary btn-sm">Agregar al carrito</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <!-- Tarjeta 2 -->
+                                <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-column">
+                                    <div class="extra-card text-center h-100">
+                                        <img src="imgs/veggie.png" class="card-img-top mx-auto" alt="Producto 2" style="width: 100px; height: auto;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">La SOLID</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolores quis reiciendis quod odio minima tempore exercitationem aut dolor mollitia, nostrum eum provident natus! Quia aliquid deleniti a ratione non?</p>
+                                            <button type="button" class="btn btn-primary btn-sm">Agregar al carrito</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-column">
+                                    <div class="extra-card text-center h-100">
+                                        <img src="imgs/veggie.png" class="card-img-top mx-auto" alt="Producto 3" style="width: 100px; height: auto;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Big Compilada</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolores quis reiciendis quod odio minima tempore exercitationem aut dolor mollitia, nostrum eum provident natus! Quia aliquid deleniti a ratione non?</p>
+                                            <button type="button" class="btn btn-primary btn-sm">Agregar al carrito</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+        
+                       </div>
+        
+                    </div>
+        
+        
+            
+            
+          </section>
+          <section id="bebidas">
+            <div class="container-fluid px-0">
+              <div id="separador-hamburguesas" class="row">
                 <div class="col-12 px-0">
-                   <div class="owl-carousel owl-theme ">
-                     
-                         <div class="card py-0">
-                            <img src="imgs/coca-cola.webp" width="100px" alt="">
-                            <h3>Super 8086</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat ut praesentium ea consequuntur a exercitationem fugit perspiciatis, sequi natus, saepe unde! Voluptas odio voluptatibus iure quidem quis maxime fugit.</p>
-                            <button type="button" class="btn btn-primary boton-agregar">Agregar al carrito</button>
-                        </div>
-                        <div class="card">
-                            <img src="imgs/coca-cola.webp" width="100px" alt="">
-                            <h3>La SOLID</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat ut praesentium ea consequuntur a exercitationem fugit perspiciatis, sequi natus, saepe unde! Voluptas odio voluptatibus iure quidem quis maxime fugit.</p>
-                            <button type="button" class="btn btn-primary boton-agregar">Agregar al carrito</button>
-                        </div>
-                        <div class="card">
-                            <img src="imgs/coca-cola.webp" width="100px" alt="">
-                            <h3>Big Compilada</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat ut praesentium ea consequuntur a exercitationem fugit perspiciatis, sequi natus, saepe unde! Voluptas odio voluptatibus iure quidem quis maxime fugit.</p>
-                            <button type="button" class="btn btn-primary boton-agregar">Agregar al carrito</button>
-                        </div>
-
-                        
+                  <div class="text-center py-0">
                     
-                     
-                   </div>
-                   <button  type="button" class="btn boton-ver-mas btn-primary">Ver más</button>
-                   <div class="row align-items-center" id="extra-cards" style="display: none;">
-                    <!-- Más tarjetas de productos aquí -->
-                    <div class="container my-5">
-                        <div class="row justify-content-center" id="product-cards">
-                            <!-- Tarjeta 1 -->
-                            <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-column">
-                                <div class="extra-card text-center h-100">
-                                    <img src="imgs/coca-cola.webp" class="card-img-top mx-auto" alt="Producto 1" style="width: 100px; height: auto;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Super 8086</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolores quis reiciendis quod odio minima tempore exercitationem aut dolor mollitia, nostrum eum provident natus! Quia aliquid deleniti a ratione non?</p>
-                                        <button type="button" class="btn btn-primary btn-sm">Agregar al carrito</button>
-                                    </div>
-                                </div>
-                            </div>
+                    <h2>Bebidas</h2>
                     
-                            <!-- Tarjeta 2 -->
-                            <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-column">
-                                <div class="extra-card text-center h-100">
-                                    <img src="imgs/coca-cola.webp" class="card-img-top mx-auto" alt="Producto 2" style="width: 100px; height: auto;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">La SOLID</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolores quis reiciendis quod odio minima tempore exercitationem aut dolor mollitia, nostrum eum provident natus! Quia aliquid deleniti a ratione non?</p>
-                                        <button type="button" class="btn btn-primary btn-sm">Agregar al carrito</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-column">
-                                <div class="extra-card text-center h-100">
-                                    <img src="imgs/coca-cola.webp" class="card-img-top mx-auto" alt="Producto 3" style="width: 100px; height: auto;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Big Compilada</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolores quis reiciendis quod odio minima tempore exercitationem aut dolor mollitia, nostrum eum provident natus! Quia aliquid deleniti a ratione non?</p>
-                                        <button type="button" class="btn btn-primary btn-sm">Agregar al carrito</button>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                           
-                            <!-- Tarjeta 1 -->
-                            <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-column">
-                                <div class="extra-card text-center h-100">
-                                    <img src="imgs/coca-cola.webp" class="card-img-top mx-auto" alt="Producto 1" style="width: 100px; height: auto;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Super 8086</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolores quis reiciendis quod odio minima tempore exercitationem aut dolor mollitia, nostrum eum provident natus! Quia aliquid deleniti a ratione non?</p>
-                                        <button type="button" class="btn btn-primary btn-sm">Agregar al carrito</button>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                            <!-- Tarjeta 2 -->
-                            <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-column">
-                                <div class="extra-card text-center h-100">
-                                    <img src="imgs/coca-cola.webp" class="card-img-top mx-auto" alt="Producto 2" style="width: 100px; height: auto;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">La SOLID</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolores quis reiciendis quod odio minima tempore exercitationem aut dolor mollitia, nostrum eum provident natus! Quia aliquid deleniti a ratione non?</p>
-                                        <button type="button" class="btn btn-primary btn-sm">Agregar al carrito</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-column">
-                                <div class="extra-card text-center h-100">
-                                    <img src="imgs/coca-cola.webp" class="card-img-top mx-auto" alt="Producto 3" style="width: 100px; height: auto;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Big Compilada</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolores quis reiciendis quod odio minima tempore exercitationem aut dolor mollitia, nostrum eum provident natus! Quia aliquid deleniti a ratione non?</p>
-                                        <button type="button" class="btn btn-primary btn-sm">Agregar al carrito</button>
-                                    </div>
-                                </div>
-                            </div>
-                        
-
-                   </div>
-
+                  </div>
                 </div>
-
-
             </div>
-
+            <div class="container-fluid">
+                <div id="hamburguesas-carrusel" class="row align-items-center ">
+                    <div class="col-12 px-0">
+                       <div class="owl-carousel owl-theme ">
+                         
+                             <div class="card py-0">
+                                <img src="imgs/coca-cola.webp" width="100px" alt="">
+                                <h3>Super 8086</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat ut praesentium ea consequuntur a exercitationem fugit perspiciatis, sequi natus, saepe unde! Voluptas odio voluptatibus iure quidem quis maxime fugit.</p>
+                                <button type="button" class="btn btn-primary boton-agregar">Agregar al carrito</button>
+                            </div>
+                            <div class="card">
+                                <img src="imgs/coca-cola.webp" width="100px" alt="">
+                                <h3>La SOLID</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat ut praesentium ea consequuntur a exercitationem fugit perspiciatis, sequi natus, saepe unde! Voluptas odio voluptatibus iure quidem quis maxime fugit.</p>
+                                <button type="button" class="btn btn-primary boton-agregar">Agregar al carrito</button>
+                            </div>
+                            <div class="card">
+                                <img src="imgs/coca-cola.webp" width="100px" alt="">
+                                <h3>Big Compilada</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat ut praesentium ea consequuntur a exercitationem fugit perspiciatis, sequi natus, saepe unde! Voluptas odio voluptatibus iure quidem quis maxime fugit.</p>
+                                <button type="button" class="btn btn-primary boton-agregar">Agregar al carrito</button>
+                            </div>
+                            <div class="card">
+                                <img src="imgs/coca-cola.webp" width="100px" alt="">
+                                <h3>Big Compilada</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat ut praesentium ea consequuntur a exercitationem fugit perspiciatis, sequi natus, saepe unde! Voluptas odio voluptatibus iure quidem quis maxime fugit.</p>
+                                <button type="button" class="btn btn-primary boton-agregar">Agregar al carrito</button>
+                            </div>
+                            <div class="card">
+                                <img src="imgs/coca-cola.webp" width="100px" alt="">
+                                <h3>Big Compilada</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis placeat ut praesentium ea consequuntur a exercitationem fugit perspiciatis, sequi natus, saepe unde! Voluptas odio voluptatibus iure quidem quis maxime fugit.</p>
+                                <button type="button" class="btn btn-primary boton-agregar">Agregar al carrito</button>
+                            </div>
+        
+                            
+                        
+                         
+                       </div>
+                       <button  type="button" class="btn boton-ver-mas btn-primary">Ver más</button>
+                       <div class="row align-items-center" id="extra-cards" style="display: none;">
+                        <!-- Más tarjetas de productos aquí -->
+                        <div class="container my-5">
+                            <div class="row justify-content-center" id="product-cards">
+                                <!-- Tarjeta 1 -->
+                                <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-column">
+                                    <div class="extra-card text-center h-100">
+                                        <img src="imgs/coca-cola.webp" class="card-img-top mx-auto" alt="Producto 1" style="width: 100px; height: auto;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Super 8086</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolores quis reiciendis quod odio minima tempore exercitationem aut dolor mollitia, nostrum eum provident natus! Quia aliquid deleniti a ratione non?</p>
+                                            <button type="button" class="btn btn-primary btn-sm">Agregar al carrito</button>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <!-- Tarjeta 2 -->
+                                <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-column">
+                                    <div class="extra-card text-center h-100">
+                                        <img src="imgs/coca-cola.webp" class="card-img-top mx-auto" alt="Producto 2" style="width: 100px; height: auto;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">La SOLID</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolores quis reiciendis quod odio minima tempore exercitationem aut dolor mollitia, nostrum eum provident natus! Quia aliquid deleniti a ratione non?</p>
+                                            <button type="button" class="btn btn-primary btn-sm">Agregar al carrito</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-column">
+                                    <div class="extra-card text-center h-100">
+                                        <img src="imgs/coca-cola.webp" class="card-img-top mx-auto" alt="Producto 3" style="width: 100px; height: auto;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Big Compilada</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolores quis reiciendis quod odio minima tempore exercitationem aut dolor mollitia, nostrum eum provident natus! Quia aliquid deleniti a ratione non?</p>
+                                            <button type="button" class="btn btn-primary btn-sm">Agregar al carrito</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                               
+                                <!-- Tarjeta 1 -->
+                                <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-column">
+                                    <div class="extra-card text-center h-100">
+                                        <img src="imgs/coca-cola.webp" class="card-img-top mx-auto" alt="Producto 1" style="width: 100px; height: auto;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Super 8086</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolores quis reiciendis quod odio minima tempore exercitationem aut dolor mollitia, nostrum eum provident natus! Quia aliquid deleniti a ratione non?</p>
+                                            <button type="button" class="btn btn-primary btn-sm">Agregar al carrito</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <!-- Tarjeta 2 -->
+                                <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-column">
+                                    <div class="extra-card text-center h-100">
+                                        <img src="imgs/coca-cola.webp" class="card-img-top mx-auto" alt="Producto 2" style="width: 100px; height: auto;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">La SOLID</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolores quis reiciendis quod odio minima tempore exercitationem aut dolor mollitia, nostrum eum provident natus! Quia aliquid deleniti a ratione non?</p>
+                                            <button type="button" class="btn btn-primary btn-sm">Agregar al carrito</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 card-column">
+                                    <div class="extra-card text-center h-100">
+                                        <img src="imgs/coca-cola.webp" class="card-img-top mx-auto" alt="Producto 3" style="width: 100px; height: auto;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Big Compilada</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolores quis reiciendis quod odio minima tempore exercitationem aut dolor mollitia, nostrum eum provident natus! Quia aliquid deleniti a ratione non?</p>
+                                            <button type="button" class="btn btn-primary btn-sm">Agregar al carrito</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+        
+                       </div>
+        
+                    </div>
         
         
-      </section>
-    </main>
-    <footer class="footer-section">
-        <div class="container">
-            <div class="row align-items-center justify-content-center text-center">
-                <!-- Logo de la marca -->
-                <div class="col-md-4 mb-3">
-                    <img src="imgs/2.png" alt="Logo" class="footer-logo">
                 </div>
-    
-                <!-- Información de contacto -->
-                <div class="col-md-4 mb-3">
-                    <p><strong>Dirección:</strong><br>Av. Alvarez Jonte 1500,<br>Paternal City<br>Capital Federal, Argentina</p>
-                    <div class="d-flex justify-content-center gap-3">
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-twitter"></i></a>
+        
+            
+            
+          </section>
+        </main>
+        <footer class="footer-section">
+            <div class="container">
+                <div class="row align-items-center justify-content-center text-center">
+                    <!-- Logo de la marca -->
+                    <div class="col-md-4 mb-3">
+                        <img src="imgs/2.png" alt="Logo" class="footer-logo">
+                    </div>
+        
+                    <!-- Información de contacto -->
+                    <div class="col-md-4 mb-3">
+                        <p><strong>Dirección:</strong><br>Av. Alvarez Jonte 1500,<br>Paternal City<br>Capital Federal, Argentina</p>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                        </div>
+                    </div>
+        
+                    <!-- Redes sociales -->
+                    <div class="col-md-4 mb-3">
+                        <p><i class="bi bi-instagram"></i> @KernelBurger</p>
                     </div>
                 </div>
-    
-                <!-- Redes sociales -->
-                <div class="col-md-4 mb-3">
-                    <p><i class="bi bi-instagram"></i> @KernelBurger</p>
+        
+                <!-- Texto inferior adicional -->
+                <div class="text-center mt-3">
+                    <p>Dirección General de Defensa y Protección al Consumidor. Para consultas y/o denuncias, <a href="https://buenosaires.gob.ar/defensaconsumidor/direccion-general" target="_blank">ingrese aquí</a></p>
                 </div>
             </div>
-    
-            <!-- Texto inferior adicional -->
-            <div class="text-center mt-3">
-                <p>Dirección General de Defensa y Protección al Consumidor. Para consultas y/o denuncias, <a href="https://buenosaires.gob.ar/defensaconsumidor/direccion-general" target="_blank">ingrese aquí</a></p>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="jquery.min.js"></script>

@@ -5,6 +5,7 @@ $(document).ready(function () {
     responsiveClass: true,
     autoplay: true,
     dots: true,
+    navText: ["<", ">"],
 
     autoplayHoverPause: true,
     autoplaySpeed: 1000,
