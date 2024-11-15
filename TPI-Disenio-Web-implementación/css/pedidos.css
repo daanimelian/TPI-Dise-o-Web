@@ -335,3 +335,45 @@ button.submit-opinion:hover {
   font-style: italic;
   pointer-events: none;
 }
+
+.order-steps {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding: 1rem 0;
+  background-color: #F9F9F9;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* Para mantener el icono encima del texto */
+  flex: 1;
+  text-align: center;
+  position: relative;
+  padding: 10px;
+}
+
+.step:not(:last-child)::after {
+  content: '';
+  width: 100%;
+  height: 4px;
+  background: #ddd; /* Línea divisoria entre pasos */
+  position: absolute;
+  top: 50%;
+  right: -50%; /* Mueve la línea a la derecha de cada paso */
+  z-index: -1; /* Asegura que la línea esté detrás */
+}
+
+
+.step .icon {
+  font-size: 1.5rem;
+}
+
+.step.completed .icon,
+.step.completed span {
+  color: green; /* Color verde para todos los pasos completados */
+  font-weight: bold;
+}
