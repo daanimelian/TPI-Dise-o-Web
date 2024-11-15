@@ -8,14 +8,6 @@ body {
   font-style: normal;
 }
 
-header {
-  justify-content: center;
-  align-items: center;
-  background-color: #333;
-  color: white;
-  width: 100%;
-}
-
 nav ul {
   list-style-type: none;
   display: flex;
@@ -91,7 +83,7 @@ main {
 }
 
 .footer-section a {
-  color: #ff7a0d; /* Color dorado para enlaces */
+  color: #007bff; /* Color dorado para enlaces */
   text-decoration: none;
 }
 
@@ -101,17 +93,17 @@ main {
 
 .bi-instagram {
   font-size: 1.5rem;
-  color: #ff7a0d; /* Color dorado */
+  color: #007bff; /* Color dorado */
 }
 
 .bi-facebook {
   font-size: 1.5rem;
-  color: #ff7a0d; /* Color dorado */
+  color: #007bff; /* Color dorado */
 }
 
 .bi-twitter {
   font-size: 1.5rem;
-  color: #ff7a0d; /* Color dorado */
+  color: #007bff; /* Color dorado */
 }
 
 .nav-link {
@@ -124,7 +116,7 @@ main {
 }
 
 .navbar .btn-outline-primary:hover {
-  background-color: #ff7a0d;
+  background-color: #007bff;
   color: #fff;
 }
 .our-burgers {
