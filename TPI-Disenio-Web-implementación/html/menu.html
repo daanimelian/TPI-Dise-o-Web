@@ -65,15 +65,12 @@
                       <a class="dropdown-item" href="../html/registro.html">Registrarse</a>
                   </div>
               </div>
-              <a class="btn btn-outline-primary mr-2" href="#">Carrito</a>
+              <a class="btn cart-total btn-outline-primary mr-2" href="#">Carrito | <span id="cart-total">0.00</span></a>
           </div>
           </div>
         </nav>
       </header>
-      
-    
-        <main>
-          <section
+      <section
             id="filtro-busqueda"
             class="search-filters d-flex justify-content-between align-items-center my-3 flex-wrap"
           >
@@ -85,7 +82,7 @@
                 placeholder="Buscar"
                 aria-label="Buscar"
               />
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
+              <button id="btn-busqueda" class="btn btn-outline-primary  mr-2" type="submit">Buscar</button>
             </form>
         
             <!-- Filtros a la derecha -->
@@ -100,6 +97,9 @@
               <option value="3">Filtro 3</option>
             </select>
           </section>
+    
+        <main>
+          
           <section id="hamburguesas">
             <div class="container-fluid px-0">
               <div id="separador-hamburguesas" class="row">
@@ -118,19 +118,16 @@
                          
                         <div class="card mb-3">
                             <div class="card-body">
-                                <img src="imgs/1.png" alt="">
+                                <img src="../imgs/Burguer.png" alt="La Big Kernel">
                                 <h3 class="card-title">La Big Kernel</h3>
-                                <p class="card-text">La Big Kernel es una hamburguesa doble con medallones de carne jugosa, cheddar cremoso, cebolla crispy, bacon ahumado y un aderezo especial de la casa. Acompañada de papas fritas doradas, es la combinación perfecta de sabores intensos y texturas crujientes.</p>
-                                <p class="card-text">Precio: $12.900</p>
-                                <div class="d-flex align-items-center">
-                                    <button class="btn btn-secondary btn-sm remove-one" data-name="Producto 1" data-price="12900">-</button>
-                                    <span class="mx-2 quantity" data-name="Producto 1">0</span>
-                                    <button class="btn btn-secondary btn-sm add-one" data-name="Producto 1" data-price="12900">+</button>
-                                    <div class="d-flex justify-content-center mt-2">
-                                        <button class="btn btn-primary btn-sm add-to-cart mr-2" data-name="La Big Kernel" data-price="12900">Agregar al carrito</button>
-                                        <button class="btn btn-danger btn-sm remove-from-cart hidden" data-name="La Big Kernel">Eliminar del carrito</button>
-                                    </div>
+                                <p class="card-text">PAN GOLDEN - SMASH DE CARNE x2 - CHEDDAR x4 - BACON. INCLUYE PAPAS FRITAS.</p>
+                                <h4 class="card-text">Precio: $12.900</h4>
+                                <div class="d-flex align-items-center justify-content-center my-2">
+                                    <button class="btn btn-secondary btn-sm remove-one" data-name="La Big Kernel" data-price="12900">-</button>
+                                    <span class="mx-2 quantity" data-name="La Big Kernel">0</span>
+                                    <button class="btn btn-secondary btn-sm add-one" data-name="La Big Kernel" data-price="12900">+</button>
                                 </div>
+                                  
                             </div>
                         </div>
                     
@@ -138,73 +135,48 @@
                         
                         <div class="card mb-3">
                             <div class="card-body">
-                                <img src="imgs/1.png" alt="">
-                                <h3 class="card-title">La Big Kernel</h3>
-                                <p class="card-text">La Big Kernel es una hamburguesa doble con medallones de carne jugosa, cheddar cremoso, cebolla crispy, bacon ahumado y un aderezo especial de la casa. Acompañada de papas fritas doradas, es la combinación perfecta de sabores intensos y texturas crujientes.</p>
-                                <p class="card-text">Precio: $12.900</p>
-                                <div class="d-flex align-items-center">
-                                    <button class="btn btn-secondary btn-sm remove-one" data-name="Producto 1" data-price="12900">-</button>
-                                    <span class="mx-2 quantity" data-name="Producto 1">0</span>
-                                    <button class="btn btn-secondary btn-sm add-one" data-name="Producto 1" data-price="12900">+</button>
-                                    <div class="d-flex justify-content-center mt-2">
-                                        <button class="btn btn-primary btn-sm add-to-cart mr-2" data-name="La Big Kernel" data-price="12900">Agregar al carrito</button>
-                                        <button class="btn btn-danger btn-sm remove-from-cart hidden" data-name="La Big Kernel">Eliminar del carrito</button>
-                                    </div>
+                                <img src="../imgs/SOLID.png" alt="La SOLID">
+                                <h3 class="card-title">La SOLID</h3>
+                                <p class="card-text">PAN GOLDEN - SMASH DE CARNE x2 - CHEDDAR x4 - BACON - CEBOLLA CRISPY - ALIOLI. INCLUYE PAPAS FRITAS.
+                                </p>
+                                <h4 class="card-text">Precio: $11.900</h4>
+                                <div class="d-flex align-items-center justify-content-center my-2">
+                                    <button class="btn btn-secondary btn-sm remove-one" data-name="La SOLID" data-price="11900">-</button>
+                                    <span class="mx-2 quantity" data-name="La SOLID">0</span>
+                                    <button class="btn btn-secondary btn-sm add-one" data-name="La SOLID" data-price="11900">+</button>
                                 </div>
+                                  
                             </div>
                         </div>
                         <div class="card mb-3">
                             <div class="card-body">
-                                <img src="imgs/1.png" alt="">
-                                <h3 class="card-title">La Big Kernel</h3>
-                                <p class="card-text">La Big Kernel es una hamburguesa doble con medallones de carne jugosa, cheddar cremoso, cebolla crispy, bacon ahumado y un aderezo especial de la casa. Acompañada de papas fritas doradas, es la combinación perfecta de sabores intensos y texturas crujientes.</p>
-                                <p class="card-text">Precio: $12.900</p>
-                                <div class="d-flex align-items-center">
-                                    <button class="btn btn-secondary btn-sm remove-one" data-name="Producto 1" data-price="12900">-</button>
-                                    <span class="mx-2 quantity" data-name="Producto 1">0</span>
-                                    <button class="btn btn-secondary btn-sm add-one" data-name="Producto 1" data-price="12900">+</button>
-                                    <div class="d-flex justify-content-center mt-2">
-                                        <button class="btn btn-primary btn-sm add-to-cart mr-2" data-name="La Big Kernel" data-price="12900">Agregar al carrito</button>
-                                        <button class="btn btn-danger btn-sm remove-from-cart hidden" data-name="La Big Kernel">Eliminar del carrito</button>
-                                    </div>
+                                <img src="../imgs/Cheeseburguer++.png" alt="Chesseburger++">
+                                <h3 class="card-title">Chesseburger++</h3>
+                                <p class="card-text">PAN DE QUESO - SMASH DE CARNE x2 - CHEDDAR x4. INCLUYE PAPAS FRITAS.
+                                </p>
+                                <h4 class="card-text">Precio: $10.900</h4>
+                                <div class="d-flex align-items-center justify-content-center my-2">
+                                    <button class="btn btn-secondary btn-sm remove-one" data-name="Chesseburger++" data-price="10900">-</button>
+                                    <span class="mx-2 quantity" data-name="Chesseburger++">0</span>
+                                    <button class="btn btn-secondary btn-sm add-one" data-name="Chesseburger++" data-price="10900">+</button>
                                 </div>
+                                  
                             </div>
                         </div>
                         <div class="card mb-3">
                             <div class="card-body">
-                                <img src="imgs/1.png" alt="">
-                                <h3 class="card-title">La Big Kernel</h3>
-                                <p class="card-text">La Big Kernel es una hamburguesa doble con medallones de carne jugosa, cheddar cremoso, cebolla crispy, bacon ahumado y un aderezo especial de la casa. Acompañada de papas fritas doradas, es la combinación perfecta de sabores intensos y texturas crujientes.</p>
-                                <p class="card-text">Precio: $12.900</p>
-                                <div class="d-flex align-items-center">
-                                    <button class="btn btn-secondary btn-sm remove-one" data-name="Producto 1" data-price="12900">-</button>
-                                    <span class="mx-2 quantity" data-name="Producto 1">0</span>
-                                    <button class="btn btn-secondary btn-sm add-one" data-name="Producto 1" data-price="12900">+</button>
-                                    <div class="d-flex justify-content-center mt-2">
-                                        <button class="btn btn-primary btn-sm add-to-cart mr-2" data-name="La Big Kernel" data-price="12900">Agregar al carrito</button>
-                                        <button class="btn btn-danger btn-sm remove-from-cart hidden" data-name="La Big Kernel">Eliminar del carrito</button>
-                                    </div>
-                                </div>
+                              <img src="../imgs/busquedabinaria.png" alt="Búsqueda Binaria">
+                              <h3 class="card-title">"Búsqueda Binaria"</h3>
+                              <p class="card-text">PAN GOLDEN - SMASH DE CARNE x2 - CHEDDAR x4 - BACON - SALSA BUP. INCLUYE PAPAS FRITAS.</p>
+                              <h4 class="card-text">Precio: $11.900</h4>
+                              <div class="d-flex align-items-center justify-content-center my-2">
+                                <button class="btn btn-secondary btn-sm remove-one" data-name="Búsqueda Binaria" data-price="11900">-</button>
+                                <span class="mx-2 quantity" data-name="Búsqueda Binaria">0</span>
+                                <button class="btn btn-secondary btn-sm add-one" data-name="Búsqueda Binaria" data-price="11900">+</button>
+                              </div>
                             </div>
-                        </div>
-                        <div class="card mb-3">
-                            <div class="card-body">
-                                <img src="imgs/1.png" alt="">
-                                <h3 class="card-title">La Big Kernel</h3>
-                                <p class="card-text">La Big Kernel es una hamburguesa doble con medallones de carne jugosa, cheddar cremoso, cebolla crispy, bacon ahumado y un aderezo especial de la casa. Acompañada de papas fritas doradas, es la combinación perfecta de sabores intensos y texturas crujientes.</p>
-                                <p class="card-text">Precio: $12.900</p>
-                                <div class="d-flex align-items-center">
-                                    <button class="btn btn-secondary btn-sm remove-one" data-name="Producto 1" data-price="12900">-</button>
-                                    <span class="mx-2 quantity" data-name="Producto 1">0</span>
-                                    <button class="btn btn-secondary btn-sm add-one" data-name="Producto 1" data-price="12900">+</button>
-                                    <div class="d-flex justify-content-center mt-2">
-                                        <button class="btn btn-primary btn-sm add-to-cart mr-2" data-name="La Big Kernel" data-price="12900">Agregar al carrito</button>
-                                        <button class="btn btn-danger btn-sm remove-from-cart hidden" data-name="La Big Kernel">Eliminar del carrito</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                            
+                          </div>
+                        
                         
                          
                        </div>
@@ -214,115 +186,99 @@
                         <div class="container my-5">
                             <div class="row justify-content-center" id="product-cards">
                                 <!-- Tarjeta 1 -->
-                                <div class="col-12 col-lg-4  card-column d-none">
+                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
                                     <div class="extra-card text-center h-100 card-body">
-                                        <img src="imgs/1.png" alt="">
-                                        <h3 class="card-title">La Big Kernel</h3>
-                                        <p class="card-text">La Big Kernel es una hamburguesa doble con medallones de carne jugosa, cheddar cremoso, cebolla crispy, bacon ahumado y un aderezo especial de la casa. Acompañada de papas fritas doradas, es la combinación perfecta de sabores intensos y texturas crujientes.</p>
-                                        <p class="card-text">Precio: $12.900</p>
-                                        <div class="d-flex align-items-center">
-                                            <button class="btn btn-secondary btn-sm remove-one" data-name="La Big Kernel" data-price="12900">-</button>
-                                            <span class="mx-2 quantity" data-name="La Big Kernel">0</span>
-                                            <button class="btn btn-secondary btn-sm add-one" data-name="La Big Kernel" data-price="12900">+</button>
-                                            <div class="d-flex justify-content-center mt-2">
-                                                <button class="btn btn-primary btn-sm add-to-cart mr-2" data-name="La Big Kernel" data-price="12900">Agregar al carrito</button>
-                                                <button class="btn btn-danger btn-sm remove-from-cart hidden" data-name="La Big Kernel">Eliminar del carrito</button>
-                                            </div>
-                                        </div>
+                                        <img src="../imgs/debugdeluxe.png" alt="Debug Deluxe">
+                                        <h3 class="card-title">Debug Deluxe</h3>
+                                        <p class="card-text">PAN GOLDEN - SMASH DE CARNE x2 - CHEDDAR x4 - PROVOLETA - MORRÓN ASADO - HUEVO. INCLUYE PAPAS FRITAS.
+                                        </p>
+                                        <h4 class="card-text">Precio: $13.500</h4>
+                                        <div class="d-flex align-items-center justify-content-center my-2">
+                                            <button class="btn btn-secondary btn-sm remove-one" data-name="Debug Deluxe" data-price="13500">-</button>
+                                            <span class="mx-2 quantity" data-name="Debug Deluxe">0</span>
+                                            <button class="btn btn-secondary btn-sm add-one" data-name="Debug Deluxe" data-price="13500">+</button>
+                                          </div>
+                                          
                                     </div>
                                 </div>
                                 
                                 
                         
                                 <!-- Tarjeta 2 -->
-                                <div class="col-12 col-lg-4  card-column d-none">
+                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
                                     <div class="extra-card text-center h-100 card-body">
-                                        <img src="imgs/1.png" alt="">
-                                        <h3 class="card-title">La Big Kernel</h3>
-                                        <p class="card-text">La Big Kernel es una hamburguesa doble con medallones de carne jugosa, cheddar cremoso, cebolla crispy, bacon ahumado y un aderezo especial de la casa. Acompañada de papas fritas doradas, es la combinación perfecta de sabores intensos y texturas crujientes.</p>
-                                        <p class="card-text">Precio: $12.900</p>
-                                        <div class="d-flex align-items-center">
-                                            <button class="btn btn-secondary btn-sm remove-one" data-name="La Big Kernel" data-price="12900">-</button>
-                                            <span class="mx-2 quantity" data-name="La Big Kernel">0</span>
-                                            <button class="btn btn-secondary btn-sm add-one" data-name="La Big Kernel" data-price="12900">+</button>
-                                            <div class="d-flex justify-content-center mt-2">
-                                                <button class="btn btn-primary btn-sm add-to-cart mr-2" data-name="La Big Kernel" data-price="12900">Agregar al carrito</button>
-                                                <button class="btn btn-danger btn-sm remove-from-cart hidden" data-name="La Big Kernel">Eliminar del carrito</button>
-                                            </div>
-                                        </div>
+                                        <img src="../imgs/databyte.png" alt="Data Byte">
+                                        <h3 class="card-title">Data Byte</h3>
+                                        <p class="card-text">PAN GOLDEN - SMASH DE CARNE x2 - CHEDDAR x4 - CEBOLLA CARAMELIZADA - ROQUEFORT - RÚCULA. INCLUYE PAPAS FRITAS.
+                                        </p>
+                                        <h4 class="card-text">Precio: $12.500</h4>
+                                        <div class="d-flex align-items-center justify-content-center my-2">
+                                            <button class="btn btn-secondary btn-sm remove-one" data-name="Data Byte" data-price="12500">-</button>
+                                            <span class="mx-2 quantity" data-name="Data Byte">0</span>
+                                            <button class="btn btn-secondary btn-sm add-one" data-name="Data Byte" data-price="12500">+</button>
+                                          </div>
+                                          
                                     </div>
                                 </div>
-                                <div class="col-12 col-lg-4  card-column d-none">
+                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
                                     <div class="extra-card text-center h-100 card-body">
-                                        <img src="imgs/1.png" alt="">
+                                        <img src="../imgs/Burguer.png" alt="La Big Kernel">
                                         <h3 class="card-title">La Big Kernel</h3>
-                                        <p class="card-text">La Big Kernel es una hamburguesa doble con medallones de carne jugosa, cheddar cremoso, cebolla crispy, bacon ahumado y un aderezo especial de la casa. Acompañada de papas fritas doradas, es la combinación perfecta de sabores intensos y texturas crujientes.</p>
-                                        <p class="card-text">Precio: $12.900</p>
-                                        <div class="d-flex align-items-center">
+                                        <p class="card-text">PAN GOLDEN - SMASH DE CARNE x2 - CHEDDAR x4 - BACON. INCLUYE PAPAS FRITAS.</p>
+                                        <h4 class="card-text">Precio: $12.900</h4>
+                                        <div class="d-flex align-items-center justify-content-center my-2">
                                             <button class="btn btn-secondary btn-sm remove-one" data-name="La Big Kernel" data-price="12900">-</button>
                                             <span class="mx-2 quantity" data-name="La Big Kernel">0</span>
                                             <button class="btn btn-secondary btn-sm add-one" data-name="La Big Kernel" data-price="12900">+</button>
-                                            <div class="d-flex justify-content-center mt-2">
-                                                <button class="btn btn-primary btn-sm add-to-cart mr-2" data-name="La Big Kernel" data-price="12900">Agregar al carrito</button>
-                                                <button class="btn btn-danger btn-sm remove-from-cart hidden" data-name="La Big Kernel">Eliminar del carrito</button>
-                                            </div>
-                                        </div>
+                                          </div>
+                                          
                                     </div>
                                 </div>
                             
                                
                                 <!-- Tarjeta 1 -->
-                                <div class="col-12 col-lg-4  card-column d-none">
+                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
                                     <div class="extra-card text-center h-100 card-body">
-                                        <img src="imgs/1.png" alt="">
-                                        <h3 class="card-title">La Big Kernel</h3>
-                                        <p class="card-text">La Big Kernel es una hamburguesa doble con medallones de carne jugosa, cheddar cremoso, cebolla crispy, bacon ahumado y un aderezo especial de la casa. Acompañada de papas fritas doradas, es la combinación perfecta de sabores intensos y texturas crujientes.</p>
-                                        <p class="card-text">Precio: $12.900</p>
-                                        <div class="d-flex align-items-center">
-                                            <button class="btn btn-secondary btn-sm remove-one" data-name="La Big Kernel" data-price="12900">-</button>
-                                            <span class="mx-2 quantity" data-name="La Big Kernel">0</span>
-                                            <button class="btn btn-secondary btn-sm add-one" data-name="La Big Kernel" data-price="12900">+</button>
-                                            <div class="d-flex justify-content-center mt-2">
-                                                <button class="btn btn-primary btn-sm add-to-cart mr-2" data-name="La Big Kernel" data-price="12900">Agregar al carrito</button>
-                                                <button class="btn btn-danger btn-sm remove-from-cart hidden" data-name="La Big Kernel">Eliminar del carrito</button>
-                                            </div>
-                                        </div>
+                                        <img src="../imgs/SOLID.png" alt="La SOLID">
+                                        <h3 class="card-title">La SOLID</h3>
+                                        <p class="card-text">PAN GOLDEN - SMASH DE CARNE x2 - CHEDDAR x4 - BACON - CEBOLLA CRISPY - ALIOLI. INCLUYE PAPAS FRITAS.</p>
+                                        <h4 class="card-text">Precio: $11.900</h4>
+                                        <div class="d-flex align-items-center justify-content-center my-2">
+                                            <button class="btn btn-secondary btn-sm remove-one" data-name="La SOLID" data-price="11900">-</button>
+                                            <span class="mx-2 quantity" data-name="La SOLID">0</span>
+                                            <button class="btn btn-secondary btn-sm add-one" data-name="La SOLID" data-price="11900">+</button>
+                                          </div>
+                                          
                                     </div>
                                 </div>
                             
                                 <!-- Tarjeta 2 -->
-                                <div class="col-12 col-lg-4  card-column d-none">
+                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
                                     <div class="extra-card text-center h-100 card-body">
-                                        <img src="imgs/1.png" alt="">
-                                        <h3 class="card-title">La Big Kernel</h3>
-                                        <p class="card-text">La Big Kernel es una hamburguesa doble con medallones de carne jugosa, cheddar cremoso, cebolla crispy, bacon ahumado y un aderezo especial de la casa. Acompañada de papas fritas doradas, es la combinación perfecta de sabores intensos y texturas crujientes.</p>
-                                        <p class="card-text">Precio: $12.900</p>
-                                        <div class="d-flex align-items-center">
-                                            <button class="btn btn-secondary btn-sm remove-one" data-name="La Big Kernel" data-price="12900">-</button>
-                                            <span class="mx-2 quantity" data-name="La Big Kernel">0</span>
-                                            <button class="btn btn-secondary btn-sm add-one" data-name="La Big Kernel" data-price="12900">+</button>
-                                            <div class="d-flex justify-content-center mt-2">
-                                                <button class="btn btn-primary btn-sm add-to-cart mr-2" data-name="La Big Kernel" data-price="12900">Agregar al carrito</button>
-                                                <button class="btn btn-danger btn-sm remove-from-cart hidden" data-name="La Big Kernel">Eliminar del carrito</button>
-                                            </div>
-                                        </div>
+                                        <img src="..//imgs/Cheeseburguer++.png" alt="Chesseburger++">
+                                        <h3 class="card-title">Chesseburger++</h3>
+                                        <p class="card-text">PAN DE QUESO - SMASH DE CARNE x2 - CHEDDAR x4. INCLUYE PAPAS FRITAS.</p>
+                                        <h4 class="card-text">Precio: $10.900</h4>
+                                        <div class="d-flex align-items-center justify-content-center my-2">
+                                            <button class="btn btn-secondary btn-sm remove-one" data-name="Chesseburger++" data-price="10900">-</button>
+                                            <span class="mx-2 quantity" data-name="Chesseburger++">0</span>
+                                            <button class="btn btn-secondary btn-sm add-one" data-name="Chesseburger++" data-price="10900">+</button>
+                                          </div>
+                                          
                                     </div>
                                 </div>
-                                <div class="col-12 col-lg-4  card-column d-none">
+                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
                                     <div class="extra-card text-center h-100 card-body">
-                                        <img src="imgs/1.png" alt="">
-                                        <h3 class="card-title">La Big Kernel</h3>
-                                        <p class="card-text">La Big Kernel es una hamburguesa doble con medallones de carne jugosa, cheddar cremoso, cebolla crispy, bacon ahumado y un aderezo especial de la casa. Acompañada de papas fritas doradas, es la combinación perfecta de sabores intensos y texturas crujientes.</p>
-                                        <p class="card-text">Precio: $12.900</p>
-                                        <div class="d-flex align-items-center">
-                                            <button class="btn btn-secondary btn-sm remove-one" data-name="La Big Kernel" data-price="12900">-</button>
-                                            <span class="mx-2 quantity" data-name="La Big Kernel">0</span>
-                                            <button class="btn btn-secondary btn-sm add-one" data-name="La Big Kernel" data-price="12900">+</button>
-                                            <div class="d-flex justify-content-center mt-2">
-                                                <button class="btn btn-primary btn-sm add-to-cart mr-2" data-name="La Big Kernel" data-price="12900">Agregar al carrito</button>
-                                                <button class="btn btn-danger btn-sm remove-from-cart hidden" data-name="La Big Kernel">Eliminar del carrito</button>
-                                            </div>
-                                        </div>
+                                        <img src="../imgs/busquedabinaria.png" alt="Búsqueda Binaria">
+                                        <h3 class="card-title">Búsqueda Binaria</h3>
+                                        <p class="card-text">PAN GOLDEN - SMASH DE CARNE x2 - CHEDDAR x4 - BACON - SALSA BUP. INCLUYE PAPAS FRITAS.</p>
+                                        <h4 class="card-text">Precio: $11.900</h4>
+                                        <div class="d-flex align-items-center justify-content-center my-2">
+                                            <button class="btn btn-secondary btn-sm remove-one" data-name="Búsqueda Binaria" data-price="11900">-</button>
+                                            <span class="mx-2 quantity" data-name="Búsqueda Binaria">0</span>
+                                            <button class="btn btn-secondary btn-sm add-one" data-name="Búsqueda Binaria" data-price="11900">+</button>
+                                          </div>
+                                          
                                     </div>
                                 </div>
                             
@@ -336,13 +292,13 @@
             
             
           </section>
-          <section id="hamburguesas">
+          <section id="veggie">
             <div class="container-fluid px-0">
               <div id="separador-hamburguesas" class="row">
                 <div class="col-12 px-0">
                   <div class="text-center py-0">
                     
-                    <h2>Hamburguesas</h2>
+                    <h2>Veggie</h2>
                     
                   </div>
                 </div>
@@ -354,19 +310,16 @@
                          
                         <div class="card mb-3">
                             <div class="card-body">
-                                <img src="imgs/1.png" alt="">
-                                <h3 class="card-title">La Big Kernel</h3>
-                                <p class="card-text">La Big Kernel es una hamburguesa doble con medallones de carne jugosa, cheddar cremoso, cebolla crispy, bacon ahumado y un aderezo especial de la casa. Acompañada de papas fritas doradas, es la combinación perfecta de sabores intensos y texturas crujientes.</p>
-                                <p class="card-text">Precio: $12.900</p>
-                                <div class="d-flex align-items-center">
-                                    <button class="btn btn-secondary btn-sm remove-one" data-name="Producto 1" data-price="12900">-</button>
-                                    <span class="mx-2 quantity" data-name="Producto 1">0</span>
-                                    <button class="btn btn-secondary btn-sm add-one" data-name="Producto 1" data-price="12900">+</button>
-                                    <div class="d-flex justify-content-center mt-2">
-                                        <button class="btn btn-primary btn-sm add-to-cart mr-2" data-name="La Big Kernel" data-price="12900">Agregar al carrito</button>
-                                        <button class="btn btn-danger btn-sm remove-from-cart hidden" data-name="La Big Kernel">Eliminar del carrito</button>
-                                    </div>
-                                </div>
+                                <img src="../imgs/fullstack.png" alt="Full Stack">
+                                <h3 class="card-title">La "Full Stack"</h3>
+                                <p class="card-text">PAN DE SÉSAMO - MEDALLÓN VEGANO x2 - CHEDDAR VEGANO x3 - CEBOLLA - LECHUGA - PEPINILLOS - SALSA BUP. INCLUYE PAPAS FRITAS.</p>
+                                <h4 class="card-text">Precio: $12.900</h4>
+                                <div class="d-flex align-items-center justify-content-center my-2">
+                                    <button class="btn btn-secondary btn-sm remove-one" data-name="Full Stack" data-price="12900">-</button>
+                                    <span class="mx-2 quantity" data-name="Full Stack">0</span>
+                                    <button class="btn btn-secondary btn-sm add-one" data-name="Full Stack" data-price="12900">+</button>
+                                  </div>
+                                  
                             </div>
                         </div>
                     
@@ -374,73 +327,47 @@
                         
                         <div class="card mb-3">
                             <div class="card-body">
-                                <img src="imgs/1.png" alt="">
-                                <h3 class="card-title">La Big Kernel</h3>
-                                <p class="card-text">La Big Kernel es una hamburguesa doble con medallones de carne jugosa, cheddar cremoso, cebolla crispy, bacon ahumado y un aderezo especial de la casa. Acompañada de papas fritas doradas, es la combinación perfecta de sabores intensos y texturas crujientes.</p>
-                                <p class="card-text">Precio: $12.900</p>
-                                <div class="d-flex align-items-center">
-                                    <button class="btn btn-secondary btn-sm remove-one" data-name="Producto 1" data-price="12900">-</button>
-                                    <span class="mx-2 quantity" data-name="Producto 1">0</span>
-                                    <button class="btn btn-secondary btn-sm add-one" data-name="Producto 1" data-price="12900">+</button>
-                                    <div class="d-flex justify-content-center mt-2">
-                                        <button class="btn btn-primary btn-sm add-to-cart mr-2" data-name="La Big Kernel" data-price="12900">Agregar al carrito</button>
-                                        <button class="btn btn-danger btn-sm remove-from-cart hidden" data-name="La Big Kernel">Eliminar del carrito</button>
-                                    </div>
-                                </div>
+                                <img src="../imgs/echoburger.png" alt="Echo Burger">
+                                <h3 class="card-title">Echo Burger</h3>
+                                <p class="card-text">PAN VEGANO - PASTA DE ARVEJAS SIMIL POLLO APANADO EN PANKO - GUACAMOLE - TOMATE - CEBOLLA CARAMELIZADA - CHEDDAR VEGANO x2. INCLUYE PAPAS FRITAS.</p>
+                                <h4 class="card-text">Precio: $11.900</h4>
+                                <div class="d-flex align-items-center justify-content-center my-2">
+                                    <button class="btn btn-secondary btn-sm remove-one" data-name="Echo Burger" data-price="11900">-</button>
+                                    <span class="mx-2 quantity" data-name="Echo Burger">0</span>
+                                    <button class="btn btn-secondary btn-sm add-one" data-name="Echo Burger" data-price="11900">+</button>
+                                  </div>
+                                  
                             </div>
                         </div>
                         <div class="card mb-3">
                             <div class="card-body">
-                                <img src="imgs/1.png" alt="">
-                                <h3 class="card-title">La Big Kernel</h3>
-                                <p class="card-text">La Big Kernel es una hamburguesa doble con medallones de carne jugosa, cheddar cremoso, cebolla crispy, bacon ahumado y un aderezo especial de la casa. Acompañada de papas fritas doradas, es la combinación perfecta de sabores intensos y texturas crujientes.</p>
-                                <p class="card-text">Precio: $12.900</p>
-                                <div class="d-flex align-items-center">
-                                    <button class="btn btn-secondary btn-sm remove-one" data-name="Producto 1" data-price="12900">-</button>
-                                    <span class="mx-2 quantity" data-name="Producto 1">0</span>
-                                    <button class="btn btn-secondary btn-sm add-one" data-name="Producto 1" data-price="12900">+</button>
-                                    <div class="d-flex justify-content-center mt-2">
-                                        <button class="btn btn-primary btn-sm add-to-cart mr-2" data-name="La Big Kernel" data-price="12900">Agregar al carrito</button>
-                                        <button class="btn btn-danger btn-sm remove-from-cart hidden" data-name="La Big Kernel">Eliminar del carrito</button>
-                                    </div>
-                                </div>
+                                <img src="../imgs/Proxy Paty.png" alt="Proxy Paty">
+                                <h3 class="card-title">Proxy Paty</h3>
+                                <p class="card-text">PAN VEGANO - MEDALLÓN VEGANO 80GR x2 - CHEDDAR VEGANO x2 - BASTÓN DE MUZZALMENDRA - SALSA DE TOMATE. INCLUYE PAPAS FRITAS.</p>
+                                <h4 class="card-text">Precio: $12.900</h4>
+                                <div class="d-flex align-items-center justify-content-center my-2">
+                                    <button class="btn btn-secondary btn-sm remove-one" data-name="Proxy Paty" data-price="12900">-</button>
+                                    <span class="mx-2 quantity" data-name="Proxy Paty">0</span>
+                                    <button class="btn btn-secondary btn-sm add-one" data-name="Proxy Paty" data-price="12900">+</button>
+                                  </div>
+                                  
                             </div>
                         </div>
                         <div class="card mb-3">
                             <div class="card-body">
-                                <img src="imgs/1.png" alt="">
-                                <h3 class="card-title">La Big Kernel</h3>
-                                <p class="card-text">La Big Kernel es una hamburguesa doble con medallones de carne jugosa, cheddar cremoso, cebolla crispy, bacon ahumado y un aderezo especial de la casa. Acompañada de papas fritas doradas, es la combinación perfecta de sabores intensos y texturas crujientes.</p>
-                                <p class="card-text">Precio: $12.900</p>
-                                <div class="d-flex align-items-center">
-                                    <button class="btn btn-secondary btn-sm remove-one" data-name="Producto 1" data-price="12900">-</button>
-                                    <span class="mx-2 quantity" data-name="Producto 1">0</span>
-                                    <button class="btn btn-secondary btn-sm add-one" data-name="Producto 1" data-price="12900">+</button>
-                                    <div class="d-flex justify-content-center mt-2">
-                                        <button class="btn btn-primary btn-sm add-to-cart mr-2" data-name="La Big Kernel" data-price="12900">Agregar al carrito</button>
-                                        <button class="btn btn-danger btn-sm remove-from-cart hidden" data-name="La Big Kernel">Eliminar del carrito</button>
-                                    </div>
-                                </div>
+                                <img src="../imgs/Burguer.png" alt="La Veggie Kernel">
+                                <h3 class="card-title">La Veggie Kernel</h3>
+                                <p class="card-text">PAN VEGANO - SMASH VEGANO x2 - CHEDDAR VEGANO x4 - BACON VEGANO. INCLUYE PAPAS FRITAS.</p>
+                                <h4 class="card-text">Precio: $12.900</h4>
+                                <div class="d-flex align-items-center justify-content-center my-2">
+                                    <button class="btn btn-secondary btn-sm remove-one" data-name="La Veggie Kernel" data-price="12900">-</button>
+                                    <span class="mx-2 quantity" data-name="La Veggie Kernel">0</span>
+                                    <button class="btn btn-secondary btn-sm add-one" data-name="La Veggie Kernel" data-price="12900">+</button>
+                                  </div>
+                                  
                             </div>
                         </div>
-                        <div class="card mb-3">
-                            <div class="card-body">
-                                <img src="imgs/1.png" alt="">
-                                <h3 class="card-title">La Big Kernel</h3>
-                                <p class="card-text">La Big Kernel es una hamburguesa doble con medallones de carne jugosa, cheddar cremoso, cebolla crispy, bacon ahumado y un aderezo especial de la casa. Acompañada de papas fritas doradas, es la combinación perfecta de sabores intensos y texturas crujientes.</p>
-                                <p class="card-text">Precio: $12.900</p>
-                                <div class="d-flex align-items-center">
-                                    <button class="btn btn-secondary btn-sm remove-one" data-name="Producto 1" data-price="12900">-</button>
-                                    <span class="mx-2 quantity" data-name="Producto 1">0</span>
-                                    <button class="btn btn-secondary btn-sm add-one" data-name="Producto 1" data-price="12900">+</button>
-                                    <div class="d-flex justify-content-center mt-2">
-                                        <button class="btn btn-primary btn-sm add-to-cart mr-2" data-name="La Big Kernel" data-price="12900">Agregar al carrito</button>
-                                        <button class="btn btn-danger btn-sm remove-from-cart hidden" data-name="La Big Kernel">Eliminar del carrito</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                            
+                        
                         
                          
                        </div>
@@ -450,117 +377,100 @@
                         <div class="container my-5">
                             <div class="row justify-content-center" id="product-cards">
                                 <!-- Tarjeta 1 -->
-                                <div class="col-12 col-lg-4  card-column d-none">
+                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
                                     <div class="extra-card text-center h-100 card-body">
-                                        <img src="imgs/1.png" alt="">
-                                        <h3 class="card-title">La Big Kernel</h3>
-                                        <p class="card-text">La Big Kernel es una hamburguesa doble con medallones de carne jugosa, cheddar cremoso, cebolla crispy, bacon ahumado y un aderezo especial de la casa. Acompañada de papas fritas doradas, es la combinación perfecta de sabores intensos y texturas crujientes.</p>
-                                        <p class="card-text">Precio: $12.900</p>
-                                        <div class="d-flex align-items-center">
-                                            <button class="btn btn-secondary btn-sm remove-one" data-name="La Big Kernel" data-price="12900">-</button>
-                                            <span class="mx-2 quantity" data-name="La Big Kernel">0</span>
-                                            <button class="btn btn-secondary btn-sm add-one" data-name="La Big Kernel" data-price="12900">+</button>
-                                            <div class="d-flex justify-content-center mt-2">
-                                                <button class="btn btn-primary btn-sm add-to-cart mr-2" data-name="La Big Kernel" data-price="12900">Agregar al carrito</button>
-                                                <button class="btn btn-danger btn-sm remove-from-cart hidden" data-name="La Big Kernel">Eliminar del carrito</button>
-                                            </div>
-                                        </div>
+                                        <img src="../imgs/SOLID.png" alt="Veggie SOLID">
+                                        <h3 class="card-title">Veggie SOLID</h3>
+                                        <p class="card-text">PAN VEGANO - SMASH VEGANO x2 - CHEDDAR VEGANO x4 - BACON VEGANO - CEBOLLA CRISPY - ALIOLI VEGANO. INCLUYE PAPAS FRITAS.</p>
+                                        <h4 class="card-text">Precio: $11.900</h4>
+                                        <div class="d-flex align-items-center justify-content-center my-2">
+                                            <button class="btn btn-secondary btn-sm remove-one" data-name="Veggie SOLID" data-price="11900">-</button>
+                                            <span class="mx-2 quantity" data-name="Veggie SOLID">0</span>
+                                            <button class="btn btn-secondary btn-sm add-one" data-name="Veggie SOLID" data-price="11900">+</button>
+                                          </div>
+                                          
                                     </div>
                                 </div>
                                 
                                 
                         
                                 <!-- Tarjeta 2 -->
-                                <div class="col-12 col-lg-4  card-column d-none">
+                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
                                     <div class="extra-card text-center h-100 card-body">
-                                        <img src="imgs/1.png" alt="">
-                                        <h3 class="card-title">La Big Kernel</h3>
-                                        <p class="card-text">La Big Kernel es una hamburguesa doble con medallones de carne jugosa, cheddar cremoso, cebolla crispy, bacon ahumado y un aderezo especial de la casa. Acompañada de papas fritas doradas, es la combinación perfecta de sabores intensos y texturas crujientes.</p>
-                                        <p class="card-text">Precio: $12.900</p>
-                                        <div class="d-flex align-items-center">
-                                            <button class="btn btn-secondary btn-sm remove-one" data-name="La Big Kernel" data-price="12900">-</button>
-                                            <span class="mx-2 quantity" data-name="La Big Kernel">0</span>
-                                            <button class="btn btn-secondary btn-sm add-one" data-name="La Big Kernel" data-price="12900">+</button>
-                                            <div class="d-flex justify-content-center mt-2">
-                                                <button class="btn btn-primary btn-sm add-to-cart mr-2" data-name="La Big Kernel" data-price="12900">Agregar al carrito</button>
-                                                <button class="btn btn-danger btn-sm remove-from-cart hidden" data-name="La Big Kernel">Eliminar del carrito</button>
-                                            </div>
-                                        </div>
+                                        <img src="..//imgs/Cheeseburguer++.png" alt="Veggie Chesseburger++">
+                                        <h3 class="card-title">Veggie Chesseburger++</h3>
+                                        <p class="card-text">PAN DE QUESO VEGANO - SMASH VEGANO x2 - CHEDDAR VEGANO x4. INCLUYE PAPAS FRITAS.</p>
+                                        <h4 class="card-text">Precio: $10.900</h4>
+                                        <div class="d-flex align-items-center justify-content-center my-2">
+                                            <button class="btn btn-secondary btn-sm remove-one" data-name="Veggie Chesseburger++" data-price="10900">-</button>
+                                            <span class="mx-2 quantity" data-name="Veggie Chesseburger++">0</span>
+                                            <button class="btn btn-secondary btn-sm add-one" data-name="Veggie Chesseburger++" data-price="10900">+</button>
+                                          </div>
+                                          
                                     </div>
                                 </div>
-                                <div class="col-12 col-lg-4  card-column d-none">
+                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
                                     <div class="extra-card text-center h-100 card-body">
-                                        <img src="imgs/1.png" alt="">
-                                        <h3 class="card-title">La Big Kernel</h3>
-                                        <p class="card-text">La Big Kernel es una hamburguesa doble con medallones de carne jugosa, cheddar cremoso, cebolla crispy, bacon ahumado y un aderezo especial de la casa. Acompañada de papas fritas doradas, es la combinación perfecta de sabores intensos y texturas crujientes.</p>
-                                        <p class="card-text">Precio: $12.900</p>
-                                        <div class="d-flex align-items-center">
-                                            <button class="btn btn-secondary btn-sm remove-one" data-name="La Big Kernel" data-price="12900">-</button>
-                                            <span class="mx-2 quantity" data-name="La Big Kernel">0</span>
-                                            <button class="btn btn-secondary btn-sm add-one" data-name="La Big Kernel" data-price="12900">+</button>
-                                            <div class="d-flex justify-content-center mt-2">
-                                                <button class="btn btn-primary btn-sm add-to-cart mr-2" data-name="La Big Kernel" data-price="12900">Agregar al carrito</button>
-                                                <button class="btn btn-danger btn-sm remove-from-cart hidden" data-name="La Big Kernel">Eliminar del carrito</button>
-                                            </div>
-                                        </div>
+                                        <img src="../imgs/fullstack.png" alt="Full Stack">
+                                        <h3 class="card-title">La "Full Stack"</h3>
+                                        <p class="card-text">PAN DE SÉSAMO - MEDALLÓN VEGANO x2 - CHEDDAR VEGANO x3 - CEBOLLA - LECHUGA - PEPINILLOS - SALSA BUP. INCLUYE PAPAS FRITAS.</p>
+                                        <h4 class="card-text">Precio: $12.900</h4>
+                                        <div class="d-flex align-items-center justify-content-center my-2">
+                                            <button class="btn btn-secondary btn-sm remove-one" data-name="Full Stack" data-price="12900">-</button>
+                                            <span class="mx-2 quantity" data-name="Full Stack">0</span>
+                                            <button class="btn btn-secondary btn-sm add-one" data-name="Full Stack" data-price="12900">+</button>
+                                          </div>
+                                          
                                     </div>
                                 </div>
                             
                                
                                 <!-- Tarjeta 1 -->
-                                <div class="col-12 col-lg-4  card-column d-none">
+                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
                                     <div class="extra-card text-center h-100 card-body">
-                                        <img src="imgs/1.png" alt="">
-                                        <h3 class="card-title">La Big Kernel</h3>
-                                        <p class="card-text">La Big Kernel es una hamburguesa doble con medallones de carne jugosa, cheddar cremoso, cebolla crispy, bacon ahumado y un aderezo especial de la casa. Acompañada de papas fritas doradas, es la combinación perfecta de sabores intensos y texturas crujientes.</p>
-                                        <p class="card-text">Precio: $12.900</p>
-                                        <div class="d-flex align-items-center">
-                                            <button class="btn btn-secondary btn-sm remove-one" data-name="La Big Kernel" data-price="12900">-</button>
-                                            <span class="mx-2 quantity" data-name="La Big Kernel">0</span>
-                                            <button class="btn btn-secondary btn-sm add-one" data-name="La Big Kernel" data-price="12900">+</button>
-                                            <div class="d-flex justify-content-center mt-2">
-                                                <button class="btn btn-primary btn-sm add-to-cart mr-2" data-name="La Big Kernel" data-price="12900">Agregar al carrito</button>
-                                                <button class="btn btn-danger btn-sm remove-from-cart hidden" data-name="La Big Kernel">Eliminar del carrito</button>
-                                            </div>
-                                        </div>
+                                        <img src="../imgs/echoburger.png" alt="Echo Burger">
+                                        <h3 class="card-title">Echo Burger</h3>
+                                        <p class="card-text">PAN VEGANO - PASTA DE ARVEJAS SIMIL POLLO APANADO EN PANKO - GUACAMOLE - TOMATE - CEBOLLA CARAMELIZADA - CHEDDAR VEGANO x2. INCLUYE PAPAS FRITAS.</p>
+                                        <h4 class="card-text">Precio: $11.900</h4>
+                                        <div class="d-flex align-items-center justify-content-center my-2">
+                                            <button class="btn btn-secondary btn-sm remove-one" data-name="Echo Burger" data-price="11900">-</button>
+                                            <span class="mx-2 quantity" data-name="Echo Burger">0</span>
+                                            <button class="btn btn-secondary btn-sm add-one" data-name="Echo Burger" data-price="11900">+</button>
+                                          </div>
+                                          
                                     </div>
                                 </div>
                             
                                 <!-- Tarjeta 2 -->
-                                <div class="col-12 col-lg-4  card-column d-none">
+                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
                                     <div class="extra-card text-center h-100 card-body">
-                                        <img src="imgs/1.png" alt="">
-                                        <h3 class="card-title">La Big Kernel</h3>
-                                        <p class="card-text">La Big Kernel es una hamburguesa doble con medallones de carne jugosa, cheddar cremoso, cebolla crispy, bacon ahumado y un aderezo especial de la casa. Acompañada de papas fritas doradas, es la combinación perfecta de sabores intensos y texturas crujientes.</p>
-                                        <p class="card-text">Precio: $12.900</p>
-                                        <div class="d-flex align-items-center">
-                                            <button class="btn btn-secondary btn-sm remove-one" data-name="La Big Kernel" data-price="12900">-</button>
-                                            <span class="mx-2 quantity" data-name="La Big Kernel">0</span>
-                                            <button class="btn btn-secondary btn-sm add-one" data-name="La Big Kernel" data-price="12900">+</button>
-                                            <div class="d-flex justify-content-center mt-2">
-                                                <button class="btn btn-primary btn-sm add-to-cart mr-2" data-name="La Big Kernel" data-price="12900">Agregar al carrito</button>
-                                                <button class="btn btn-danger btn-sm remove-from-cart hidden" data-name="La Big Kernel">Eliminar del carrito</button>
-                                            </div>
-                                        </div>
+                                        <img src="../imgs/Proxy Paty.png" alt="Proxy Paty">
+                                        <h3 class="card-title">Proxy Paty</h3>
+                                        <p class="card-text">PAN VEGANO - MEDALLÓN VEGANO 80GR x2 - CHEDDAR VEGANO x2 - BASTÓN DE MUZZALMENDRA - SALSA DE TOMATE. INCLUYE PAPAS FRITAS.</p>
+                                        <h4 class="card-text">Precio: $12.900</h4>
+                                        <div class="d-flex align-items-center justify-content-center my-2">
+                                            <button class="btn btn-secondary btn-sm remove-one" data-name="Proxy Paty" data-price="12900">-</button>
+                                            <span class="mx-2 quantity" data-name="Proxy Paty">0</span>
+                                            <button class="btn btn-secondary btn-sm add-one" data-name="Proxy Paty" data-price="12900">+</button>
+                                          </div>
+                                          
                                     </div>
                                 </div>
-                                <div class="col-12 col-lg-4  card-column d-none">
+                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
                                     <div class="extra-card text-center h-100 card-body">
-                                        <img src="imgs/1.png" alt="">
-                                        <h3 class="card-title">La Big Kernel</h3>
-                                        <p class="card-text">La Big Kernel es una hamburguesa doble con medallones de carne jugosa, cheddar cremoso, cebolla crispy, bacon ahumado y un aderezo especial de la casa. Acompañada de papas fritas doradas, es la combinación perfecta de sabores intensos y texturas crujientes.</p>
-                                        <p class="card-text">Precio: $12.900</p>
-                                        <div class="d-flex align-items-center">
-                                            <button class="btn btn-secondary btn-sm remove-one" data-name="La Big Kernel" data-price="12900">-</button>
-                                            <span class="mx-2 quantity" data-name="La Big Kernel">0</span>
-                                            <button class="btn btn-secondary btn-sm add-one" data-name="La Big Kernel" data-price="12900">+</button>
-                                            <div class="d-flex justify-content-center mt-2">
-                                                <button class="btn btn-primary btn-sm add-to-cart mr-2" data-name="La Big Kernel" data-price="12900">Agregar al carrito</button>
-                                                <button class="btn btn-danger btn-sm remove-from-cart hidden" data-name="La Big Kernel">Eliminar del carrito</button>
-                                            </div>
-                                        </div>
+                                        <img src="../imgs/Burguer.png" alt="La Veggie Kernel">
+                                        <h3 class="card-title">La Veggie Kernel</h3>
+                                        <p class="card-text">PAN VEGANO - SMASH VEGANO x2 - CHEDDAR VEGANO x4 - BACON VEGANO. INCLUYE PAPAS FRITAS.</p>
+                                        h4 class="card-text">Precio: $12.900</h4>
+                                        <div class="d-flex align-items-center justify-content-center my-2">
+                                            <button class="btn btn-secondary btn-sm remove-one" data-name="La Veggie Kernel" data-price="12900">-</button>
+                                            <span class="mx-2 quantity" data-name="La Veggie Kernel">0</span>
+                                            <button class="btn btn-secondary btn-sm add-one" data-name="La Veggie Kernel" data-price="12900">+</button>
+                                          </div>
+                                          
                                     </div>
                                 </div>
+                                
                             
         
                        </div>
@@ -572,13 +482,13 @@
             
             
           </section>
-          <section id="hamburguesas">
+          <section id="bebidas">
             <div class="container-fluid px-0">
               <div id="separador-hamburguesas" class="row">
                 <div class="col-12 px-0">
                   <div class="text-center py-0">
                     
-                    <h2>Hamburguesas</h2>
+                    <h2>Bebidas</h2>
                     
                   </div>
                 </div>
@@ -590,19 +500,16 @@
                          
                         <div class="card mb-3">
                             <div class="card-body">
-                                <img src="imgs/1.png" alt="">
-                                <h3 class="card-title">La Big Kernel</h3>
-                                <p class="card-text">La Big Kernel es una hamburguesa doble con medallones de carne jugosa, cheddar cremoso, cebolla crispy, bacon ahumado y un aderezo especial de la casa. Acompañada de papas fritas doradas, es la combinación perfecta de sabores intensos y texturas crujientes.</p>
-                                <p class="card-text">Precio: $12.900</p>
-                                <div class="d-flex align-items-center">
-                                    <button class="btn btn-secondary btn-sm remove-one" data-name="Producto 1" data-price="12900">-</button>
-                                    <span class="mx-2 quantity" data-name="Producto 1">0</span>
-                                    <button class="btn btn-secondary btn-sm add-one" data-name="Producto 1" data-price="12900">+</button>
-                                    <div class="d-flex justify-content-center mt-2">
-                                        <button class="btn btn-primary btn-sm add-to-cart mr-2" data-name="La Big Kernel" data-price="12900">Agregar al carrito</button>
-                                        <button class="btn btn-danger btn-sm remove-from-cart hidden" data-name="La Big Kernel">Eliminar del carrito</button>
-                                    </div>
-                                </div>
+                                <img src="../imgs/coca-cola.webp" alt="Coca-Cola">
+                                <h3 class="card-title">Coca-Cola</h3>
+                                <p class="card-text">500 ml</p>
+                                <h4 class="card-text">Precio: $3.900</h4>
+                                <div class="d-flex align-items-center justify-content-center my-2">
+                                    <button class="btn btn-secondary btn-sm remove-one" data-name="Coca-Cola" data-price="3900">-</button>
+                                    <span class="mx-2 quantity" data-name="Coca-Cola">0</span>
+                                    <button class="btn btn-secondary btn-sm add-one" data-name="Coca-Colae" data-price="3900">+</button>
+                                  </div>
+                                  
                             </div>
                         </div>
                     
@@ -610,73 +517,47 @@
                         
                         <div class="card mb-3">
                             <div class="card-body">
-                                <img src="imgs/1.png" alt="">
-                                <h3 class="card-title">La Big Kernel</h3>
-                                <p class="card-text">La Big Kernel es una hamburguesa doble con medallones de carne jugosa, cheddar cremoso, cebolla crispy, bacon ahumado y un aderezo especial de la casa. Acompañada de papas fritas doradas, es la combinación perfecta de sabores intensos y texturas crujientes.</p>
-                                <p class="card-text">Precio: $12.900</p>
-                                <div class="d-flex align-items-center">
-                                    <button class="btn btn-secondary btn-sm remove-one" data-name="Producto 1" data-price="12900">-</button>
-                                    <span class="mx-2 quantity" data-name="Producto 1">0</span>
-                                    <button class="btn btn-secondary btn-sm add-one" data-name="Producto 1" data-price="12900">+</button>
-                                    <div class="d-flex justify-content-center mt-2">
-                                        <button class="btn btn-primary btn-sm add-to-cart mr-2" data-name="La Big Kernel" data-price="12900">Agregar al carrito</button>
-                                        <button class="btn btn-danger btn-sm remove-from-cart hidden" data-name="La Big Kernel">Eliminar del carrito</button>
-                                    </div>
-                                </div>
+                                <img src="../imgs/sprite.webp" alt="prite ZERO">
+                                <h3 class="card-title">Sprite ZERO</h3>
+                                <p class="card-text">500 ml</p>
+                                <h4 class="card-text">Precio: $3.900</h4>
+                                <div class="d-flex align-items-center justify-content-center my-2">
+                                    <button class="btn btn-secondary btn-sm remove-one" data-name="prite ZERO" data-price="3900">-</button>
+                                    <span class="mx-2 quantity" data-name="prite ZERO">0</span>
+                                    <button class="btn btn-secondary btn-sm add-one" data-name="prite ZERO" data-price="3900">+</button>
+                                  </div>
+                                  
                             </div>
                         </div>
                         <div class="card mb-3">
                             <div class="card-body">
-                                <img src="imgs/1.png" alt="">
-                                <h3 class="card-title">La Big Kernel</h3>
-                                <p class="card-text">La Big Kernel es una hamburguesa doble con medallones de carne jugosa, cheddar cremoso, cebolla crispy, bacon ahumado y un aderezo especial de la casa. Acompañada de papas fritas doradas, es la combinación perfecta de sabores intensos y texturas crujientes.</p>
-                                <p class="card-text">Precio: $12.900</p>
-                                <div class="d-flex align-items-center">
-                                    <button class="btn btn-secondary btn-sm remove-one" data-name="Producto 1" data-price="12900">-</button>
-                                    <span class="mx-2 quantity" data-name="Producto 1">0</span>
-                                    <button class="btn btn-secondary btn-sm add-one" data-name="Producto 1" data-price="12900">+</button>
-                                    <div class="d-flex justify-content-center mt-2">
-                                        <button class="btn btn-primary btn-sm add-to-cart mr-2" data-name="La Big Kernel" data-price="12900">Agregar al carrito</button>
-                                        <button class="btn btn-danger btn-sm remove-from-cart hidden" data-name="La Big Kernel">Eliminar del carrito</button>
-                                    </div>
-                                </div>
+                                <img src="../imgs/fanta.jpg" alt="Fanta">
+                                <h3 class="card-title">Fanta</h3>
+                                <p class="card-text">500 ml</p>
+                                <h4 class="card-text">Precio: $3.900</h4>
+                                <div class="d-flex align-items-center justify-content-center my-2">
+                                    <button class="btn btn-secondary btn-sm remove-one" data-name="Fanta" data-price="3900">-</button>
+                                    <span class="mx-2 quantity" data-name="Fanta">0</span>
+                                    <button class="btn btn-secondary btn-sm add-one" data-name="Fanta" data-price="3900">+</button>
+                                  </div>
+                                  
                             </div>
                         </div>
                         <div class="card mb-3">
                             <div class="card-body">
-                                <img src="imgs/1.png" alt="">
-                                <h3 class="card-title">La Big Kernel</h3>
-                                <p class="card-text">La Big Kernel es una hamburguesa doble con medallones de carne jugosa, cheddar cremoso, cebolla crispy, bacon ahumado y un aderezo especial de la casa. Acompañada de papas fritas doradas, es la combinación perfecta de sabores intensos y texturas crujientes.</p>
-                                <p class="card-text">Precio: $12.900</p>
-                                <div class="d-flex align-items-center">
-                                    <button class="btn btn-secondary btn-sm remove-one" data-name="Producto 1" data-price="12900">-</button>
-                                    <span class="mx-2 quantity" data-name="Producto 1">0</span>
-                                    <button class="btn btn-secondary btn-sm add-one" data-name="Producto 1" data-price="12900">+</button>
-                                    <div class="d-flex justify-content-center mt-2">
-                                        <button class="btn btn-primary btn-sm add-to-cart mr-2" data-name="La Big Kernel" data-price="12900">Agregar al carrito</button>
-                                        <button class="btn btn-danger btn-sm remove-from-cart hidden" data-name="La Big Kernel">Eliminar del carrito</button>
-                                    </div>
-                                </div>
+                                <img src="../imgs/agua.jpg" alt="Villavicencio">
+                                <h3 class="card-title">Agua mineral "Villavicencio"</h3>
+                                <p class="card-text">500 ml</p>
+                                <h4 class="card-text">Precio: $3.900</h4>
+                                <div class="d-flex align-items-center justify-content-center my-2">
+                                    <button class="btn btn-secondary btn-sm remove-one" data-name="Villavicencio" data-price="3900">-</button>
+                                    <span class="mx-2 quantity" data-name="Villavicencio">0</span>
+                                    <button class="btn btn-secondary btn-sm add-one" data-name="Villavicencio" data-price="3900">+</button>
+                                  </div>
+                                  
                             </div>
                         </div>
-                        <div class="card mb-3">
-                            <div class="card-body">
-                                <img src="imgs/1.png" alt="">
-                                <h3 class="card-title">La Big Kernel</h3>
-                                <p class="card-text">La Big Kernel es una hamburguesa doble con medallones de carne jugosa, cheddar cremoso, cebolla crispy, bacon ahumado y un aderezo especial de la casa. Acompañada de papas fritas doradas, es la combinación perfecta de sabores intensos y texturas crujientes.</p>
-                                <p class="card-text">Precio: $12.900</p>
-                                <div class="d-flex align-items-center">
-                                    <button class="btn btn-secondary btn-sm remove-one" data-name="Producto 1" data-price="12900">-</button>
-                                    <span class="mx-2 quantity" data-name="Producto 1">0</span>
-                                    <button class="btn btn-secondary btn-sm add-one" data-name="Producto 1" data-price="12900">+</button>
-                                    <div class="d-flex justify-content-center mt-2">
-                                        <button class="btn btn-primary btn-sm add-to-cart mr-2" data-name="La Big Kernel" data-price="12900">Agregar al carrito</button>
-                                        <button class="btn btn-danger btn-sm remove-from-cart hidden" data-name="La Big Kernel">Eliminar del carrito</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                            
+                        
                         
                          
                        </div>
@@ -686,115 +567,97 @@
                         <div class="container my-5">
                             <div class="row justify-content-center" id="product-cards">
                                 <!-- Tarjeta 1 -->
-                                <div class="col-12 col-lg-4  card-column d-none">
+                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
                                     <div class="extra-card text-center h-100 card-body">
-                                        <img src="imgs/1.png" alt="">
-                                        <h3 class="card-title">La Big Kernel</h3>
-                                        <p class="card-text">La Big Kernel es una hamburguesa doble con medallones de carne jugosa, cheddar cremoso, cebolla crispy, bacon ahumado y un aderezo especial de la casa. Acompañada de papas fritas doradas, es la combinación perfecta de sabores intensos y texturas crujientes.</p>
-                                        <p class="card-text">Precio: $12.900</p>
-                                        <div class="d-flex align-items-center">
-                                            <button class="btn btn-secondary btn-sm remove-one" data-name="La Big Kernel" data-price="12900">-</button>
-                                            <span class="mx-2 quantity" data-name="La Big Kernel">0</span>
-                                            <button class="btn btn-secondary btn-sm add-one" data-name="La Big Kernel" data-price="12900">+</button>
-                                            <div class="d-flex justify-content-center mt-2">
-                                                <button class="btn btn-primary btn-sm add-to-cart mr-2" data-name="La Big Kernel" data-price="12900">Agregar al carrito</button>
-                                                <button class="btn btn-danger btn-sm remove-from-cart hidden" data-name="La Big Kernel">Eliminar del carrito</button>
-                                            </div>
-                                        </div>
+                                        <img src="../imgs/cerveza.jpg" alt="Heineken">
+                                        <h3 class="card-title">Cerveza "Heineken"</h3>
+                                        <p class="card-text">473 cm3</p>
+                                        <h4 class="card-text">Precio: $4.900</h4>
+                                        <div class="d-flex align-items-center justify-content-center my-2">
+                                            <button class="btn btn-secondary btn-sm remove-one" data-name="Heineken" data-price="4900">-</button>
+                                            <span class="mx-2 quantity" data-name="Heineken">0</span>
+                                            <button class="btn btn-secondary btn-sm add-one" data-name="Heineken" data-price="4900">+</button>
+                                          </div>
+                                          
                                     </div>
                                 </div>
                                 
                                 
                         
                                 <!-- Tarjeta 2 -->
-                                <div class="col-12 col-lg-4  card-column d-none">
+                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
                                     <div class="extra-card text-center h-100 card-body">
-                                        <img src="imgs/1.png" alt="">
-                                        <h3 class="card-title">La Big Kernel</h3>
-                                        <p class="card-text">La Big Kernel es una hamburguesa doble con medallones de carne jugosa, cheddar cremoso, cebolla crispy, bacon ahumado y un aderezo especial de la casa. Acompañada de papas fritas doradas, es la combinación perfecta de sabores intensos y texturas crujientes.</p>
-                                        <p class="card-text">Precio: $12.900</p>
-                                        <div class="d-flex align-items-center">
-                                            <button class="btn btn-secondary btn-sm remove-one" data-name="La Big Kernel" data-price="12900">-</button>
-                                            <span class="mx-2 quantity" data-name="La Big Kernel">0</span>
-                                            <button class="btn btn-secondary btn-sm add-one" data-name="La Big Kernel" data-price="12900">+</button>
-                                            <div class="d-flex justify-content-center mt-2">
-                                                <button class="btn btn-primary btn-sm add-to-cart mr-2" data-name="La Big Kernel" data-price="12900">Agregar al carrito</button>
-                                                <button class="btn btn-danger btn-sm remove-from-cart hidden" data-name="La Big Kernel">Eliminar del carrito</button>
-                                            </div>
-                                        </div>
+                                        <img src="../imgs/brahma.jpg" alt="Brahma">
+                                        <h3 class="card-title">Cerveza "Brahma"</h3>
+                                        <p class="card-text">473 cm3</p>
+                                        <h4 class="card-text">Precio: $4.000</h4>
+                                        <div class="d-flex align-items-center justify-content-center my-2">
+                                            <button class="btn btn-secondary btn-sm remove-one" data-name="Brahma" data-price="4000">-</button>
+                                            <span class="mx-2 quantity" data-name="Brahma">0</span>
+                                            <button class="btn btn-secondary btn-sm add-one" data-name="Brahma" data-price="4000">+</button>
+                                          </div>
+                                          
                                     </div>
                                 </div>
-                                <div class="col-12 col-lg-4  card-column d-none">
+                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
                                     <div class="extra-card text-center h-100 card-body">
-                                        <img src="imgs/1.png" alt="">
-                                        <h3 class="card-title">La Big Kernel</h3>
-                                        <p class="card-text">La Big Kernel es una hamburguesa doble con medallones de carne jugosa, cheddar cremoso, cebolla crispy, bacon ahumado y un aderezo especial de la casa. Acompañada de papas fritas doradas, es la combinación perfecta de sabores intensos y texturas crujientes.</p>
-                                        <p class="card-text">Precio: $12.900</p>
-                                        <div class="d-flex align-items-center">
-                                            <button class="btn btn-secondary btn-sm remove-one" data-name="La Big Kernel" data-price="12900">-</button>
-                                            <span class="mx-2 quantity" data-name="La Big Kernel">0</span>
-                                            <button class="btn btn-secondary btn-sm add-one" data-name="La Big Kernel" data-price="12900">+</button>
-                                            <div class="d-flex justify-content-center mt-2">
-                                                <button class="btn btn-primary btn-sm add-to-cart mr-2" data-name="La Big Kernel" data-price="12900">Agregar al carrito</button>
-                                                <button class="btn btn-danger btn-sm remove-from-cart hidden" data-name="La Big Kernel">Eliminar del carrito</button>
-                                            </div>
-                                        </div>
+                                        <img src="../imgs/coca-cola.webp" alt="Coca-Cola">
+                                        <h3 class="card-title">Coca-Cola</h3>
+                                        <p class="card-text">500 ml</p>
+                                        <h4 class="card-text">Precio: $3.900</h4>
+                                        <div class="d-flex align-items-center justify-content-center my-2">
+                                            <button class="btn btn-secondary btn-sm remove-one" data-name="Coca-Cola" data-price="3900">-</button>
+                                            <span class="mx-2 quantity" data-name="Coca-Cola">0</span>
+                                            <button class="btn btn-secondary btn-sm add-one" data-name="Coca-Cola" data-price="3900">+</button>
+                                          </div>
+                                          
                                     </div>
                                 </div>
                             
                                
                                 <!-- Tarjeta 1 -->
-                                <div class="col-12 col-lg-4  card-column d-none">
+                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
                                     <div class="extra-card text-center h-100 card-body">
-                                        <img src="imgs/1.png" alt="">
-                                        <h3 class="card-title">La Big Kernel</h3>
-                                        <p class="card-text">La Big Kernel es una hamburguesa doble con medallones de carne jugosa, cheddar cremoso, cebolla crispy, bacon ahumado y un aderezo especial de la casa. Acompañada de papas fritas doradas, es la combinación perfecta de sabores intensos y texturas crujientes.</p>
-                                        <p class="card-text">Precio: $12.900</p>
-                                        <div class="d-flex align-items-center">
-                                            <button class="btn btn-secondary btn-sm remove-one" data-name="La Big Kernel" data-price="12900">-</button>
-                                            <span class="mx-2 quantity" data-name="La Big Kernel">0</span>
-                                            <button class="btn btn-secondary btn-sm add-one" data-name="La Big Kernel" data-price="12900">+</button>
-                                            <div class="d-flex justify-content-center mt-2">
-                                                <button class="btn btn-primary btn-sm add-to-cart mr-2" data-name="La Big Kernel" data-price="12900">Agregar al carrito</button>
-                                                <button class="btn btn-danger btn-sm remove-from-cart hidden" data-name="La Big Kernel">Eliminar del carrito</button>
-                                            </div>
-                                        </div>
+                                        <img src="../imgs/sprite.webp" alt="Sprite ZERO">
+                                        <h3 class="card-title">Sprite ZERO</h3>
+                                        <p class="card-text">500 ml</p>
+                                        <h4 class="card-text">Precio: $3.900</h4>
+                                        <div class="d-flex align-items-center justify-content-center my-2">
+                                            <button class="btn btn-secondary btn-sm remove-one" data-name="Sprite ZERO" data-price="3900">-</button>
+                                            <span class="mx-2 quantity" data-name="Sprite ZERO">0</span>
+                                            <button class="btn btn-secondary btn-sm add-one" data-name="Sprite ZERO" data-price="3900">+</button>
+                                          </div>
+                                          
                                     </div>
                                 </div>
                             
                                 <!-- Tarjeta 2 -->
-                                <div class="col-12 col-lg-4  card-column d-none">
+                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
                                     <div class="extra-card text-center h-100 card-body">
-                                        <img src="imgs/1.png" alt="">
-                                        <h3 class="card-title">La Big Kernel</h3>
-                                        <p class="card-text">La Big Kernel es una hamburguesa doble con medallones de carne jugosa, cheddar cremoso, cebolla crispy, bacon ahumado y un aderezo especial de la casa. Acompañada de papas fritas doradas, es la combinación perfecta de sabores intensos y texturas crujientes.</p>
-                                        <p class="card-text">Precio: $12.900</p>
-                                        <div class="d-flex align-items-center">
-                                            <button class="btn btn-secondary btn-sm remove-one" data-name="La Big Kernel" data-price="12900">-</button>
-                                            <span class="mx-2 quantity" data-name="La Big Kernel">0</span>
-                                            <button class="btn btn-secondary btn-sm add-one" data-name="La Big Kernel" data-price="12900">+</button>
-                                            <div class="d-flex justify-content-center mt-2">
-                                                <button class="btn btn-primary btn-sm add-to-cart mr-2" data-name="La Big Kernel" data-price="12900">Agregar al carrito</button>
-                                                <button class="btn btn-danger btn-sm remove-from-cart hidden" data-name="La Big Kernel">Eliminar del carrito</button>
-                                            </div>
-                                        </div>
+                                        <img src="../imgs/fanta.jpg" alt="Fanta">
+                                        <h3 class="card-title">Fanta</h3>
+                                        <p class="card-text">500 ml</p>
+                                        <h4 class="card-text">Precio: $3.900</h4>
+                                        <div class="d-flex align-items-center justify-content-center my-2">
+                                            <button class="btn btn-secondary btn-sm remove-one" data-name="Fanta" data-price="3900">-</button>
+                                            <span class="mx-2 quantity" data-name="Fanta">0</span>
+                                            <button class="btn btn-secondary btn-sm add-one" data-name="Fanta" data-price="3900">+</button>
+                                          </div>
+                                          
                                     </div>
                                 </div>
-                                <div class="col-12 col-lg-4  card-column d-none">
+                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
                                     <div class="extra-card text-center h-100 card-body">
-                                        <img src="imgs/1.png" alt="">
-                                        <h3 class="card-title">La Big Kernel</h3>
-                                        <p class="card-text">La Big Kernel es una hamburguesa doble con medallones de carne jugosa, cheddar cremoso, cebolla crispy, bacon ahumado y un aderezo especial de la casa. Acompañada de papas fritas doradas, es la combinación perfecta de sabores intensos y texturas crujientes.</p>
-                                        <p class="card-text">Precio: $12.900</p>
-                                        <div class="d-flex align-items-center">
-                                            <button class="btn btn-secondary btn-sm remove-one" data-name="La Big Kernel" data-price="12900">-</button>
-                                            <span class="mx-2 quantity" data-name="La Big Kernel">0</span>
-                                            <button class="btn btn-secondary btn-sm add-one" data-name="La Big Kernel" data-price="12900">+</button>
-                                            <div class="d-flex justify-content-center mt-2">
-                                                <button class="btn btn-primary btn-sm add-to-cart mr-2" data-name="La Big Kernel" data-price="12900">Agregar al carrito</button>
-                                                <button class="btn btn-danger btn-sm remove-from-cart hidden" data-name="La Big Kernel">Eliminar del carrito</button>
-                                            </div>
-                                        </div>
+                                        <img src="../imgs/agua.jpg" alt="Villavicencio">
+                                        <h3 class="card-title">Agua mineral "Villavicencio"</h3>
+                                        <p class="card-text">500 ml</p>
+                                        <h4 class="card-text">Precio: $3.900</h4>
+                                        <div class="d-flex align-items-center justify-content-center my-2">
+                                            <button class="btn btn-secondary btn-sm remove-one" data-name="Villavicencio" data-price="3900">-</button>
+                                            <span class="mx-2 quantity" data-name="Villavicencio">0</span>
+                                            <button class="btn btn-secondary btn-sm add-one" data-name="Villavicencio" data-price="3900">+</button>
+                                          </div>
+                                          
                                     </div>
                                 </div>
                             
@@ -846,7 +709,7 @@
     <script src="jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../vendors/jquery.owlcarousel/dist/owl.carousel.js"></script>
-    <script src="funciones.js" >
+    <script src="../scripts/menú.js" >
         
         
     </script>
