@@ -10,7 +10,7 @@
 /* Estilo global para el color de texto y fondo */
 body {
     font-family: 'Roboto', sans-serif;
-    color: var(--text-color);
+    color: var(--text-color);   
     background-color: var(--background-color);
 }
 
@@ -38,7 +38,7 @@ body {
   
   .navbar .btn-outline-primary {
     border-color: #007bff;
-    color: #007bff;
+    color: white !important;
   }
   
   .navbar .btn-outline-primary:hover {
@@ -153,6 +153,48 @@ p {
     min-width: 100px; /* Ajuste de tamaño mínimo para uniformar las tarjetas */
 }
 
+/* Ajustes de las tarjetas en tamaños normales */
+.reward-cards .card {
+    width: 180px; /* Ancho fijo para pantallas grandes */
+    max-width: 180px;
+}
+
+/* Ajustes responsivos para pantallas pequeñas */
+@media (max-width: 767.98px) {
+    .points-section {
+        padding: 15px; /* Reduce el padding en dispositivos móviles */
+        margin-bottom: 40px; /* Asegura espacio extra en la parte inferior */
+    }
+
+    .background-light {
+        padding: 20px; /* Asegura un padding adecuado en dispositivos móviles */
+        height: auto; /* Permite que el contenedor crezca según el contenido */
+    }
+
+    .fixed-size-container {
+        min-height: auto; /* Permite que el contenedor crezca o disminuya según el contenido */
+        height: auto; /* Elimina cualquier restricción de altura fija */
+    }
+
+    .reward-cards {
+        flex-direction: column; /* Apila las tarjetas verticalmente */
+        align-items: center; /* Centra las tarjetas */
+        gap: 20px; /* Espaciado vertical entre tarjetas */
+    }
+
+    .reward-cards .card {
+        width: 100%; /* Las tarjetas ocupan el ancho completo en pantallas pequeñas */
+        max-width: none; /* Sin límite de ancho en pantallas móviles */
+        margin-bottom: 20px; /* Espacio adicional entre las tarjetas */
+    }
+
+    .progress {
+        width: 80%; /* Ajuste de ancho de la barra de progreso en pantallas pequeñas */
+        margin: auto; /* Centra la barra de progreso */
+    }
+}
+
+
 /* Imágenes en tarjetas */
 .card img {
     display: block;
@@ -215,65 +257,65 @@ p {
     background-color: var(--secondary-color); /* Fondo naranja */
     color: var(--text-color);
     position: relative;
-    padding-bottom: 0;
-    margin-bottom: 0;
+    padding: 3rem 0;
 }
 
 .obtener-puntos-contenedor {
-    height: 520px;
-    width: 1300px;
-    max-width: 1300px;
-    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 2rem;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Sombra para resaltar el contenedor */
 }
 
-/* Título y subtítulos */
-.obtener-puntos-section h2 {
-    font-size: 2.5rem; /* Aumenta el tamaño del título */
+.titulo-seccion {
+    font-size: 2rem; /* Tamaño del título */
     font-weight: bold;
-    color: #000000;
+    color: #003eb1; /* Azul para el título */
     margin-bottom: 1rem;
+    text-align: center;
 }
 
-.obtener-puntos-section p {
-    font-size: 1.25rem; /* Tamaño del texto principal */
-    color: #003eb1;
-    margin-bottom: 1.5rem;
+.descripcion-seccion {
+    font-size: 1.1rem; /* Tamaño del texto principal */
+    color: #666666; /* Color gris para el texto */
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
-.title-black {
-    color: #000000;
+.image-container {
+    background-color: #FFFFFF; /* Fondo blanco para la imagen */
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
 }
 
-/* Texto en secciones */
+.image-container img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.texto-seccion {
+    color: #333333;
+    line-height: 1.6;
+}
+
 .texto-seccion h5 {
-    font-size: 1.5rem; /* Tamaño de subtítulos de las secciones */
-    color: #333; /* Color de los títulos */
-    margin-top: 1rem;
+    font-size: 1.5rem; /* Tamaño de subtítulos */
+    font-weight: bold;
+    color: #003eb1; /* Azul para subtítulos */
+    margin-top: 1.5rem;
 }
 
 .texto-seccion p {
-    font-size: 1.2rem; /* Tamaño de texto en las secciones */
-    color: #000; /* Color del texto */
-    line-height: 1.6;
-    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
 }
 
-/* Fondo e imagen */
-.bg-light {
-    padding: 2rem; /* Incrementa el padding para agrandar la caja */
-    margin: 1rem auto; /* Centra la imagen */
-    background-color: #3a1717d7; 
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.bg-light img {
-    max-width: 100%; /* Asegura que la imagen ocupe todo el ancho de la caja */
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar la imagen */
-}
-
-/* Guarda en la parte superior de la sección */
+/* Guarda */
 .guarda {
     background-image: url('guarda_desktop.svg'); /* Ruta del SVG de la guarda */
     height: 40px;
@@ -288,7 +330,6 @@ p {
     left: 0;
 }
 
-/* Guarda en la parte inferior de la sección */
 .guarda-bottom {
     position: absolute;
     bottom: 0;

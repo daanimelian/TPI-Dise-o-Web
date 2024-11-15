@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hamburguesería</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+    
     <!-- bxSlider CSS -->
     <link href="../home/vendors/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -13,90 +18,101 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="bg-light text-white p-3">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
-                <a class="navbar-brand" href="#">
-                    <img src="../home/img/1.png" alt="Logo" style="width: 80px;"> <!-- Ajusta el tamaño del logo -->
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link text-primary" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-primary" href="#">Menu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-primary" href="#">Promociones</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-primary" href="#">Pedidos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-primary" href="#">Mi perfil</a>
-                        </li>
-                    </ul>
-    
-                    <!-- User Controls: Dropdown for Login -->
-                    <div class="navbar-nav">
-                        <div class="nav-item dropdown">
-                            <a class="btn btn-outline-primary dropdown-toggle mr-2" href="#" id="loginDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Login
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="loginDropdown">
-                                <a class="dropdown-item" href="#">Iniciar Sesión</a>
-                                <a class="dropdown-item" href="#">Registrarse</a>
-                            </div>
-                        </div>
-                        <a class="btn btn-outline-primary mr-2" href="#">Carrito</a>
-                    </div>
-                </div>
-            </nav>
-    
-            <!-- jQuery and Bootstrap JS -->
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-        </div>
-    </header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+          <a class="navbar-brand" href="#">
+            <img src="../header/logo.png" alt="Logo" style="width: 80px" />
+            <!-- Ajusta el tamaño del logo -->
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="#">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="#">Promociones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="#">Pedidos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="#">Mi perfil</a>
+              </li>
+            </ul>
+            <!-- User Controls: Dropdown for Login -->
+            <div class="navbar-nav">
+              <div class="nav-item dropdown">
+                  <a class="btn btn-outline-primary dropdown-toggle mr-2" href="#" id="loginDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Login
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="loginDropdown">
+                      <a class="dropdown-item" href="#">Iniciar Sesión</a>
+                      <a class="dropdown-item" href="#">Registrarse</a>
+                  </div>
+              </div>
+              <a class="btn btn-outline-primary mr-2" href="#">Carrito</a>
+          </div>
+          </div>
+        </nav>
+      </header>
+      
     
     <!-- Main Content -->
-    <main class="container my-5">
+    <main>
         <!-- Intro Section -->
-        <section class="intro text-center mb-5">
-            <h2>Somos la mejor hamburguesería</h2>
-            <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad potent delectus delicata usu.</p>
-            <div class="image-placeholder bg-light my-3 p-5">
+         <div >
+        <section class="our-burgers">
+            <div class="intro burger-section">
+              <div class="burger-text">
+                <h2>Nuestras Hamburguesas</h2>
+                <p> La hamburguesería favorita de los amantes de la tecnología. Carne Angus de primera, cortada a diario y cocinada a la parrilla, con todos los ingredientes que amas.</p> 
+                  <p>¡Descubre nuestras hamburguesas únicas como la x8086 y la Búsqueda Binaria!</p>
+              </div>
+              <div class="burger-image">
+                <img src="../home/img/burger_1.jpeg" alt="Hamburguesa Clásica">
+              </div>
             </div>
-        </section>
+            <div class="nudo burger-section">
+              <div class="burger-text">
+                <h2>Nuestra Historia</h2>
+                <p>Kernel Burguer nació como un lugar secreto en 2023, inspirado en la fusión entre tecnología y buen sabor. Oculta tras un letrero de neón con un ícono de computadora, la hamburguesería rápidamente se convirtió en un fenómeno local.
 
-        <!-- Gallery Section -->
-        <section class="gallery mb-5">
-            <h3 class="text-center">Imágenes hamburguesas</h3>
-            <ul class="bxslider">
-                <li><img src="../home/img/img_01.jpg" alt="Imagen 1" /></li>
-                <li><img src="../home/img/img_02.jpg" alt="Imagen 2" /></li>
-                <li><img src="../home/img/img_03.jpg" alt="Imagen 3" /></li>
-            </ul>
-        </section>
-
-        <!-- Google Maps Section -->
+                    Kernel Burguer fue la primera en iniciar la fiebre de hamburguesas geek.</p>
+              </div>
+              <div class="burger-image">
+                <img src="../home/img/1.png" alt="logo">
+              </div>
+            </div>
+          </section>
+           <!-- Google Maps Section -->
         <section class="map-section mb-5">
-            <h4 class="text-center">Nuestra Ubicación</h4>
-            <div id="map" class="bg-light" style="height: 300px;"></div>
-        </section>
-    </main>
+          <h3 class="text-center">Nuestra Ubicación</h4>
+          <div id="map" class="bg-light" style="height: 300px;"></div>
+      </section>
+        </main>      
+
 
     <!-- Footer -->
     <footer class="footer-section">
-        <div class="container">
+        <div>
             <div class="row align-items-center justify-content-center text-center">
                 <!-- Logo de la marca -->
                 <div class="col-md-4 mb-3">
-                    <img src="../home/img/1.png" alt="Logo" class="footer-logo">
+                    <img src="../home/img/1.png" alt="Logo" class="footer-logo" style="width: 50%;">
                 </div>
     
                 <!-- Información de contacto -->
@@ -122,6 +138,7 @@
         </div>
     </footer>
 
+
     <!-- jQuery (solo una vez) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     
@@ -133,20 +150,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!-- Google Maps Script -->
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhMkTfU-i3F6l9H1TdLQjT-6DKibnmKas&callback=initMap"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhMkTfU-i3F6l9H1TdLQjT-6DKibnmKa&callback=initMap"></script>
     <script src="scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Inicialización del carrusel -->
-    <script>
-        $(document).ready(function () {
-            $(".bxslider").bxSlider({
-                mode: "vertical",
-                randomStart: true,
-                keyboardEnabled: true,
-            });
-        });
-    </script>
 </body>
 </html>
 

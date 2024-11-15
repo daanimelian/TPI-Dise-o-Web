@@ -35,3 +35,23 @@ function initMap() {
     });
 }
 
+// Selecciona todas las secciones de hamburguesas
+const burgerSections = document.querySelectorAll('.burger-section');
+
+window.addEventListener('scroll', () => {
+  // Detecta el scroll y ajusta la visibilidad de cada sección
+  burgerSections.forEach(section => {
+    const sectionTop = section.getBoundingClientRect().top;
+    const sectionHeight = section.clientHeight;
+
+    // Agrega la clase 'active' si la sección está en el viewport
+    if (sectionTop < window.innerHeight && sectionTop + sectionHeight > 0) {
+      section.classList.add('active');
+    } else {
+      section.classList.remove('active');
+    }
+  });
+});
+
+
+

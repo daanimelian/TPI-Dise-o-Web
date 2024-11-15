@@ -11,7 +11,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
   <a class="navbar-brand" href="#">
-    <img src="1.png" alt="Logo" style="width: 100px;"> <!-- Ajusta el tamaño del logo -->
+    <img src="1.png" alt="Logo" class="img-fluid" style="max-width: 100px;"> <!-- Ajusta el tamaño del logo -->
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -41,83 +41,77 @@
   </div>
 </nav>
 
-    <!-- Sección principal -->
-    <section class="container my-5 points-section">
-        <div class="row d-flex justify-content-between align-items-start">
-            <!-- Columna izquierda: Puntos acumulados -->
-            <div class="col-lg-6 col-md-12 text-center background-light mb-4 fixed-size-container">
-                <h2 class="text-center text-dark">Tus puntos acumulados:</h2>
-                <p id="total-puntos" class="text-center fs-3 text-dark">5000/10000</p>
-                <div class="progress mb-4 mx-auto" style="width: 50%;">
-                    <div id="progress-bar" class="progress-bar bg-dark" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+<section class="container my-5 points-section">
+    <div class="row d-flex justify-content-between align-items-start">
+        <div class="col-lg-6 col-md-12 text-center background-light mb-4 fixed-size-container">
+            <h2 class="text-center text-dark">Tus puntos acumulados:</h2>
+            <p id="total-puntos" class="text-center fs-3 text-dark">5000/10000</p>
+            <div class="progress mb-4 mx-auto" style="width: 50%;">
+                <div id="progress-bar" class="progress-bar bg-dark" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center gap-3 reward-cards">
+                <div class="card p-3 text-center" style="width: 180px;">
+                    <h6 class="text-dark">Canjear en envío rápido gratis</h6>
+                    <img src="delivery-bike.png" alt="Envío Gratis" width="50" class="my-2">
+                    <p class="text-dark">800 pts</p>
+                    <button class="btn btn-secondary" onclick="canjearPuntos(800)">¡Canjeá!</button>
                 </div>
-                <div class="d-flex flex-wrap justify-content-center gap-3 reward-cards">
-                    <div class="card p-3 text-center" style="width: 180px;">
-                        <h6 class="text-dark">Canjear en envío rápido gratis</h6>
-                        <img src="delivery-bike.png" alt="Envío Gratis" width="50" class="my-2">
-                        <p class="text-dark">800 pts</p>
-                        <button class="btn btn-secondary" onclick="canjearPuntos(800)">¡Canjeá!</button>
-                    </div>
-                    <div class="card p-3 text-center" style="width: 180px;">
-                        <h6 class="text-dark">Canjear descuento en compra</h6>
-                        <img src="tag.png" alt="Descuento" width="50" class="my-2">
-                        <p class="text-dark">1000 pts</p>
-                        <button class="btn btn-secondary" onclick="canjearPuntos(1000)">¡Canjeá!</button>
-                    </div>
-                    <div class="card p-3 text-center" style="width: 180px;">
-                        <h6 class="text-dark">Canjear en bebida gratis</h6>
-                        <img src="soda.png" alt="Bebida Gratis" width="50" class="my-2">
-                        <p class="text-dark">1200 pts</p>
-                        <button class="btn btn-secondary" onclick="canjearPuntos(1200)">¡Canjeá!</button>
-                    </div>
+                <div class="card p-3 text-center" style="width: 180px;">
+                    <h6 class="text-dark">Canjear descuento en compra</h6>
+                    <img src="tag.png" alt="Descuento" width="50" class="my-2">
+                    <p class="text-dark">1000 pts</p>
+                    <button class="btn btn-secondary" onclick="canjearPuntos(1000)">¡Canjeá!</button>
+                </div>
+                <div class="card p-3 text-center" style="width: 180px;">
+                    <h6 class="text-dark">Canjear en bebida gratis</h6>
+                    <img src="soda.png" alt="Bebida Gratis" width="50" class="my-2">
+                    <p class="text-dark">1200 pts</p>
+                    <button class="btn btn-secondary" onclick="canjearPuntos(1200)">¡Canjeá!</button>
                 </div>
             </div>
+        </div>
 
-            <!-- Columna derecha: Perfil del usuario -->
-            <div class="col-lg-5 col-md-12 text-center user-info background-light p-4 fixed-size-container">
-                <div class="row align-items-center">
-                    <div class="col-12 text-center mb-3">
-                        <img src="pexels-artempodrez-4728849.jpg" alt="Imagen de Perfil" class="img-fluid rounded-circle profile-img" style="width: 100px; height: 100px;">
-                    </div>
-                    <div class="col-12 text-center">
-                        <h4 class="text-dark">Luciano Perrella</h4>
-                        <p class="text-dark"><strong>Puntos Disponibles:</strong> <span id="puntos-disponibles">5000</span></p>
-                        <p class="text-dark"><strong>Dirección:</strong> Avenida balbastro 653</p>
-                        <p class="text-dark"><strong>Email:</strong> lucianoperrella@gmail.com</p>
-                        <p class="text-dark"><strong>Celular:</strong> 1231234</p>
-                        <div class="profile-buttons d-flex justify-content-center gap-3 mt-3">
-                            <!-- Botón Cambiar foto de perfil -->
-                            <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#cambiarFotoModal">Cambiar foto de perfil</button>
-                            <!-- Botón Asociar medios de pago -->
-                            <button id="botonMedioPago" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#asociarMediosModal">Asociar medios de pago</button>
-                        </div>
+        <div class="col-lg-5 col-md-12 text-center user-info background-light p-4 fixed-size-container">
+            <div class="row align-items-center">
+                <div class="col-12 text-center mb-3">
+                    <img src="pexels-artempodrez-4728849.jpg" alt="Imagen de Perfil" class="img-fluid rounded-circle profile-img" style="width: 100px; height: 100px;">
+                </div>
+                <div class="col-12 text-center">
+                    <h4 class="text-dark">Luciano Perrella</h4>
+                    <p class="text-dark"><strong>Puntos Disponibles:</strong> <span id="puntos-disponibles">5000</span></p>
+                    <p class="text-dark"><strong>Dirección:</strong> Avenida Balbastro 653</p>
+                    <p class="text-dark"><strong>Email:</strong> lucianoperrella@gmail.com</p>
+                    <p class="text-dark"><strong>Celular:</strong> 11 3062-1777</p>
+                    <div class="profile-buttons d-flex justify-content-center gap-3 mt-3">
+                        <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#cambiarFotoModal">Cambiar foto de perfil</button>
+                        <button id="botonMedioPago" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#asociarMediosModal">Asociar medios de pago</button>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-        <!-- Modal Cambiar Foto de Perfil -->
-        <div class="modal fade" id="cambiarFotoModal" tabindex="-1" aria-labelledby="cambiarFotoLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="cambiarFotoLabel">Cambiar Foto de Perfil</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+    </div>
+</section>
+
+<div class="modal fade" id="cambiarFotoModal" tabindex="-1" aria-labelledby="cambiarFotoLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cambiarFotoLabel">Cambiar Foto de Perfil</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="formFile" class="form-label">Sube una nueva foto de perfil:</label>
+                        <input class="form-control" type="file" id="formFile">
                     </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="mb-3">
-                                <label for="formFile" class="form-label">Sube una nueva foto de perfil:</label>
-                                <input class="form-control" type="file" id="formFile">
-                            </div>
-                            <button type="submit" class="btn btn-primary">Guardar</button>
-                        </form>
-                    </div>
-                </div>
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                </form>
             </div>
         </div>
-    
-<!-- Modal de Bootstrap -->
+    </div>
+</div>
+
 <div class="modal fade" id="asociarMediosModal" tabindex="-1" aria-labelledby="asociarMediosModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -148,189 +142,74 @@
     </div>
 </div>
 
-<script>
-    let datosMedioPago = {};
-
-    // Función para asociar la tarjeta y cerrar el modal
-    function asociarTarjeta() {
-        const numeroTarjeta = document.getElementById("numeroTarjeta").value.trim();
-        const fechaExpiracion = document.getElementById("fechaExpiracion").value.trim();
-        const cvv = document.getElementById("cvv").value.trim();
-
-        // Validaciones
-        const validaciones = {
-            tarjeta: numeroTarjeta.length === 16 && /^\d+$/.test(numeroTarjeta),
-            fecha: /^\d{2}\/\d{2}$/.test(fechaExpiracion),
-            cvv: /^\d{3}$/.test(cvv)
-        };
-
-        if (validaciones.tarjeta && validaciones.fecha && validaciones.cvv) {
-            // Guarda los datos ingresados
-            datosMedioPago = {
-                numeroTarjeta,
-                fechaExpiracion,
-                cvv
-            };
-
-            // Cambia el texto del botón a "Cambiar medios de pago asociados"
-            document.getElementById("botonMedioPago").textContent = "Cambiar medios de pago asociados";
-
-            // Cierra el modal
-            const modal = bootstrap.Modal.getInstance(document.getElementById("asociarMediosModal"));
-            modal.hide();
-
-            // Limpia el formulario
-            document.getElementById("medioPagoForm").reset();
-        } else {
-            let errores = [];
-            if (!validaciones.tarjeta) errores.push("El número de tarjeta debe tener 16 dígitos.");
-            if (!validaciones.fecha) errores.push("La fecha debe estar en formato MM/AA.");
-            if (!validaciones.cvv) errores.push("El CVV debe tener 3 dígitos.");
-            
-            alert("Por favor, corrige los siguientes errores:\n" + errores.join("\n"));
-        }
-    }
-
-    // Al abrir el modal, precarga los datos si ya existen
-    document.getElementById("botonMedioPago").addEventListener("click", () => {
-        if (Object.keys(datosMedioPago).length !== 0) {
-            document.getElementById("numeroTarjeta").value = datosMedioPago.numeroTarjeta;
-            document.getElementById("fechaExpiracion").value = datosMedioPago.fechaExpiracion;
-            document.getElementById("cvv").value = datosMedioPago.cvv;
-        }
-    });
-
-    // Formato automático para la fecha de expiración
-    document.getElementById("fechaExpiracion").addEventListener("input", function(e) {
-        let value = e.target.value.replace(/\D/g, "");
-        if (value.length >= 2) {
-            value = value.slice(0, 2) + "/" + value.slice(2, 4);
-        }
-        e.target.value = value;
-    });
-
-    // Solo permitir números en el campo de tarjeta
-    document.getElementById("numeroTarjeta").addEventListener("input", function(e) {
-        e.target.value = e.target.value.replace(/\D/g, "");
-    });
-
-    // Solo permitir números en el campo CVV
-    document.getElementById("cvv").addEventListener("input", function(e) {
-        e.target.value = e.target.value.replace(/\D/g, "");
-    });
-</script>
-
-
-
-
-    <!-- Modal de Bootstrap -->
-    <div class="modal fade" id="canjeModal" tabindex="-1" aria-labelledby="canjeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="canjeModalLabel">Kernel Burger te informa:</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                </div>
-                <div class="modal-body" id="canjeMensaje">
-                    <!-- Mensaje de canje se actualizará dinámicamente -->
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
-                </div>
+<div class="modal fade" id="canjeModal" tabindex="-1" aria-labelledby="canjeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="canjeModalLabel">Kernel Burger te informa:</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body" id="canjeMensaje">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- JavaScript para el sistema de puntos -->
-    <script>
-        let puntosDisponibles = 5000;
-        const maxPuntos = 10000;
-
-        function actualizarPuntos() {
-            document.getElementById("total-puntos").innerText = `${puntosDisponibles}/${maxPuntos}`;
-            document.getElementById("puntos-disponibles").innerText = puntosDisponibles;
-            const porcentaje = (puntosDisponibles / maxPuntos) * 100;
-            const progressBar = document.getElementById("progress-bar");
-            progressBar.style.width = `${porcentaje}%`;
-            progressBar.setAttribute("aria-valuenow", porcentaje);
-        }
-
-        function canjearPuntos(costo) {
-            if (puntosDisponibles >= costo) {
-                puntosDisponibles -= costo;
-                actualizarPuntos();
-                document.getElementById("canjeMensaje").innerText = `¡Canje realizado! Has gastado ${costo} puntos.`;
-                new bootstrap.Modal(document.getElementById("canjeModal")).show();
-            } else {
-                document.getElementById("canjeMensaje").innerText = "No tienes suficientes puntos para este canje.";
-                new bootstrap.Modal(document.getElementById("canjeModal")).show();
-            }
-        }
-
-        actualizarPuntos();
-    </script>
-
-
-    <!-- ¿Cómo obtener puntos? -->
-    <section class="obtener-puntos-section text-light py-5">
-        <div class="guarda guarda-top"></div>
-        <div class="container obtener-puntos-contenedor">
-            <h2 class="titulo-seccion">¿Cómo obtener puntos?</h2>
-            <p class="descripcion-seccion">Acumular puntos es fácil y te permite acceder a recompensas exclusivas. Aquí te mostramos algunas maneras de ganar puntos en nuestra plataforma:</p>
-            
-            <div class="row align-items-center">
-                <div class="col-md-4 text-center">
-                    <div class="bg-light p-4 rounded shadow-lg">
-                        <img src="pexels-zurielescobedo-10771116.jpg" alt="Imagen ilustrativa de puntos" class="img-fluid rounded">
-                    </div>
-                </div>
-                <div class="col-md-8 texto-seccion">
-                    <h5>Hacer un Pedido:</h5>
-                    <p>Cada vez que realices un pedido en nuestra tienda, acumularás puntos que se sumarán automáticamente a tu cuenta.</p>
-                    
-                    <h5>Invitar a un Amigo:</h5>
-                    <p>Por cada amigo que invites y realice su primer pedido, recibirás puntos adicionales. ¡No hay límite en las invitaciones!</p>
-                    
-                    <h5>Días Especiales:</h5>
-                    <p>En tu cumpleaños o durante eventos especiales, obtén puntos extra como un regalo de nuestra parte.</p>
+<section class="obtener-puntos-section py-5">
+    <div class="guarda guarda-top"></div>
+    <div class="container obtener-puntos-contenedor text-center">
+        <h2 class="titulo-seccion">¿Cómo obtener puntos?</h2>
+        <p class="descripcion-seccion">Acumular puntos es fácil y te permite acceder a recompensas exclusivas. Aquí te mostramos algunas maneras de ganar puntos en nuestra plataforma:</p>
+        
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-4 text-center">
+                <div class="image-container shadow-sm rounded bg-white">
+                    <img src="pexels-zurielescobedo-10771116.jpg" alt="Imagen ilustrativa de puntos" class="img-fluid rounded">
                 </div>
             </div>
+            <div class="col-md-7 texto-seccion text-start mt-4 mt-md-0">
+                <h5>Hacer un Pedido:</h5>
+                <p>Cada vez que realices un pedido en nuestra tienda, acumularás puntos que se sumarán automáticamente a tu cuenta.</p>
+                
+                <h5>Invitar a un Amigo:</h5>
+                <p>Por cada amigo que invites y realice su primer pedido, recibirás puntos adicionales. ¡No hay límite en las invitaciones!</p>
+                
+                <h5>Días Especiales:</h5>
+                <p>En tu cumpleaños o durante eventos especiales, obtén puntos extra como un regalo de nuestra parte.</p>
+            </div>
         </div>
-        <div class="guarda guarda-bottom"></div>
-    </section>
+    </div>
+    <div class="guarda guarda-bottom"></div>
+</section>
 
-<!-- Footer -->
 <footer class="footer-section">
     <div class="container">
         <div class="row align-items-center justify-content-center text-center">
-            <!-- Logo de la marca -->
             <div class="col-md-4 mb-3">
                 <img src="2.png" alt="Logo" class="footer-logo">
             </div>
-
-            <!-- Información de contacto -->
             <div class="col-md-4 mb-3">
                 <p><strong>Dirección:</strong><br>Av. Alvarez Jonte 1500,<br>Paternal City<br>Capital Federal, Argentina</p>
                 <div class="d-flex justify-content-center gap-3">
-                    <a href="#"><i class="bi bi-instagram"></i></a>
                     <a href="#"><i class="bi bi-facebook"></i></a>
                     <a href="#"><i class="bi bi-twitter"></i></a>
                 </div>
             </div>
-
-            <!-- Redes sociales -->
             <div class="col-md-4 mb-3">
                 <p><i class="bi bi-instagram"></i> @KernelBurger</p>
             </div>
         </div>
 
-        <!-- Texto inferior adicional -->
         <div class="text-center mt-3">
             <p>Dirección General de Defensa y Protección al Consumidor. Para consultas y/o denuncias, <a href="https://buenosaires.gob.ar/defensaconsumidor/direccion-general" target="_blank">ingrese aquí</a></p>
         </div>
     </div>
 </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="scripts.js"></script>
 </body>
 </html>
