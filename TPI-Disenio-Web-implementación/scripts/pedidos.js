@@ -1,17 +1,19 @@
-const orders = [
+let orders = [
   {
     status: "ENTREGADO",
     date: "01 de nov",
     items: 5,
     price: "19,555",
-    paymentMethod: "Efectivo"
+    paymentMethod: "Efectivo",
+    opinionSent: false
   },
   {
     status: "ENTREGADO",
     date: "22 de sep",
     items: 2,
     price: "2,570",
-    paymentMethod: "Mercado Pago"
+    paymentMethod: "Mercado Pago",
+    opinionSent: false
   }
 ];
 
@@ -21,7 +23,6 @@ let currentOrder = {
   estimatedTime: calculateEstimatedTime(30)
 };
 
-// Función para calcular la fecha y hora estimada
 function calculateEstimatedTime(minutesToAdd) {
   const now = new Date();
   const estimatedTime = new Date(now.getTime() + minutesToAdd * 60000);
@@ -34,7 +35,6 @@ function calculateEstimatedTime(minutesToAdd) {
   return `${startTime} - ${endTime}`;
 }
 
-// Función para mostrar el estado del pedido actual
 function displayCurrentOrder() {
   const orderStatusContainer = document.querySelector(".order-status");
   orderStatusContainer.innerHTML = `
@@ -47,7 +47,6 @@ function displayCurrentOrder() {
   `;
 }
 
-// Función para obtener el mensaje según el estado del pedido
 function getOrderStatusMessage(status) {
   switch (status) {
     case "pedido confirmado":
@@ -63,7 +62,6 @@ function getOrderStatusMessage(status) {
   }
 }
 
-// Función para actualizar el estado del pedido
 function updateOrderStatus() {
   if (currentOrder.status === "pedido confirmado") {
     currentOrder.status = "estamos preparando el pedido";
@@ -76,19 +74,19 @@ function updateOrderStatus() {
   displayCurrentOrder();
 }
 
-// Función para mover el pedido al historial una vez entregado
 function moveOrderToHistory() {
   orders.push({
     status: currentOrder.status,
     date: new Date().toLocaleDateString('es-ES', { day: '2-digit', month: 'short' }),
     items: 3,
     price: "20,000",
-    paymentMethod: "Tarjeta"
+    paymentMethod: "Tarjeta",
+    opinionSent: false
   });
   displayOrderHistory();
+  checkNoPendingOrders();
 }
 
-// Función para mostrar el historial de pedidos
 function displayOrderHistory() {
   const orderHistoryContainer = document.getElementById("orderHistoryContainer");
   const noOrdersMessage = document.getElementById("noOrdersMessage");
@@ -98,7 +96,7 @@ function displayOrderHistory() {
   } else {
     noOrdersMessage.style.display = "none";
     orderHistoryContainer.innerHTML = "";
-    orders.forEach((order) => {
+    orders.forEach((order, index) => {
       const orderCard = document.createElement("div");
       orderCard.className = "order-card";
       orderCard.innerHTML = `
@@ -106,9 +104,13 @@ function displayOrderHistory() {
         <p>${order.date} • ${order.items} productos</p>
         <p>- $${order.price} - ${order.paymentMethod}</p>
         <div class="actions">
-          <a href="#" class="action-link">Opinar</a>
+          ${
+            order.opinionSent
+              ? '<span class="opinion-sent">Opinión enviada</span>'
+              : `<a href="#" class="action-link" onclick="enableOpinionInput(${index}, event)">Opinar</a>`
+          }
           <span>|</span>
-          <a href="#" class="action-link">Repetir</a>
+          <a href="#" class="action-link reorder">Repetir</a>
         </div>
       `;
       orderHistoryContainer.appendChild(orderCard);
@@ -116,15 +118,69 @@ function displayOrderHistory() {
   }
 }
 
+function checkNoPendingOrders() {
+  if (orders.filter(order => order.status !== "ENTREGADO").length === 0) {
+    const orderStatusContainer = document.querySelector(".order-status");
+    orderStatusContainer.innerHTML = "<p>No hay pedidos en curso.</p>";
+  }
+}
+
+function startOrderProcessing() {
+  const processingInterval = setInterval(() => {
+    if (currentOrder.status !== "ENTREGADO") {
+      updateOrderStatus();
+    } else {
+      clearInterval(processingInterval);
+    }
+  }, 5000);
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   displayOrderHistory();
   displayCurrentOrder();
+  startOrderProcessing();
 });
 
+function enableOpinionInput(index, event) {
+  event.preventDefault();
 
-setInterval(updateOrderStatus, 6000);
+  const order = orders[index];
+  if (order.opinionSent) return;
 
-// Activar y desactivar el menú en dispositivos móviles
-document.querySelector(".navbar-toggler").addEventListener("click", () => {
-  document.querySelector(".navbar-menu").classList.toggle("active");
-});
+  const opinionBox = document.createElement("div");
+  opinionBox.className = "opinion-box";
+  opinionBox.innerHTML = `
+    <textarea id="opinionInput" placeholder="Escribe tu opinión..." rows="4" cols="50"></textarea>
+    <button class="submit-opinion" onclick="submitOpinion(${index})">Enviar Opinión</button>
+  `;
+
+  const actionsContainer = event.target.closest(".actions");
+  actionsContainer.appendChild(opinionBox);
+
+  event.target.style.pointerEvents = "none";
+  event.target.style.color = "#aaa";
+}
+
+function submitOpinion(index) {
+  const opinionInput = document.getElementById("opinionInput");
+  const order = orders[index];
+
+  if (opinionInput.value.trim() === "") {
+    alert("Por favor, escribe una opinión.");
+    return;
+  }
+
+  order.opinionSent = true;
+
+  alert("Gracias por tu opinión!");
+
+  const opinionLink = document.querySelector(`.order-card:nth-child(${index + 1}) .action-link`);
+  opinionLink.innerHTML = "Opinión enviada";
+  opinionLink.style.pointerEvents = "none";
+  opinionLink.style.color = "#aaa";
+
+  const opinionBox = document.querySelector(".opinion-box");
+  opinionBox.remove();
+
+  displayOrderHistory();
+}
