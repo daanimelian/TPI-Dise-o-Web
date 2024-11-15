@@ -3,6 +3,10 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
 }
 
 header {
@@ -43,7 +47,7 @@ main {
 }
 
 .intro {
-    margin-bottom: 40px;
+    margin-bottom: 5px;
 }
 
 .image-placeholder {
@@ -123,4 +127,75 @@ main {
     background-color: #FF7A0D;
     color: #fff;
   }
+  .our-burgers {
+    width: 100%;
+    overflow: hidden;
+  }
   
+  /* Contenedor de cada sección de hamburguesas */
+  .burger-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ocupa la altura completa de la ventana */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Estilo del texto */
+  .burger-text {
+    position: absolute;
+    left: 50%;
+    right: 10%;
+    transform: translateX(-50%);
+    opacity: 2;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Estilo de la imagen */
+  .burger-image {
+    position: absolute;
+    width: 60%;
+    height: 80%;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+      }
+  
+  /* Estilo para la imagen específica */
+  .burger-image img {
+    width: 60%;
+    height: 80%;
+    object-fit: cover;
+    transition: transform 0.8s ease-out;
+    border: 5px;
+    border-color: white;
+    border-style: solid;
+  }
+  
+  /* Clase activa cuando el texto debe mostrarse */
+  .burger-section.active .burger-text {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .burger-section.active .burger-image img {
+    transform: scale(1.05); /* Zoom suave en la imagen al hacer scroll */
+    opacity: 1;
+  }
+
+.intro {
+    background: url(../home/img/restaurant_2.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+.nudo {
+    background: url(../home/img/restaurant.jpg) no-repeat fixed;
+    background-size: cover;
+}
