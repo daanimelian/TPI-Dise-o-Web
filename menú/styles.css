@@ -1,34 +1,41 @@
 #filtro-busqueda {
   margin: 13px;
 }
+
+.hidden {
+  display: none;
+}
+
 .owl-prev,
 .owl-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  /* Aumentar tamaño del texto de la flecha */
   color: #333;
   background-color: rgba(255, 255, 255, 0.7);
-  padding: 15px; /* Aumentar padding para agrandar el botón */
+  padding: 15px;
   border-radius: 100%;
   cursor: pointer;
 }
+
 .owl-prev {
-  left: -40px; /* Ajusta según el espacio que necesites */
+  left: -40px;
 }
+
 .owl-next {
-  right: -40px; /* Ajusta según el espacio que necesites */
+  right: -40px;
 }
+
 #separador-hamburguesas {
-  background-color: #f5762c;
+  background-color: #6b8bc8;
   height: 50px;
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-
   margin-bottom: 10px;
   padding: 0;
 }
+
 #hamburguesas-carrusel {
   margin: 20px;
   justify-content: center;
@@ -39,36 +46,33 @@
   justify-content: center;
   align-items: center;
 }
+
 #hamburguesas-carrusel img {
   max-width: 550px;
   justify-content: center;
   align-items: center;
 }
 
-.boton-agregar {
+.boton-agregar,
+.boton-ver-mas {
   margin-bottom: 10px;
 }
-#hamburguesas h2 {
-  color: #6b8bc8;
+
+.boton-ver-mas {
+  margin-left: 3px;
+  margin-top: 15px;
+}
+
+#hamburguesas h2,
+#veggie h2,
+#bebidas h2 {
+  color: white;
   font-weight: bold;
 }
 
-#veggie h2 {
-  color: #6b8bc8;
-  font-weight: bold;
-}
-
-#veggie {
-  margin-top: 60px;
-}
-
+#veggie,
 #bebidas {
   margin-top: 60px;
-}
-
-#bebidas h2 {
-  color: #6b8bc8;
-  font-weight: bold;
 }
 
 .card {
@@ -77,40 +81,72 @@
   margin-top: 0;
 }
 
-.boton-ver-mas {
-  margin-bottom: 10px;
-  margin-left: 3px;
-  margin-top: 15px;
-}
-
 header {
   position: sticky;
   top: 0;
   z-index: 1000 !important;
 }
 
-.extra-card {
-  border: 1px solid #ddd; /* Opcional: borde para darle un efecto de tarjeta */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-  transition: transform 0.2s; /* Animación de hover */
+.extra-card .remove-from-cart {
+  font-size: 0.8rem;
+  padding: 2px 6px;
+  line-height: 1;
 }
+
+/* Estilos para los botones de cantidad (- y +) */
+.d-flex.align-items-center.mb-2 {
+  justify-content: center;
+  gap: 5px;
+}
+
+/* Botones agregar y eliminar en la fila de botones */
+.d-flex.justify-content-center {
+  margin-top: 8px;
+}
+
+/* Estilo para todos los botones */
+.btn {
+  font-size: 0.9rem;
+}
+
+/* Estilos específicos para los botones de agregar y eliminar */
+.add-to-cart,
+.remove-from-cart {
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  width: auto;
+  margin-left: 10px;
+}
+
+.extra-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin-bottom: 50px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .card-column {
-  min-width: 200px; /* Ancho mínimo para evitar que se achiquen mucho */
+  min-width: 200px;
   max-width: 500px;
 }
+
 .extra-card:hover {
-  transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+  transform: scale(1.05);
 }
 
 .extra-card img {
   padding-top: 5px;
-  min-width: 150px; /* Tamaño máximo de la imagen */
+  max-width: 100px;
   height: auto;
   margin-bottom: 10px;
 }
+
 .footer-section {
-  background-color: #ebebeb; /* Fondo claro */
-  color: #fff; /* Color de texto blanco */
+  background-color: #ebebeb;
+  color: #fff;
   padding: 20px 0;
 }
 
@@ -125,7 +161,7 @@ header {
 }
 
 .footer-section a {
-  color: #ff7a0d; /* Color dorado para enlaces */
+  color: #ff7a0d;
   text-decoration: none;
 }
 
@@ -133,17 +169,9 @@ header {
   text-decoration: underline;
 }
 
-.bi-instagram {
-  font-size: 1.5rem;
-  color: #ff7a0d; /* Color dorado */
-}
-
-.bi-facebook {
-  font-size: 1.5rem;
-  color: #ff7a0d; /* Color dorado */
-}
-
+.bi-instagram,
+.bi-facebook,
 .bi-twitter {
   font-size: 1.5rem;
-  color: #ff7a0d; /* Color dorado */
+  color: #ff7a0d;
 }
