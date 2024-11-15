@@ -6,9 +6,10 @@ $(document).ready(function () {
     autoplay: true,
     dots: true,
     navText: ["<", ">"],
+    mouseDrag: true,
 
     autoplayHoverPause: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 1500,
     responsive: {
       0: {
         items: 1,
@@ -24,6 +25,7 @@ $(document).ready(function () {
         items: 3,
         nav: true,
         loop: true,
+        mouseDrag: false,
       },
     },
   });
@@ -71,10 +73,10 @@ const cart = {
     const existingItem = this.items.find((i) => i.name === item.name);
     if (existingItem) {
       // Incrementa la cantidad si el producto ya existe
-      existingItem.quantity += item.quantity;
+      existingItem.quantity += 1;
     } else {
-      // Añade un nuevo producto al carrito
-      this.items.push(item);
+      // Añade un nuevo producto al carrito con cantidad inicial de 1
+      this.items.push({ ...item, quantity: 1 });
     }
     this.updateTotal();
   },
@@ -110,69 +112,35 @@ const cart = {
 
 // Función para inicializar la tarjeta de producto
 function initializeProductCard(card) {
-  const addToCartBtn = card.querySelector(".add-to-cart");
   const addOneBtn = card.querySelector(".add-one");
   const removeOneBtn = card.querySelector(".remove-one");
-  const removeFromCartBtn = card.querySelector(".remove-from-cart");
   const quantityDisplay = card.querySelector(".quantity");
 
   let quantity = 0;
+  const productName = addOneBtn.getAttribute("data-name");
+  const productPrice = parseFloat(addOneBtn.getAttribute("data-price"));
 
-  // Evento para añadir uno al contador
+  // Evento para añadir uno al contador y actualizar el carrito
   addOneBtn.addEventListener("click", () => {
     quantity++;
-    quantityDisplay.textContent = quantity; // Muestra solo el número
+    quantityDisplay.textContent = quantity;
 
-    // Muestra el botón de "Eliminar del carrito" si la cantidad es mayor que 0
-    if (quantity > 0) {
-      removeFromCartBtn.classList.remove("hidden");
-    }
+    // Añade el producto al carrito o incrementa la cantidad si ya está en el carrito
+    cart.addItem({
+      name: productName,
+      price: productPrice,
+    });
   });
 
-  // Evento para quitar uno al contador
+  // Evento para quitar uno al contador y actualizar el carrito
   removeOneBtn.addEventListener("click", () => {
     if (quantity > 0) {
       quantity--;
-      quantityDisplay.textContent = quantity; // Muestra solo el número
+      quantityDisplay.textContent = quantity;
+
+      // Decrementa la cantidad del producto en el carrito o lo elimina si llega a cero
+      cart.removeItem(productName);
     }
-
-    // Oculta el botón de "Eliminar del carrito" si la cantidad es 0
-    if (quantity === 0) {
-      removeFromCartBtn.classList.add("hidden");
-    }
-  });
-
-  // Evento para agregar el producto al carrito
-  addToCartBtn.addEventListener("click", () => {
-    const productName = addToCartBtn.getAttribute("data-name");
-    const productPrice = parseFloat(addToCartBtn.getAttribute("data-price"));
-
-    if (quantity > 0) {
-      // Añade el producto al carrito con su cantidad actual
-      cart.addItem({
-        name: productName,
-        price: productPrice,
-        quantity: quantity,
-      });
-
-      // Reiniciar el contador después de agregar al carrito
-      quantity = 0;
-      quantityDisplay.textContent = quantity; // Reinicia solo con el número
-
-      // Oculta el botón "Eliminar del carrito" después de agregar el producto
-      removeFromCartBtn.classList.add("hidden");
-    }
-  });
-
-  // Evento para eliminar un producto del carrito
-  removeFromCartBtn.addEventListener("click", () => {
-    const productName = removeFromCartBtn.getAttribute("data-name");
-    cart.removeItem(productName);
-
-    // Reiniciar la cantidad y ocultar el botón "Eliminar del carrito"
-    quantity = 0;
-    quantityDisplay.textContent = quantity;
-    removeFromCartBtn.classList.add("hidden");
   });
 }
 
