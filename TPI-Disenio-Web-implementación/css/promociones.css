@@ -20,7 +20,7 @@ h2, h3 {
 }
 
 .card-body {
-    background-color: #ff6900;
+    background-color: #003eb1;
     color: white;
     border-radius: 8px;
 }
@@ -31,7 +31,7 @@ h2, h3 {
 
 /* Sección de Descuentos */
 section {
-    background-color: #ff6900; /* Fondo naranja */
+    background-color: #003eb1; 
     color: white;
     padding: 2rem;
     border-radius: 8px;
@@ -66,7 +66,7 @@ section .d-flex p {
 }
 
 .button-container .btn {
-    background-color: #ff6900; /* Naranja */
+    background-color: #003eb1; /* Naranja */
     color: white;
     font-weight: bold;
     border: none;
@@ -77,12 +77,12 @@ section .d-flex p {
 }
 
 .button-container .btn:hover {
-    background-color: #e65a00;
+    background-color: #003eb1;
 }
 
 /* Sección "Cómo obtener puntos" */
 .points-section {
-    background-color: #ff6900; /* Naranja */
+    background-color: #003eb1; /* Naranja */
     color: white;
     padding: 2rem;
     margin-top: 2rem;
@@ -147,6 +147,6 @@ section .d-flex p {
   }
   
   .navbar .btn-outline-primary:hover {
-    background-color: #FF7A0D;
+    background-color: #0d8eff;
     color: #fff;
   }

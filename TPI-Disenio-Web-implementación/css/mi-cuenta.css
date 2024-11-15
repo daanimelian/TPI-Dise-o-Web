@@ -1,7 +1,7 @@
 /* Colores de la paleta */
 :root {
     --primary-color: #003eb1; /* Color azul del header */
-    --secondary-color: #FF7A0D; /* Naranja para fondo de la sección */
+    --secondary-color: #ffffff; /* Naranja para fondo de la sección */
     --background-color: #ebebeb; /* Color crema de fondo */
     --button-color: #1d54b9; /* Azul de los botones */
     --text-color: #000000; /* Color de texto negro */
@@ -42,7 +42,7 @@ body {
   }
   
   .navbar .btn-outline-primary:hover {
-    background-color: #FF7A0D;
+    background-color: #007bff;
     color: #fff;
   }
 
@@ -102,7 +102,7 @@ p {
 }
 
 .progress-bar {
-    background: linear-gradient(90deg, #ff7a0d, #f5a715); /* Gradiente de color para la barra */
+    background: linear-gradient(90deg, #003eb1, #15b9f5); /* Gradiente de color para la barra */
     height: 30px;
     transition: width 0.5s ease; /* Animación de la barra */
     border-radius: 15px 0 0 15px; /* Bordes redondeados solo en el lado izquierdo */
@@ -244,7 +244,7 @@ p {
 }
 
 .profile-buttons .btn:hover {
-    background-color: #FF7A0D; /* Efecto hover en naranja */
+    background-color: #3b73d7; /* Efecto hover en naranja */
 }
 
 /* Progreso */
@@ -285,6 +285,8 @@ p {
 }
 
 .image-container {
+    width: 260px;
+    height: 375px;
     background-color: #FFFFFF; /* Fondo blanco para la imagen */
     border-radius: 8px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Sombra ligera */
@@ -315,26 +317,9 @@ p {
     margin-bottom: 1rem;
 }
 
-/* Guarda */
-.guarda {
-    background-image: url('guarda_desktop.svg'); /* Ruta del SVG de la guarda */
-    height: 40px;
-    background-size: contain;
-    background-repeat: repeat-x;
-    width: 100%;
-}
 
-.guarda-top {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
 
-.guarda-bottom {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
+
 
 /* Ajustes para el footer */
 .footer-section {
@@ -353,7 +338,7 @@ p {
 }
 
 .footer-section a {
-    color: #FF7A0D; /* Color dorado para enlaces */
+    color: #003eb1; /* Color dorado para enlaces */
     text-decoration: none;
 }
 
@@ -363,15 +348,15 @@ p {
 
 .bi-instagram {
     font-size: 1.5rem;
-    color: #FF7A0D; /* Color dorado */
+    color: #003eb1; /* Color dorado */
 }
 
 .bi-facebook {
     font-size: 1.5rem;
-    color: #FF7A0D; /* Color dorado */
+    color: #003eb1; /* Color dorado */
 }
 
 .bi-twitter {
     font-size: 1.5rem;
-    color: #FF7A0D; /* Color dorado */
+    color: #003eb1; /* Color dorado */
 }
