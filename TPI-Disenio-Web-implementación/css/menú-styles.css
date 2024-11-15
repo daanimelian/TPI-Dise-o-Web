@@ -1,5 +1,6 @@
 #filtro-busqueda {
-  margin: 13px;
+  margin: 20px;
+  margin-bottom: 0;
 }
 
 .hidden {
@@ -29,17 +30,28 @@
 #separador-hamburguesas {
   background-color: #6b8bc8;
   height: 50px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  text-align: center; /* Asegura que el texto esté centrado */
+  width: 100%; /* Asegura que el contenedor tome el ancho completo */
+  margin: 0 auto; /* Centra el contenedor si tiene un ancho fijo */
+}
+#separador-hamburguesas h2 {
+  /* Asegúrate de que tu texto esté en un elemento adecuado */
+  margin: 0; /* Elimina cualquier margen en el texto */
   padding: 0;
 }
 
 #hamburguesas-carrusel {
   margin: 20px;
+  margin-bottom: 0px;
   justify-content: center;
   align-items: center;
+}
+.card img {
+  width: 100%;
+  height: auto; /* Mantiene la proporción de la imagen */
 }
 
 #hamburguesas-carrusel .card {
@@ -76,7 +88,6 @@
 }
 
 .card {
-  margin-bottom: 2px;
   margin-left: 2px;
   margin-top: 0;
 }
@@ -109,13 +120,23 @@ header {
   font-size: 0.9rem;
 }
 
-/* Estilos específicos para los botones de agregar y eliminar */
-.add-to-cart,
-.remove-from-cart {
-  font-size: 0.8rem;
-  padding: 4px 8px;
-  width: auto;
-  margin-left: 10px;
+main .btn {
+  max-width: 100%; /* Hacer que los botones ocupen el ancho completo del contenedor */
+  margin-top: 5px;
+  max-width: 150px; /* Tamaño máximo */
+  border: 1px solid #0f0e0e;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: var(--button-color); /* Color azul personalizado */
+}
+
+main .btn {
+  background-color: #3b73d7; /* Ajuste de hover para un tono más claro */
+}
+
+.card-body img {
+  max-height: 350px;
 }
 
 .extra-card {
@@ -133,10 +154,25 @@ header {
   max-width: 500px;
 }
 
-.extra-card:hover {
+.card-body:hover {
   transform: scale(1.05);
 }
 
+.card-body img {
+  max-width: 75px;
+  max-height: 350px;
+}
+
+#btn-busqeda {
+  border-color: #007bff;
+  color: #007bff;
+  margin-left: 4px;
+}
+
+#btn-busqeda:hover {
+  background-color: #ff7a0d;
+  color: #fff;
+}
 .extra-card img {
   padding-top: 5px;
   max-width: 100px;
