@@ -1,0 +1,152 @@
+/* Colores base */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+h2, h3 {
+    color: #004fc5;
+}
+
+.container {
+    max-width: 900px;
+}
+
+/* Estilos para los combos */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.card-body {
+    background-color: #003eb1;
+    color: white;
+    border-radius: 8px;
+}
+
+.card-body p {
+    font-weight: bold;
+}
+
+/* Sección de Descuentos */
+section {
+    background-color: #003eb1; 
+    color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+section .d-flex img {
+    width: 40px;
+    height: 40px;
+}
+
+section .d-flex h5 {
+    font-weight: bold;
+    color: white;
+}
+
+section .d-flex p {
+    color: white;
+}
+
+/* Botones de puntos */
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+.button-container .btn {
+    background-color: #003eb1; /* Naranja */
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+}
+
+.button-container .btn:hover {
+    background-color: #003eb1;
+}
+
+/* Sección "Cómo obtener puntos" */
+.points-section {
+    background-color: #003eb1; /* Naranja */
+    color: white;
+    padding: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.points-section h2 {
+    color: white;
+}
+
+.points-section p {
+    margin-top: 0.5rem;
+    color: white;
+}
+
+/* Información del perfil */
+.profile-info {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.profile-info h4 {
+    color: #004fc5;
+}
+
+.profile-info p {
+    color: #666;
+}
+
+/* Estilo de encabezado */
+.header {
+    background-color: #d9dee6;
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    padding: 0 1rem;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+.nav-link {
+    font-weight: bold;
+  }
+  
+  .navbar .btn-outline-primary {
+    border-color: #fbfcfc;
+    color: #ffffff;
+  }
+  
+  .navbar .btn-outline-primary:hover {
+    background-color: #0d8eff;
+    color: #fff;
+  }

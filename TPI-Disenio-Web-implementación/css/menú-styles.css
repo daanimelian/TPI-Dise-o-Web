@@ -7,6 +7,7 @@
   display: none;
 }
 
+
 .owl-prev,
 .owl-next {
   position: absolute;
@@ -132,8 +133,9 @@ main .btn {
 }
 
 main .btn {
-  background-color: #3b73d7; /* Ajuste de hover para un tono más claro */
+  background-color: #004fc5; /* Ajuste de hover para un tono más claro */
 }
+
 
 .card-body img {
   max-height: 350px;
@@ -163,14 +165,14 @@ main .btn {
   max-height: 350px;
 }
 
-#btn-busqeda {
+#btn-busqueda {
   border-color: #007bff;
   color: #007bff;
   margin-left: 4px;
 }
 
-#btn-busqeda:hover {
-  background-color: #ff7a0d;
+#btn-busqueda:hover {
+  background-color: 004fc5;
   color: #fff;
 }
 .extra-card img {
@@ -211,3 +213,51 @@ main .btn {
   font-size: 1.5rem;
   color: #ff7a0d;
 }
+
+/* Configuración general */
+/* Mantiene el carrito al extremo derecho y el menú hamburguesa a la izquierda */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Estilos generales */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Alineación del carrito junto al menú hamburguesa en pantallas pequeñas y medianas */
+@media (max-width: 991.98px) {
+  #menu-hamburguesa-carrito {
+      display: flex;
+      align-items: center;
+      gap: 10px; /* Espacio entre el menú hamburguesa y el carrito */
+  }
+
+  .navbar-toggler {
+      order: 1; /* Coloca el menú hamburguesa al inicio */
+  }
+
+  #contenedor-carrito {
+      order: 2; /* Asegura que el carrito esté a la derecha del menú hamburguesa */
+  }
+}
+
+/* Alineación del carrito al final de la barra de navegación en pantallas grandes */
+@media (min-width: 992px) {
+  /* Oculta el botón de menú hamburguesa en pantallas grandes */
+  .navbar-toggler {
+      display: none;
+  }
+
+  /* Mueve el carrito al extremo derecho después de "Login" */
+  #contenedor-carrito {
+      margin-left: auto;
+  }
+}
+

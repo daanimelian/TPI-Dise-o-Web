@@ -147,16 +147,16 @@ main {
 .burger-text {
   position: absolute;
   left: 50%;
-  right: 10%;
   transform: translateX(-50%);
-  opacity: 2;
+  opacity: 0;
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
   z-index: 2;
   color: white;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 10px;
   border-radius: 5px;
+  margin: 2%;
 }
 
 /* Estilo de la imagen */
@@ -180,10 +180,16 @@ main {
   border-style: solid;
 }
 
-/* Clase activa cuando el texto debe mostrarse */
-.burger-section.active .burger-text {
+/* Cuando la clase 'active' está presente y la dirección es 'derecha' */
+.burger-section.active .burger-text.derecha {
   opacity: 1;
-  transform: translateX(0);
+  transform: translateX(0%); /* Se mueve del centro hacia la derecha */
+}
+
+/* Cuando la clase 'active' está presente y la dirección es 'izquierda' */
+.burger-section.active .burger-text.izquierda {
+  opacity: 1;
+  transform: translateX(-100%); /* Se mueve del centro hacia la izquierda */
 }
 
 .burger-section.active .burger-image img {
