@@ -1,0 +1,377 @@
+/* Colores de la paleta */
+:root {
+    --primary-color: #003eb1; /* Color azul del header */
+    --secondary-color: #FF7A0D; /* Naranja para fondo de la sección */
+    --background-color: #ebebeb; /* Color crema de fondo */
+    --button-color: #1d54b9; /* Azul de los botones */
+    --text-color: #000000; /* Color de texto negro */
+}
+
+/* Estilo global para el color de texto y fondo */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);   
+    background-color: var(--background-color);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--primary-color);
+    padding: 0rem 4.1rem; /* Ajuste de padding para la barra */
+}
+
+.navbar .navbar-brand, .navbar-nav .nav-link {
+    color: var(--text-color) !important;
+}
+
+.navbar .navbar-brand img {
+    width: 100px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem; /* Tamaño de texto uniforme en la navbar */
+}
+
+.nav-link {
+    font-weight: bold;
+  }
+  
+  .navbar .btn-outline-primary {
+    border-color: #007bff;
+    color: white !important;
+  }
+  
+  .navbar .btn-outline-primary:hover {
+    background-color: #FF7A0D;
+    color: #fff;
+  }
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000 !important;
+  }
+
+
+/* Encabezados principales */
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+/* Subtítulos y textos secundarios */
+p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Texto de información de usuario */
+.user-info h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.user-info p {
+    font-size: 1.20rem;
+    color: #555;
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+/* Estilos para la barra de progreso personalizada */
+.progress {
+    height: 30px; /* Aumenta la altura de la barra */
+    background-color: #f3f3f3; /* Color de fondo de la barra */
+    border-radius: 15px; /* Bordes redondeados */
+    overflow: hidden; /* Esconde los elementos que sobresalen */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2); /* Añade una sombra interna */
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, #ff7a0d, #f5a715); /* Gradiente de color para la barra */
+    height: 30px;
+    transition: width 0.5s ease; /* Animación de la barra */
+    border-radius: 15px 0 0 15px; /* Bordes redondeados solo en el lado izquierdo */
+    height: 100%; /* Asegura que la altura sea completa dentro del contenedor */
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #fff; /* Color del texto en la barra */
+}
+
+/* Contenedor de perfil con fondo claro */
+.background-light {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(1, 0, 0, 0.1); /* Añade sombra para destacar */
+}
+
+.fixed-size-container {
+    min-width: 45%; /* Ajusta el ancho mínimo deseado */
+    height: 450px; /* Ajusta la altura automática */
+    background-color: #f9f9f9; /* Fondo claro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+}
+
+/* Tarjetas de recompensas */
+.card {
+    width: 180px; /* Define un ancho fijo para todas las tarjetas */
+    height: 230px;
+    padding: 1rem;
+    border: 2px solid #0f0e0e;
+    border-radius: 10px;
+    margin-top: 1rem;
+    background-color: var(--secondary-color);
+    text-align: center; /* Centrar el contenido de las tarjetas */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade sombra */
+    transition: transform 0.2s, box-shadow 0.2s; /* Transiciones para efectos */
+}
+
+.reward-cards .col-4 {
+    min-width: 100px; /* Ajuste de tamaño mínimo para uniformar las tarjetas */
+}
+
+/* Ajustes de las tarjetas en tamaños normales */
+.reward-cards .card {
+    width: 180px; /* Ancho fijo para pantallas grandes */
+    max-width: 180px;
+}
+
+/* Ajustes responsivos para pantallas pequeñas */
+@media (max-width: 767.98px) {
+    .points-section {
+        padding: 15px; /* Reduce el padding en dispositivos móviles */
+        margin-bottom: 40px; /* Asegura espacio extra en la parte inferior */
+    }
+
+    .background-light {
+        padding: 20px; /* Asegura un padding adecuado en dispositivos móviles */
+        height: auto; /* Permite que el contenedor crezca según el contenido */
+    }
+
+    .fixed-size-container {
+        min-height: auto; /* Permite que el contenedor crezca o disminuya según el contenido */
+        height: auto; /* Elimina cualquier restricción de altura fija */
+    }
+
+    .reward-cards {
+        flex-direction: column; /* Apila las tarjetas verticalmente */
+        align-items: center; /* Centra las tarjetas */
+        gap: 20px; /* Espaciado vertical entre tarjetas */
+    }
+
+    .reward-cards .card {
+        width: 100%; /* Las tarjetas ocupan el ancho completo en pantallas pequeñas */
+        max-width: none; /* Sin límite de ancho en pantallas móviles */
+        margin-bottom: 20px; /* Espacio adicional entre las tarjetas */
+    }
+
+    .progress {
+        width: 80%; /* Ajuste de ancho de la barra de progreso en pantallas pequeñas */
+        margin: auto; /* Centra la barra de progreso */
+    }
+}
+
+
+/* Imágenes en tarjetas */
+.card img {
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+/* Botones uniformes */
+.btn {
+    max-width: 100%; /* Hacer que los botones ocupen el ancho completo del contenedor */
+    margin-top: 5px;
+    max-width: 150px; /* Tamaño máximo */
+    border: 1px solid #0f0e0e;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: var(--button-color); /* Color azul personalizado */
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #3b73d7; /* Ajuste de hover para un tono más claro */
+}
+
+/* Tamaño uniforme de botones para perfil */
+.profile-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Espacio entre los botones */
+}
+
+/* Imagen de perfil */
+.profile-img {
+    width: 140px; /* Ajusta el tamaño según tus preferencias */
+    height: 160px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    padding: 5px;
+}
+.profile-buttons .btn {
+    max-width: 200px;
+    font-weight: 500;
+    background-color: var(--button-color);
+    color: #fff;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.profile-buttons .btn:hover {
+    background-color: #FF7A0D; /* Efecto hover en naranja */
+}
+
+/* Progreso */
+.progress-bar {
+    background-color: var(--secondary-color);
+}
+
+/* Sección ¿Cómo obtener puntos? */
+.obtener-puntos-section {
+    background-color: var(--secondary-color); /* Fondo naranja */
+    color: var(--text-color);
+    position: relative;
+    padding: 3rem 0;
+}
+
+.obtener-puntos-contenedor {
+    max-width: 900px;
+    margin: auto;
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 2rem;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Sombra para resaltar el contenedor */
+}
+
+.titulo-seccion {
+    font-size: 2rem; /* Tamaño del título */
+    font-weight: bold;
+    color: #003eb1; /* Azul para el título */
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.descripcion-seccion {
+    font-size: 1.1rem; /* Tamaño del texto principal */
+    color: #666666; /* Color gris para el texto */
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.image-container {
+    background-color: #FFFFFF; /* Fondo blanco para la imagen */
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.texto-seccion {
+    color: #333333;
+    line-height: 1.6;
+}
+
+.texto-seccion h5 {
+    font-size: 1.5rem; /* Tamaño de subtítulos */
+    font-weight: bold;
+    color: #003eb1; /* Azul para subtítulos */
+    margin-top: 1.5rem;
+}
+
+.texto-seccion p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+/* Guarda */
+.guarda {
+    background-image: url('guarda_desktop.svg'); /* Ruta del SVG de la guarda */
+    height: 40px;
+    background-size: contain;
+    background-repeat: repeat-x;
+    width: 100%;
+}
+
+.guarda-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.guarda-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* Ajustes para el footer */
+.footer-section {
+    background-color: #ebebeb; /* Fondo claro */
+    color: #fff; /* Color de texto blanco */
+    padding: 20px 0;
+}
+
+.footer-logo {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.footer-section p {
+    margin: 5px 0;
+}
+
+.footer-section a {
+    color: #FF7A0D; /* Color dorado para enlaces */
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.bi-instagram {
+    font-size: 1.5rem;
+    color: #FF7A0D; /* Color dorado */
+}
+
+.bi-facebook {
+    font-size: 1.5rem;
+    color: #FF7A0D; /* Color dorado */
+}
+
+.bi-twitter {
+    font-size: 1.5rem;
+    color: #FF7A0D; /* Color dorado */
+}
