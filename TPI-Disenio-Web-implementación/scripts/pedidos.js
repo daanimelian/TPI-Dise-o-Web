@@ -184,3 +184,81 @@ function submitOpinion(index) {
 
   displayOrderHistory();
 }
+
+function updateOrderStatus() {
+  if (currentOrder.status === "pedido confirmado") {
+    currentOrder.status = "estamos preparando el pedido";
+    document.querySelector('.step:nth-child(1)').classList.add("completed");
+  } else if (currentOrder.status === "estamos preparando el pedido") {
+    currentOrder.status = "el delivery esta en camino";
+    document.querySelector('.step:nth-child(2)').classList.add("completed");
+  } else if (currentOrder.status === "el delivery esta en camino") {
+    currentOrder.status = "ENTREGADO";
+    document.querySelector('.step:nth-child(3)').classList.add("completed");
+    moveOrderToHistory();
+  }
+
+  if (currentOrder.status === "ENTREGADO") {
+    document.querySelectorAll('.step').forEach(step => {
+      step.classList.add("completed");
+    });
+    document.querySelector('.step:nth-child(4)').classList.add("completed");
+  }
+  displayCurrentOrder();
+}
+
+function updateOrderStatus() {
+  if (currentOrder.status === "pedido confirmado") {
+    currentOrder.status = "estamos preparando el pedido";
+    document.querySelector('.step:nth-child(1)').classList.add("completed");
+  } else if (currentOrder.status === "estamos preparando el pedido") {
+    currentOrder.status = "el delivery esta en camino";
+    document.querySelector('.step:nth-child(2)').classList.add("completed");
+  } else if (currentOrder.status === "el delivery esta en camino") {
+    currentOrder.status = "ENTREGADO";
+    document.querySelector('.step:nth-child(3)').classList.add("completed");
+    moveOrderToHistory();
+  }
+
+  // Actualiza el color inmediatamente al cambiar el estado
+  updateStatusColor();
+
+  if (currentOrder.status === "ENTREGADO") {
+    document.querySelectorAll('.step').forEach(step => {
+      step.classList.add("completed");
+    });
+    document.querySelector('.step:nth-child(4)').classList.add("completed");
+
+    setTimeout(() => {
+      const currentOrderSection = document.querySelector('.current-order');
+      currentOrderSection.innerHTML = `
+        <h2>No hay pedidos en curso</h2>
+        <p class="no-order-message">Esperamos tu próximo pedido.</p>
+      `;
+    }, 5000);
+  }
+  displayCurrentOrder();
+}
+
+
+function updateStatusColor() {
+  const statusElement = document.querySelector('.current-status');
+  if (!statusElement) return; // Asegúrate de que existe el elemento
+
+  switch (currentOrder.status) {
+    case "pedido confirmado":
+      statusElement.style.color = "blue"; // Color para "pedido confirmado"
+      break;
+    case "estamos preparando el pedido":
+      statusElement.style.color = "orange"; // Color para "estamos preparando el pedido"
+      break;
+    case "el delivery esta en camino":
+      statusElement.style.color = "green"; // Color para "el delivery está en camino"
+      break;
+    case "ENTREGADO":
+      statusElement.style.color = "gray"; // Color para "ENTREGADO"
+      break;
+    default:
+      statusElement.style.color = "black"; // Color por defecto
+  }
+}
