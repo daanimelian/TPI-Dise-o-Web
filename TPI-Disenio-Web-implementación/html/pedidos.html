@@ -1,151 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pedido en Curso</title>
-    <link rel="stylesheet" href="../css/pedidos.css" />
-    <link rel="stylesheet" href="../css/home-styles.css" />
-  </head>
-  <body>
-    <!-- Header -->
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
-        <a class="navbar-brand" href="#">
-          <img src="../imgs/Bichito 2.png" alt="Logo" style="width: 80px" />
-          <!-- Ajusta el tamaño del logo -->
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link text-primary" href="../html/home.html"
-                >Inicio</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-primary" href="../html/menu.html">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-primary" href="../html/promociones.html"
-                >Promociones</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-primary" href="../html/pedidos.html"
-                >Pedidos</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-primary" href="../html/MiPerfil.html"
-                >Mi perfil</a
-              >
-            </li>
-          </ul>
-          <!-- User Controls: Dropdown for Login -->
-          <div class="navbar-nav">
-            <div class="nav-item dropdown">
-              <a
-                class="btn btn-outline-primary dropdown-toggle mr-2"
-                href="#"
-                id="loginDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Login
-              </a>
-              <div class="dropdown-menu" aria-labelledby="loginDropdown">
-                <a class="dropdown-item" href="./login.html">Iniciar Sesión</a>
-                <a class="dropdown-item" href="../html/registro.html"
-                  >Registrarse</a
-                >
-              </div>
-            </div>
-            <a class="btn btn-outline-primary mr-2" href="#">Carrito</a>
-          </div>
-        </div>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedido en Curso</title>
+  <link rel="stylesheet" href="../css/pedidos.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a class="navbar-brand" href="#">
+        <img src="../imgs/logo.png" alt="Logo">
+      </a>
+      <button class="navbar-toggler" aria-label="Toggle navigation">
+        &#9776;
+      </button>
+      <div class="navbar-menu">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Promociones</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Pedidos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Mi perfil</a></li>
+        </ul>
+      </div>
+      <div class="navbar-buttons">
+        <a class="btn-login" href="#">Login</a>
+        <a class="btn-cart" href="#">Carrito</a>
+      </div>
+    </nav>
+  </header>
 
-    <main>
-      <section class="current-order">
-        <h2>Pedido en curso.</h2>
-        <div class="order-status">
-          <p>Pedido #2255</p>
-          <p>El repartidor está en el restaurante esperando tu pedido.</p>
-          <div class="time">
-            <span class="icon">🕒</span>
-            <span>00:31 - 00:41</span>
-          </div>
-        </div>
-      </section>
-      <section class="order-history">
-        <h2>Historial de pedidos.</h2>
-        <div id="orderHistoryContainer"></div>
-        <div id="noOrdersMessage" style="display: none">
-          No hay pedidos previos.
-        </div>
-      </section>
-    </main>
-    <!-- Footer -->
-    <footer class="footer-section">
-      <div>
-        <div class="row align-items-center justify-content-center text-center">
-          <!-- Logo de la marca -->
-          <div class="col-md-4 mb-3">
-            <img
-              src="../imgs/Bichito 1.png"
-              alt="Logo"
-              class="footer-logo"
-              style="width: 50%"
-            />
-          </div>
-
-          <!-- Información de contacto -->
-          <div class="col-md-4 mb-3">
-            <p>
-              <strong>Dirección:</strong><br />Av. Alvarez Jonte 1500,<br />Paternal
-              City<br />Capital Federal, Argentina
-            </p>
-            <div class="d-flex justify-content-center gap-3">
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-twitter"></i></a>
-            </div>
-          </div>
-
-          <!-- Redes sociales -->
-          <div class="col-md-4 mb-3">
-            <p><i class="bi bi-instagram"></i> @KernelBurger</p>
-          </div>
-        </div>
-
-        <!-- Texto inferior adicional -->
-        <div class="text-center mt-3">
-          <p>
-            Dirección General de Defensa y Protección al Consumidor. Para
-            consultas y/o denuncias,
-            <a
-              href="https://buenosaires.gob.ar/defensaconsumidor/direccion-general"
-              target="_blank"
-              >ingrese aquí</a
-            >
-          </p>
+  <main>
+    <section class="current-order">
+      <h2>Pedido en curso.</h2>
+      <div class="order-status">
+        <p>Pedido #2255</p>
+        <p>El repartidor está en el restaurante esperando tu pedido.</p>
+        <div class="time">
+          <span class="icon">🕒</span>
+          <span>00:31 - 00:41</span>
         </div>
       </div>
-    </footer>
+    </section>
+    <section class="order-history">
+      <h2>Historial de pedidos.</h2>
+      <div id="orderHistoryContainer">
+      </div>
+      <div id="noOrdersMessage" style="display: none;">No hay pedidos previos.</div>
+    </section>
+  </main>
 
-    <script src="../scripts/pedidos.js"></script>
-  </body>
+  <script src="pedidos.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const navbarToggler = document.querySelector(".navbar-toggler");
+      const navbarMenu = document.querySelector(".navbar-menu");
+
+      navbarToggler.addEventListener("click", function () {
+        navbarMenu.classList.toggle("active");
+      });
+    });
+  </script>
+
+</body>
 </html>
