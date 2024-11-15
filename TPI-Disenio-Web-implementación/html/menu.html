@@ -19,57 +19,70 @@
   <body>
     
         <!-- Header -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
-          <a class="navbar-brand" href="#">
-            <img src="../imgs/Bichito 2.png" alt="Logo" style="width: 80px" />
-            <!-- Ajusta el tamaño del logo -->
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a class="nav-link text-primary" href="../html/home.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-primary" href="../html/menu.html">Menu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-primary" href="../html/promociones.html">Promociones</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-primary" href="../html/pedidos.html">Pedidos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-primary" href="../html/MiPerfil.html">Mi perfil</a>
-              </li>
-            </ul>
-            <!-- User Controls: Dropdown for Login -->
-            <div class="navbar-nav">
-              <div class="nav-item dropdown">
-                  <a class="btn btn-outline-primary dropdown-toggle mr-2" href="#" id="loginDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Login
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="loginDropdown">
-                      <a class="dropdown-item" href="./login.html">Iniciar Sesión</a>
-                      <a class="dropdown-item" href="../html/registro.html">Registrarse</a>
+        <header>
+          <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+              <!-- Logo -->
+              <a class="navbar-brand" href="#">
+                  <img src="../imgs/Bichito 2.png" alt="Logo" style="width: 80px" />
+              </a>
+      
+              <!-- Botón Menú Hamburguesa -->
+              <button
+                  class="navbar-toggler"
+                  type="button"
+                  id="nav-btn"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNav"
+                  aria-controls="navbarNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+              >
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+      
+              <!-- Contenido del Menú -->
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav mx-auto">
+                      <li class="nav-item">
+                          <a class="nav-link text-primary" href="../html/home.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-primary" href="../html/menu.html">Menú</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-primary" href="../html/promociones.html">Promociones</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-primary" href="../html/pedidos.html">Pedidos</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-primary" href="../html/MiPerfil.html">Mi perfil</a>
+                      </li>
+                  </ul>
+                  
+                  <!-- User Controls para Login -->
+                  <div class="navbar-nav">
+                      <div class="nav-item dropdown">
+                          <a class="btn btn-outline-primary dropdown-toggle mr-2" href="#" id="loginDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Login
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="loginDropdown">
+                              <a class="dropdown-item" href="./login.html">Iniciar Sesión</a>
+                              <a class="dropdown-item" href="../html/registro.html">Registrarse</a>
+                          </div>
+                      </div>
                   </div>
               </div>
-              <a class="btn cart-total btn-outline-primary mr-2" href="#">Carrito | <span id="cart-total">0.00</span></a>
-          </div>
-          </div>
-        </nav>
+      
+              <!-- Botón Carrito alineado a la derecha -->
+              <div class="d-flex align-items-center ms-auto" id="contenedor-carrito">
+                  <a class="btn cart-total btn-outline-primary" href="#">
+                      Carrito | <span id="cart-total">0.00</span>
+                  </a>
+              </div>
+          </nav>
       </header>
+      
       <section
             id="filtro-busqueda"
             class="search-filters d-flex justify-content-between align-items-center my-3 flex-wrap"
