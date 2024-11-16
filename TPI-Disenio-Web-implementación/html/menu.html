@@ -18,18 +18,19 @@
         
             <!-- Header -->
             <header>
-                <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom d-flex justify-content-between align-items-center">
-                     <div class="container">
+                <div class="container">
+                    <nav class="navbar  navbar-expand-lg navbar-light bg-white border-bottom">
                      <!-- Logo -->
                      <a class="navbar-brand" href="#">
-                         <img src="../imgs/Bichito 2.png" alt="Logo" style="width: 110px" />
+                         <img class="logo" src="../imgs/Bichito 2.png" alt="Logo" style="max-width: 35%;" />
                      </a>
+                     
                 
-                     <!-- Contenedor del botón hamburguesa -->
-                     <div class="d-flex align-items-center ms-auto">
-                         <!-- Botón Menú Hamburguesa (solo visible en pantallas pequeñas) -->
+                 
+                     <div  class="d-flex align-items-center ms-auto ">
+                         
                          <button
-                             class="navbar-toggler me-2 d-lg-none"
+                             class="navbar-toggler me-2  d-lg-none"
                              type="button"
                              id="burguer-btn"
                              data-bs-toggle="collapse"
@@ -42,7 +43,7 @@
                          </button>
                      </div>
                 
-                     <!-- Contenido del Menú -->
+                     
                      <div class="collapse navbar-collapse" id="navbarNav">
                          <ul class="navbar-nav mx-auto">
                              <li class="nav-item">
@@ -62,7 +63,7 @@
                              </li>
                          </ul>
                 
-                         <!-- User Controls para Login -->
+                         
                          <div class="navbar-nav">
                              <div class="nav-item dropdown">
                                  <a class="btn btn-outline-primary dropdown-toggle me-2" href="#" id="loginDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -77,15 +78,15 @@
                      </div>
                 
                 
-                 <!-- Botón Carrito alineado a la derecha del login en pantallas grandes -->
-                 <div class="d-flex align-items-center ms-auto">
-                     <a class="btn cart-total btn-outline-primary ms-lg-2" href="#">
-                         <span id="cart-total">0.00</span>
-                     </a>
-                 </div>
-                </nav>
+               
+                        <div class="d-flex align-items-center ms-auto">
+                          <a class="btn cart-total btn-outline-primary ms-lg-2" href="#">
+                              <span id="cart-total">0.00</span>
+                          </a>
+                      </div>
+                    </nav>
                </div>
-        </header>
+            </header>
     
         
         
@@ -103,7 +104,7 @@
                             type="search"
                             placeholder="Buscar"
                             aria-label="Buscar"
-                            style="width: 200px;"
+                            style="width: 150px;"
                         />
                         <button id="btn-busqueda" class="btn btn-outline-primary" type="submit">Buscar</button>
                     </form>
@@ -113,7 +114,7 @@
                         class="form-select"
                         aria-label="Filtros"
                         id="btn-filtros"
-                        style="width: 150px; min-width: 100px;"
+                       
                     >
                         <option selected>Filtros</option>
                         <option value="1">Filtro 1</option>

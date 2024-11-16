@@ -3,11 +3,9 @@
   margin-bottom: 0;
 }
 #barra-busqueda {
-  max-width: 150px;
+  max-width: 110px;
 }
-body {
-  padding: 20px;
-}
+
 .hidden {
   display: none;
 }
@@ -176,7 +174,8 @@ main .btn {
 #btn-busqueda {
   border-color: #007bff;
   color: white;
-  margin-left: 4px;
+  margin-left: 2px;
+  padding: 7px;
 }
 
 #btn-busqueda:hover {
@@ -234,4 +233,17 @@ main .btn {
   #contenedor-carrito {
     order: 2; /* Asegura que el carrito esté a la derecha del menú hamburguesa */
   }
+}
+/* General Styles */
+.navbar-brand {
+  display: flex; /* Asegura que el contenedor del logo sea flexible */
+  align-items: center; /* Centra verticalmente el logo */
+  max-width: 100%; /* Evita que crezca fuera del contenedor */
+}
+
+/* Imagen del logo */
+.logo {
+  max-width: 5%; /* Ajusta el ancho de la imagen al contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  max-height: 35%; /* Controla la altura máxima en pantallas grandes */
 }
