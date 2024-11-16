@@ -48,3 +48,20 @@
 #btn-ingresar {
   margin-top: 10px;
 }
+
+
+/* Asegurar que el main ocupe al menos toda la altura restante */
+body, html {
+  height: 100%; /* Asegura que el html y body ocupen toda la ventana */
+}
+
+main {
+  min-height: calc(100vh - 150px); /* Altura mínima, restando el espacio del header y footer */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente el contenido */
+}
+
+footer {
+  margin-top: auto; /* Empuja el footer al final si el contenido no llena la pantalla */
+}
