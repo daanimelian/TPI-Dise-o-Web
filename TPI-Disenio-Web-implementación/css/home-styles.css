@@ -35,6 +35,10 @@ nav a {
   color: #fff;
 }
 
+h1 {
+  display: none;
+}
+
 /* Controles del usuario (Login, Carrito) */
 .user-controls {
   display: flex;
