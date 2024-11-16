@@ -1,5 +1,5 @@
 :root {
-  --blue: #003eb1;
+  --blue: #007bff;
   --light-yellow: #F1EAD0;
   --background-color: #ebebeb;
 }
@@ -79,13 +79,14 @@ main {
 .btn-login,
 .btn-cart {
   padding: 0.5rem 1rem;
-  background-color: var(--blue);
-  color: white;
+  background-color: white;
+  color: var(--blue);
   border: none;
   cursor: pointer;
   border-radius: 4px;
   text-decoration: none;
   font-weight: bold;
+  border: var(--blue);
 }
 
 .btn-login:hover,
@@ -293,12 +294,12 @@ main {
 }
 
 .nav-link:hover {
-  color: #F1EAD0;
+  color: #0a58ca;
 }
 
 .btn-login:hover,
 .btn-cart:hover {
-  background-color: #0056b3;
+  background-color: var(--blue);
   color: white;
 }
 
@@ -376,4 +377,196 @@ button.submit-opinion:hover {
 .step.completed span {
   color: green; /* Color verde para todos los pasos completados */
   font-weight: bold;
+}
+
+.navbar .btn-outline-primary {
+  border-color: #007bff;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link {
+  font-weight: bold;
+}
+
+.navbar .btn-outline-primary {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.navbar .btn-outline-primary:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+.bi-instagram {
+  font-size: 1.5rem;
+  color: var(--footer-link-color);
+}
+
+
+/* Header styles */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link {
+  font-weight: bold;
+}
+
+.navbar .btn-outline-primary {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.navbar .btn-outline-primary:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000 !important;
+}
+
+/* Login container styles */
+.login-container {
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.login-container .form-control {
+  border-radius: 5px;
+}
+
+.login-container .btn-primary {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.login-container img {
+  max-width: 380px;
+}
+
+#btn-ingresar {
+  margin-top: 10px;
+}
+
+/* Footer styles */
+.footer-section {
+  background-color: #ebebeb; /* Fondo claro */
+  color: #fff; /* Color de texto blanco */
+  padding: 20px 0;
+}
+
+.footer-logo {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.footer-section p {
+  margin: 5px 0;
+  color: black;
+}
+
+.footer-section a {
+  color: #007bff; /* Color dorado para enlaces */
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.bi-facebook {
+  font-size: 1.5rem;
+  color: #007bff; /* Color dorado */
+}
+
+.bi-twitter {
+  font-size: 1.5rem;
+  color: #007bff; /* Color dorado */
+}
+
+/* Estilo general del footer */
+.footer-section {
+    background-color: #ebebeb; /* Fondo claro */
+    color: #333; /* Texto oscuro */
+    padding: 20px 0;
+    font-family: "Geist Mono", monospace;
+}
+
+/* Logo */
+.footer-logo {
+    max-width: 150px;
+}
+
+/* Texto del footer */
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+/* Enlaces */
+.footer-section a {
+    color: #007bff; /* Color azul */
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+/* Íconos */
+.bi-instagram, .bi-facebook, .bi-twitter {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.bi-instagram:hover, .bi-facebook:hover, .bi-twitter:hover {
+    color: #0056b3; /* Color azul más oscuro */
+}
+
+/* Ajustes de alineación */
+.text-start {
+    text-align: left; /* Alineación a la izquierda */
+}
+
+.text-end {
+    text-align: right; /* Alineación a la derecha */
+}
+
+.text-center {
+    text-align: center; /* Alineación centrada */
+}
+
+.d-flex.gap-3 {
+    justify-content: center;
+    margin-top: 10px;
 }
