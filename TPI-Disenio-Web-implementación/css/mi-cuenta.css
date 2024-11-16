@@ -167,6 +167,41 @@ body {
     }
 }
 
+/* Ajustes responsivos para pantallas medianas */
+@media (max-width: 1300px) {
+    .points-section {
+        padding: 15px; /* Reduce el padding en dispositivos móviles */
+        margin-bottom: 40px; /* Asegura espacio extra en la parte inferior */
+    }
+
+    .background-light {
+        padding: 20px; /* Asegura un padding adecuado en dispositivos móviles */
+        height: auto; /* Permite que el contenedor crezca según el contenido */
+    }
+
+    .fixed-size-container {
+        min-height: auto; /* Permite que el contenedor crezca o disminuya según el contenido */
+        height: auto; /* Elimina cualquier restricción de altura fija */
+    }
+
+    .reward-cards {
+        flex-direction: column; /* Apila las tarjetas verticalmente */
+        align-items: center; /* Centra las tarjetas */
+        gap: 20px; /* Espaciado vertical entre tarjetas */
+    }
+
+    .reward-cards .card {
+        width: 100%; /* Las tarjetas ocupan el ancho completo en pantallas pequeñas */
+        max-width: none; /* Sin límite de ancho en pantallas móviles */
+        margin-bottom: 20px; /* Espacio adicional entre las tarjetas */
+    }
+
+    .progress {
+        width: 80%; /* Ajuste de ancho de la barra de progreso en pantallas pequeñas */
+        margin: auto; /* Centra la barra de progreso */
+    }
+}
+
 
 /* Imágenes en tarjetas */
 .card img {
@@ -218,53 +253,43 @@ body {
 
 /* Sección ¿Cómo obtener puntos? */
 .obtener-puntos-section {
-    background-color: var(--secondary-color); /* Fondo naranja */
+    background-color: var(--secondary-color);
     color: var(--text-color);
     position: relative;
     padding: 3rem 0;
 }
 
 .obtener-puntos-contenedor {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se adapten en pantallas pequeñas */
+    gap: 20px; /* Espaciado entre los elementos */
+    align-items: center; /* Centra verticalmente la imagen y el texto */
     max-width: 900px;
     margin: auto;
-    background-color: #ffffff; /* Fondo blanco */
+    background-color: #ffffff;
     padding: 2rem;
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Sombra para resaltar el contenedor */
-}
-
-.titulo-seccion {
-    font-size: 2rem; /* Tamaño del título */
-    font-weight: bold;
-    color: #003eb1; /* Azul para el título */
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-.descripcion-seccion {
-    font-size: 1.1rem; /* Tamaño del texto principal */
-    color: #666666; /* Color gris para el texto */
-    margin-bottom: 2rem;
-    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .image-container {
-    width: 260px;
-    height: 375px;
-    background-color: #FFFFFF; /* Fondo blanco para la imagen */
-    border-radius: 8px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-    padding: 1rem;
+    flex: 1 1 300px; /* Imagen ocupa espacio proporcional y tiene un ancho mínimo */
+    max-width: 300px;
+    height: auto; /* Ajuste dinámico de la altura */
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .image-container img {
     max-width: 100%;
+    height: auto;
     border-radius: 8px;
 }
 
 .texto-seccion {
+    flex: 2 1 500px; /* Texto ocupa el doble de espacio que la imagen */
+    text-align: justify; /* Justifica el texto */
     color: #333333;
     line-height: 1.6;
 }
@@ -272,12 +297,43 @@ body {
 .texto-seccion h5 {
     font-size: 1.5rem; /* Tamaño de subtítulos */
     font-weight: bold;
-    color: #003eb1; /* Azul para subtítulos */
+    color: #003eb1;
     margin-top: 1.5rem;
 }
 
 .texto-seccion p {
     font-size: 1.1rem;
     margin-bottom: 1rem;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 767.98px) {
+    .obtener-puntos-contenedor {
+        flex-direction: column; /* Apila la imagen y el texto */
+        text-align: center; /* Centra el contenido */
+    }
+
+    .image-container {
+        max-width: 100%; /* Imagen ocupa el ancho completo */
+    }
+
+    .texto-seccion {
+        padding: 10px; /* Reduce el padding en pantallas pequeñas */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .obtener-puntos-contenedor {
+        flex-wrap: wrap; /* Permite reorganización */
+        gap: 15px;
+    }
+
+    .image-container {
+        flex: 1 1 40%; /* Imagen ocupa menos espacio */
+    }
+
+    .texto-seccion {
+        flex: 2 1 60%; /* Texto ocupa más espacio */
+    }
 }
 
