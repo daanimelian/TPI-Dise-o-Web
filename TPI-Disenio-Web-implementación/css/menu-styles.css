@@ -2,7 +2,9 @@
   margin: 20px;
   margin-bottom: 0;
 }
-
+#barra-busqueda {
+  max-width: 150px;
+}
 body {
   padding: 20px;
 }
@@ -141,7 +143,6 @@ main .btn {
   background-color: #004fc5; /* Ajuste de hover para un tono más claro */
 }
 
-
 .card-body img {
   max-height: 350px;
 }
@@ -164,7 +165,9 @@ main .btn {
 .card-body:hover {
   transform: scale(1.05);
 }
-
+#id-busqueda {
+  max-width: 110px;
+}
 .card-body img {
   max-width: 75px;
   max-height: 350px;
@@ -172,7 +175,7 @@ main .btn {
 
 #btn-busqueda {
   border-color: #007bff;
-  color: #007bff;
+  color: white;
   margin-left: 4px;
 }
 
@@ -203,20 +206,8 @@ main .btn {
   color: black;
 }
 
-.footer-section a {
-  color: #ff7a0d;
-  text-decoration: none;
-}
-
 .footer-section a:hover {
   text-decoration: underline;
-}
-
-.bi-instagram,
-.bi-facebook,
-.bi-twitter {
-  font-size: 1.5rem;
-  color: #ff7a0d;
 }
 
 /* Configuración general */
@@ -239,18 +230,16 @@ main .btn {
 /* Alineación del carrito junto al menú hamburguesa en pantallas pequeñas y medianas */
 @media (max-width: 991.98px) {
   #menu-hamburguesa-carrito {
-      display: flex;
-      align-items: center;
-      gap: 10px; /* Espacio entre el menú hamburguesa y el carrito */
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre el menú hamburguesa y el carrito */
   }
 
   .navbar-toggler {
-      order: 1; /* Coloca el menú hamburguesa al inicio */
+    order: 1; /* Coloca el menú hamburguesa al inicio */
   }
 
   #contenedor-carrito {
-      order: 2; /* Asegura que el carrito esté a la derecha del menú hamburguesa */
+    order: 2; /* Asegura que el carrito esté a la derecha del menú hamburguesa */
   }
 }
-
-
