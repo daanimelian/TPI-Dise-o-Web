@@ -15,711 +15,730 @@
   </head>
   <body>
     
-        <!-- Header -->
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom d-flex justify-content-between align-items-center">
-                <!-- Logo -->
-                <a class="navbar-brand" href="#">
-                    <img src="../imgs/Bichito 2.png" alt="Logo" style="width: 80px" />
-                </a>
         
-                <!-- Contenedor del botón hamburguesa -->
-                <div class="d-flex align-items-center ms-auto">
-                    <!-- Botón Menú Hamburguesa (solo visible en pantallas pequeñas) -->
-                    <button
-                        class="navbar-toggler me-2 d-lg-none"
-                        type="button"
-                        id="burguer-btn"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav"
-                        aria-controls="navbarNav"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-        
-                <!-- Contenido del Menú -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link text-primary" href="../html/home.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-primary" href="../html/menu.html">Menú</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-primary" href="../html/promociones.html">Promociones</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-primary" href="../html/pedidos.html">Pedidos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-primary" href="../html/MiPerfil.html">Mi perfil</a>
-                        </li>
-                    </ul>
-        
-                    <!-- User Controls para Login -->
-                    <div class="navbar-nav">
-                        <div class="nav-item dropdown">
-                            <a class="btn btn-outline-primary dropdown-toggle me-2" href="#" id="loginDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Login
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="loginDropdown">
-                                <a class="dropdown-item" href="./login.html">Iniciar Sesión</a>
-                                <a class="dropdown-item" href="../html/registro.html">Registrarse</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
-                <!-- Botón Carrito alineado a la derecha del login en pantallas grandes -->
-                <div class="d-flex align-items-center ms-auto">
-                    <a class="btn cart-total btn-outline-primary ms-lg-2" href="#">
-                        Carrito | <span id="cart-total">0.00</span>
-                    </a>
-                </div>
-            </nav>
+            <!-- Header -->
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom d-flex justify-content-between align-items-center">
+                     <div class="container">
+                     <!-- Logo -->
+                     <a class="navbar-brand" href="#">
+                         <img src="../imgs/Bichito 2.png" alt="Logo" style="width: 80px" />
+                     </a>
+                
+                     <!-- Contenedor del botón hamburguesa -->
+                     <div class="d-flex align-items-center ms-auto">
+                         <!-- Botón Menú Hamburguesa (solo visible en pantallas pequeñas) -->
+                         <button
+                             class="navbar-toggler me-2 d-lg-none"
+                             type="button"
+                             id="burguer-btn"
+                             data-bs-toggle="collapse"
+                             data-bs-target="#navbarNav"
+                             aria-controls="navbarNav"
+                             aria-expanded="false"
+                             aria-label="Toggle navigation"
+                         >
+                             <span class="navbar-toggler-icon"></span>
+                         </button>
+                     </div>
+                
+                     <!-- Contenido del Menú -->
+                     <div class="collapse navbar-collapse" id="navbarNav">
+                         <ul class="navbar-nav mx-auto">
+                             <li class="nav-item">
+                                 <a class="nav-link text-primary" href="../html/home.html">Inicio</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link text-primary" href="../html/menu.html">Menú</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link text-primary" href="../html/promociones.html">Promociones</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link text-primary" href="../html/pedidos.html">Pedidos</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link text-primary" href="../html/MiPerfil.html">Mi perfil</a>
+                             </li>
+                         </ul>
+                
+                         <!-- User Controls para Login -->
+                         <div class="navbar-nav">
+                             <div class="nav-item dropdown">
+                                 <a class="btn btn-outline-primary dropdown-toggle me-2" href="#" id="loginDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                     Login
+                                 </a>
+                                 <div class="dropdown-menu" aria-labelledby="loginDropdown">
+                                     <a class="dropdown-item" href="./login.html">Iniciar Sesión</a>
+                                     <a class="dropdown-item" href="../html/registro.html">Registrarse</a>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                
+                
+                 <!-- Botón Carrito alineado a la derecha del login en pantallas grandes -->
+                 <div class="d-flex align-items-center ms-auto">
+                     <a class="btn cart-total btn-outline-primary ms-lg-2" href="#">
+                         Carrito | <span id="cart-total">0.00</span>
+                     </a>
+                 </div>
+                </nav>
+               </div>
         </header>
+    
         
-        
-        
-        <section id="filtro-busqueda" class="search-filters d-flex justify-content-between align-items-center my-2 mx-0">
-            
-            <form class="d-flex align-items-center" role="search" style="flex-grow: 1;">
-                <input
-                    class="form-control me-2"
-                    type="search"
-                    placeholder="Buscar"
-                    aria-label="Buscar"
-                    style="width: 200px;"
-                />
-                <button id="btn-busqueda" class="btn btn-outline-primary" type="submit">Buscar</button>
-            </form>
-        
-           
-            <select
-                class="form-select"
-                aria-label="Filtros"
-                id="btn-filtros"
-                style="width: 150px; min-width: 100px;"
-            >
-                <option selected>Filtros</option>
-                <option value="1">Filtro 1</option>
-                <option value="2">Filtro 2</option>
-                <option value="3">Filtro 3</option>
-            </select>
-        </section>
         
         
     
-        <main>
-          
-          <section id="hamburguesas">
-            <div class="container-fluid px-0">
-              <div id="separador-hamburguesas" class="row">
-                <div class="col-12 px-0">
-                  <div class="text-center py-0">
-                    
-                    <h2>Hamburguesas</h2>
-                    
-                  </div>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div id="hamburguesas-carrusel" class="row align-items-center ">
+        
+            <main>
+                <div class="container">
+                <section id="filtro-busqueda" class="search-filters justify-content-between align-items-center my-2 ">
+                
+                    <form id="busqueda" class="d-flex align-items-center" role="search" style="flex-grow: 1;">
+                        <input
+                            id="barra-busqueda"
+                            class="form-control me-2"
+                            type="search"
+                            placeholder="Buscar"
+                            aria-label="Buscar"
+                            style="width: 200px;"
+                        />
+                        <button id="btn-busqueda" class="btn btn-outline-primary" type="submit">Buscar</button>
+                    </form>
+                
+                   
+                    <select
+                        class="form-select"
+                        aria-label="Filtros"
+                        id="btn-filtros"
+                        style="width: 150px; min-width: 100px;"
+                    >
+                        <option selected>Filtros</option>
+                        <option value="1">Filtro 1</option>
+                        <option value="2">Filtro 2</option>
+                        <option value="3">Filtro 3</option>
+                    </select>
+                </section>
+                
+                
+              
+              <section id="hamburguesas">
+                <div class="container-fluid px-0">
+                  <div id="separador-hamburguesas" class="row">
                     <div class="col-12 px-0">
-                       <div class="owl-carousel owl-theme ">
-                         
-                        <div class="card mb-3">
-                            <div class="card-body">
-                                <img src="../imgs/Burguer.png" alt="La Big Kernel">
-                                <h3 class="card-title">La Big Kernel</h3>
-                                <p class="card-text">PAN GOLDEN - SMASH DE CARNE x2 - CHEDDAR x4 - BACON. INCLUYE PAPAS FRITAS.</p>
-                                <h4 class="card-text">Precio: $12.900</h4>
-                                <div class="d-flex align-items-center justify-content-center my-2">
-                                    <button class="btn btn-secondary btn-sm remove-one" data-name="La Big Kernel" data-price="12900">-</button>
-                                    <span class="mx-2 quantity" data-name="La Big Kernel">0</span>
-                                    <button class="btn btn-secondary btn-sm add-one" data-name="La Big Kernel" data-price="12900">+</button>
-                                </div>
-                                  
-                            </div>
-                        </div>
-                    
+                      <div class="text-center py-0">
                         
+                        <h2>Hamburguesas</h2>
                         
-                        <div class="card mb-3">
-                            <div class="card-body">
-                                <img src="../imgs/SOLID.png" alt="La SOLID">
-                                <h3 class="card-title">La SOLID</h3>
-                                <p class="card-text">PAN GOLDEN - SMASH DE CARNE x2 - CHEDDAR x4 - BACON - CEBOLLA CRISPY - ALIOLI. INCLUYE PAPAS FRITAS.
-                                </p>
-                                <h4 class="card-text">Precio: $11.900</h4>
-                                <div class="d-flex align-items-center justify-content-center my-2">
-                                    <button class="btn btn-secondary btn-sm remove-one" data-name="La SOLID" data-price="11900">-</button>
-                                    <span class="mx-2 quantity" data-name="La SOLID">0</span>
-                                    <button class="btn btn-secondary btn-sm add-one" data-name="La SOLID" data-price="11900">+</button>
+                      </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div id="hamburguesas-carrusel" class="row align-items-center ">
+                        <div class="col-12 px-0">
+                           <div class="owl-carousel owl-theme ">
+                             
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <img src="../imgs/Burguer.png" alt="La Big Kernel">
+                                    <h3 class="card-title">La Big Kernel</h3>
+                                    <p class="card-text">PAN GOLDEN - SMASH DE CARNE x2 - CHEDDAR x4 - BACON. INCLUYE PAPAS FRITAS.</p>
+                                    <h4 class="card-text">Precio: $12.900</h4>
+                                    <div class="d-flex align-items-center justify-content-center my-2">
+                                        <button class="btn btn-secondary btn-sm remove-one" data-name="La Big Kernel" data-price="12900">-</button>
+                                        <span class="mx-2 quantity" data-name="La Big Kernel">0</span>
+                                        <button class="btn btn-secondary btn-sm add-one" data-name="La Big Kernel" data-price="12900">+</button>
+                                    </div>
+                                      
                                 </div>
-                                  
                             </div>
-                        </div>
-                        <div class="card mb-3">
-                            <div class="card-body">
-                                <img src="../imgs/Cheeseburguer++.png" alt="Chesseburger++">
-                                <h3 class="card-title">Chesseburger++</h3>
-                                <p class="card-text">PAN DE QUESO - SMASH DE CARNE x2 - CHEDDAR x4. INCLUYE PAPAS FRITAS.
-                                </p>
-                                <h4 class="card-text">Precio: $10.900</h4>
-                                <div class="d-flex align-items-center justify-content-center my-2">
-                                    <button class="btn btn-secondary btn-sm remove-one" data-name="Chesseburger++" data-price="10900">-</button>
-                                    <span class="mx-2 quantity" data-name="Chesseburger++">0</span>
-                                    <button class="btn btn-secondary btn-sm add-one" data-name="Chesseburger++" data-price="10900">+</button>
+                        
+                            
+                            
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <img src="../imgs/SOLID.png" alt="La SOLID">
+                                    <h3 class="card-title">La SOLID</h3>
+                                    <p class="card-text">PAN GOLDEN - SMASH DE CARNE x2 - CHEDDAR x4 - BACON - CEBOLLA CRISPY - ALIOLI. INCLUYE PAPAS FRITAS.
+                                    </p>
+                                    <h4 class="card-text">Precio: $11.900</h4>
+                                    <div class="d-flex align-items-center justify-content-center my-2">
+                                        <button class="btn btn-secondary btn-sm remove-one" data-name="La SOLID" data-price="11900">-</button>
+                                        <span class="mx-2 quantity" data-name="La SOLID">0</span>
+                                        <button class="btn btn-secondary btn-sm add-one" data-name="La SOLID" data-price="11900">+</button>
+                                    </div>
+                                      
                                 </div>
-                                  
                             </div>
-                        </div>
-                        <div class="card mb-3">
-                            <div class="card-body">
-                              <img src="../imgs/busquedabinaria.png" alt="Búsqueda Binaria">
-                              <h3 class="card-title">"Búsqueda Binaria"</h3>
-                              <p class="card-text">PAN GOLDEN - SMASH DE CARNE x2 - CHEDDAR x4 - BACON - SALSA BUP. INCLUYE PAPAS FRITAS.</p>
-                              <h4 class="card-text">Precio: $11.900</h4>
-                              <div class="d-flex align-items-center justify-content-center my-2">
-                                <button class="btn btn-secondary btn-sm remove-one" data-name="Búsqueda Binaria" data-price="11900">-</button>
-                                <span class="mx-2 quantity" data-name="Búsqueda Binaria">0</span>
-                                <button class="btn btn-secondary btn-sm add-one" data-name="Búsqueda Binaria" data-price="11900">+</button>
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <img src="../imgs/Cheeseburguer++.png" alt="Chesseburger++">
+                                    <h3 class="card-title">Chesseburger++</h3>
+                                    <p class="card-text">PAN DE QUESO - SMASH DE CARNE x2 - CHEDDAR x4. INCLUYE PAPAS FRITAS.
+                                    </p>
+                                    <h4 class="card-text">Precio: $10.900</h4>
+                                    <div class="d-flex align-items-center justify-content-center my-2">
+                                        <button class="btn btn-secondary btn-sm remove-one" data-name="Chesseburger++" data-price="10900">-</button>
+                                        <span class="mx-2 quantity" data-name="Chesseburger++">0</span>
+                                        <button class="btn btn-secondary btn-sm add-one" data-name="Chesseburger++" data-price="10900">+</button>
+                                    </div>
+                                      
+                                </div>
+                            </div>
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                  <img src="../imgs/busquedabinaria.png" alt="Búsqueda Binaria">
+                                  <h3 class="card-title">"Búsqueda Binaria"</h3>
+                                  <p class="card-text">PAN GOLDEN - SMASH DE CARNE x2 - CHEDDAR x4 - BACON - SALSA BUP. INCLUYE PAPAS FRITAS.</p>
+                                  <h4 class="card-text">Precio: $11.900</h4>
+                                  <div class="d-flex align-items-center justify-content-center my-2">
+                                    <button class="btn btn-secondary btn-sm remove-one" data-name="Búsqueda Binaria" data-price="11900">-</button>
+                                    <span class="mx-2 quantity" data-name="Búsqueda Binaria">0</span>
+                                    <button class="btn btn-secondary btn-sm add-one" data-name="Búsqueda Binaria" data-price="11900">+</button>
+                                  </div>
+                                </div>
                               </div>
-                            </div>
-                          </div>
-                        
-                        
-                         
-                       </div>
-                       <button  type="button" class="btn boton-ver-mas btn-primary">Ver más</button>
-                       <div class="row align-items-center" id="extra-cards" style="display: none;">
-                        <!-- Más tarjetas de productos aquí -->
-                        <div class="container my-5">
-                            <div class="row justify-content-center" id="product-cards">
-                                <!-- Tarjeta 1 -->
-                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
-                                    <div class="extra-card text-center h-100 card-body">
-                                        <img src="../imgs/debugdeluxe.png" alt="Debug Deluxe">
-                                        <h3 class="card-title">Debug Deluxe</h3>
-                                        <p class="card-text">PAN GOLDEN - SMASH DE CARNE x2 - CHEDDAR x4 - PROVOLETA - MORRÓN ASADO - HUEVO. INCLUYE PAPAS FRITAS.
-                                        </p>
-                                        <h4 class="card-text">Precio: $13.500</h4>
-                                        <div class="d-flex align-items-center justify-content-center my-2">
-                                            <button class="btn btn-secondary btn-sm remove-one" data-name="Debug Deluxe" data-price="13500">-</button>
-                                            <span class="mx-2 quantity" data-name="Debug Deluxe">0</span>
-                                            <button class="btn btn-secondary btn-sm add-one" data-name="Debug Deluxe" data-price="13500">+</button>
-                                          </div>
-                                          
+                            
+                            
+                             
+                           </div>
+                           <button  type="button" class="btn boton-ver-mas btn-primary">Ver más</button>
+                           <div class="row align-items-center" id="extra-cards" style="display: none;">
+                            <!-- Más tarjetas de productos aquí -->
+                            <div class="container my-5">
+                                <div class="row justify-content-center" id="product-cards">
+                                    <!-- Tarjeta 1 -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
+                                        <div class="extra-card text-center h-100 card-body">
+                                            <img src="../imgs/debugdeluxe.png" alt="Debug Deluxe">
+                                            <h3 class="card-title">Debug Deluxe</h3>
+                                            <p class="card-text">PAN GOLDEN - SMASH DE CARNE x2 - CHEDDAR x4 - PROVOLETA - MORRÓN ASADO - HUEVO. INCLUYE PAPAS FRITAS.
+                                            </p>
+                                            <h4 class="card-text">Precio: $13.500</h4>
+                                            <div class="d-flex align-items-center justify-content-center my-2">
+                                                <button class="btn btn-secondary btn-sm remove-one" data-name="Debug Deluxe" data-price="13500">-</button>
+                                                <span class="mx-2 quantity" data-name="Debug Deluxe">0</span>
+                                                <button class="btn btn-secondary btn-sm add-one" data-name="Debug Deluxe" data-price="13500">+</button>
+                                              </div>
+                                              
+                                        </div>
                                     </div>
-                                </div>
+                                    
+                                    
+                            
+                                    <!-- Tarjeta 2 -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
+                                        <div class="extra-card text-center h-100 card-body">
+                                            <img src="../imgs/databyte.png" alt="Data Byte">
+                                            <h3 class="card-title">Data Byte</h3>
+                                            <p class="card-text">PAN GOLDEN - SMASH DE CARNE x2 - CHEDDAR x4 - CEBOLLA CARAMELIZADA - ROQUEFORT - RÚCULA. INCLUYE PAPAS FRITAS.
+                                            </p>
+                                            <h4 class="card-text">Precio: $12.500</h4>
+                                            <div class="d-flex align-items-center justify-content-center my-2">
+                                                <button class="btn btn-secondary btn-sm remove-one" data-name="Data Byte" data-price="12500">-</button>
+                                                <span class="mx-2 quantity" data-name="Data Byte">0</span>
+                                                <button class="btn btn-secondary btn-sm add-one" data-name="Data Byte" data-price="12500">+</button>
+                                              </div>
+                                              
+                                        </div>
+                                    </div>
+                                    <!-- Tarjeta 3 -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
+                                        <div class="extra-card text-center h-100 card-body">
+                                            <img src="../imgs/Burguer.png" alt="La Big Kernel">
+                                            <h3 class="card-title">La Big Kernel</h3>
+                                            <p class="card-text">PAN GOLDEN - SMASH DE CARNE x2 - CHEDDAR x4 - BACON. INCLUYE PAPAS FRITAS.</p>
+                                            <h4 class="card-text">Precio: $12.900</h4>
+                                            <div class="d-flex align-items-center justify-content-center my-2">
+                                                <button class="btn btn-secondary btn-sm remove-one" data-name="La Big Kernel" data-price="12900">-</button>
+                                                <span class="mx-2 quantity" data-name="La Big Kernel">0</span>
+                                                <button class="btn btn-secondary btn-sm add-one" data-name="La Big Kernel" data-price="12900">+</button>
+                                              </div>
+                                              
+                                        </div>
+                                    </div>
                                 
+                                   
+                                    <!-- Tarjeta 4 -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
+                                        <div class="extra-card text-center h-100 card-body">
+                                            <img src="../imgs/SOLID.png" alt="La SOLID">
+                                            <h3 class="card-title">La SOLID</h3>
+                                            <p class="card-text">PAN GOLDEN - SMASH DE CARNE x2 - CHEDDAR x4 - BACON - CEBOLLA CRISPY - ALIOLI. INCLUYE PAPAS FRITAS.</p>
+                                            <h4 class="card-text">Precio: $11.900</h4>
+                                            <div class="d-flex align-items-center justify-content-center my-2">
+                                                <button class="btn btn-secondary btn-sm remove-one" data-name="La SOLID" data-price="11900">-</button>
+                                                <span class="mx-2 quantity" data-name="La SOLID">0</span>
+                                                <button class="btn btn-secondary btn-sm add-one" data-name="La SOLID" data-price="11900">+</button>
+                                              </div>
+                                              
+                                        </div>
+                                    </div>
                                 
-                        
-                                <!-- Tarjeta 2 -->
-                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
-                                    <div class="extra-card text-center h-100 card-body">
-                                        <img src="../imgs/databyte.png" alt="Data Byte">
-                                        <h3 class="card-title">Data Byte</h3>
-                                        <p class="card-text">PAN GOLDEN - SMASH DE CARNE x2 - CHEDDAR x4 - CEBOLLA CARAMELIZADA - ROQUEFORT - RÚCULA. INCLUYE PAPAS FRITAS.
-                                        </p>
-                                        <h4 class="card-text">Precio: $12.500</h4>
-                                        <div class="d-flex align-items-center justify-content-center my-2">
-                                            <button class="btn btn-secondary btn-sm remove-one" data-name="Data Byte" data-price="12500">-</button>
-                                            <span class="mx-2 quantity" data-name="Data Byte">0</span>
-                                            <button class="btn btn-secondary btn-sm add-one" data-name="Data Byte" data-price="12500">+</button>
-                                          </div>
-                                          
+                                    <!-- Tarjeta 5 -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
+                                        <div class="extra-card text-center h-100 card-body">
+                                            <img src="..//imgs/Cheeseburguer++.png" alt="Chesseburger++">
+                                            <h3 class="card-title">Chesseburger++</h3>
+                                            <p class="card-text">PAN DE QUESO - SMASH DE CARNE x2 - CHEDDAR x4. INCLUYE PAPAS FRITAS.</p>
+                                            <h4 class="card-text">Precio: $10.900</h4>
+                                            <div class="d-flex align-items-center justify-content-center my-2">
+                                                <button class="btn btn-secondary btn-sm remove-one" data-name="Chesseburger++" data-price="10900">-</button>
+                                                <span class="mx-2 quantity" data-name="Chesseburger++">0</span>
+                                                <button class="btn btn-secondary btn-sm add-one" data-name="Chesseburger++" data-price="10900">+</button>
+                                              </div>
+                                              
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
-                                    <div class="extra-card text-center h-100 card-body">
-                                        <img src="../imgs/Burguer.png" alt="La Big Kernel">
-                                        <h3 class="card-title">La Big Kernel</h3>
-                                        <p class="card-text">PAN GOLDEN - SMASH DE CARNE x2 - CHEDDAR x4 - BACON. INCLUYE PAPAS FRITAS.</p>
-                                        <h4 class="card-text">Precio: $12.900</h4>
-                                        <div class="d-flex align-items-center justify-content-center my-2">
-                                            <button class="btn btn-secondary btn-sm remove-one" data-name="La Big Kernel" data-price="12900">-</button>
-                                            <span class="mx-2 quantity" data-name="La Big Kernel">0</span>
-                                            <button class="btn btn-secondary btn-sm add-one" data-name="La Big Kernel" data-price="12900">+</button>
-                                          </div>
-                                          
+                                    <!-- Tarjeta 6 -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
+                                        <div class="extra-card text-center h-100 card-body">
+                                            <img src="../imgs/busquedabinaria.png" alt="Búsqueda Binaria">
+                                            <h3 class="card-title">Búsqueda Binaria</h3>
+                                            <p class="card-text">PAN GOLDEN - SMASH DE CARNE x2 - CHEDDAR x4 - BACON - SALSA BUP. INCLUYE PAPAS FRITAS.</p>
+                                            <h4 class="card-text">Precio: $11.900</h4>
+                                            <div class="d-flex align-items-center justify-content-center my-2">
+                                                <button class="btn btn-secondary btn-sm remove-one" data-name="Búsqueda Binaria" data-price="11900">-</button>
+                                                <span class="mx-2 quantity" data-name="Búsqueda Binaria">0</span>
+                                                <button class="btn btn-secondary btn-sm add-one" data-name="Búsqueda Binaria" data-price="11900">+</button>
+                                              </div>
+                                              
+                                        </div>
                                     </div>
-                                </div>
-                            
-                               
-                                <!-- Tarjeta 1 -->
-                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
-                                    <div class="extra-card text-center h-100 card-body">
-                                        <img src="../imgs/SOLID.png" alt="La SOLID">
-                                        <h3 class="card-title">La SOLID</h3>
-                                        <p class="card-text">PAN GOLDEN - SMASH DE CARNE x2 - CHEDDAR x4 - BACON - CEBOLLA CRISPY - ALIOLI. INCLUYE PAPAS FRITAS.</p>
-                                        <h4 class="card-text">Precio: $11.900</h4>
-                                        <div class="d-flex align-items-center justify-content-center my-2">
-                                            <button class="btn btn-secondary btn-sm remove-one" data-name="La SOLID" data-price="11900">-</button>
-                                            <span class="mx-2 quantity" data-name="La SOLID">0</span>
-                                            <button class="btn btn-secondary btn-sm add-one" data-name="La SOLID" data-price="11900">+</button>
-                                          </div>
-                                          
-                                    </div>
-                                </div>
-                            
-                                <!-- Tarjeta 2 -->
-                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
-                                    <div class="extra-card text-center h-100 card-body">
-                                        <img src="..//imgs/Cheeseburguer++.png" alt="Chesseburger++">
-                                        <h3 class="card-title">Chesseburger++</h3>
-                                        <p class="card-text">PAN DE QUESO - SMASH DE CARNE x2 - CHEDDAR x4. INCLUYE PAPAS FRITAS.</p>
-                                        <h4 class="card-text">Precio: $10.900</h4>
-                                        <div class="d-flex align-items-center justify-content-center my-2">
-                                            <button class="btn btn-secondary btn-sm remove-one" data-name="Chesseburger++" data-price="10900">-</button>
-                                            <span class="mx-2 quantity" data-name="Chesseburger++">0</span>
-                                            <button class="btn btn-secondary btn-sm add-one" data-name="Chesseburger++" data-price="10900">+</button>
-                                          </div>
-                                          
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
-                                    <div class="extra-card text-center h-100 card-body">
-                                        <img src="../imgs/busquedabinaria.png" alt="Búsqueda Binaria">
-                                        <h3 class="card-title">Búsqueda Binaria</h3>
-                                        <p class="card-text">PAN GOLDEN - SMASH DE CARNE x2 - CHEDDAR x4 - BACON - SALSA BUP. INCLUYE PAPAS FRITAS.</p>
-                                        <h4 class="card-text">Precio: $11.900</h4>
-                                        <div class="d-flex align-items-center justify-content-center my-2">
-                                            <button class="btn btn-secondary btn-sm remove-one" data-name="Búsqueda Binaria" data-price="11900">-</button>
-                                            <span class="mx-2 quantity" data-name="Búsqueda Binaria">0</span>
-                                            <button class="btn btn-secondary btn-sm add-one" data-name="Búsqueda Binaria" data-price="11900">+</button>
-                                          </div>
-                                          
-                                    </div>
-                                </div>
-                            
-        
-                       </div>
-        
+                                
+            
+                           </div>
+            
+                        </div>
+            
                     </div>
-        
-                </div>
-        
             
-            
-          </section>
-          <section id="veggie">
-            <div class="container-fluid px-0">
-              <div id="separador-hamburguesas" class="row">
-                <div class="col-12 px-0">
-                  <div class="text-center py-0">
-                    
-                    <h2>Veggie</h2>
-                    
-                  </div>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div id="hamburguesas-carrusel" class="row align-items-center ">
+                
+                
+              </section>
+              <section id="veggie">
+                <div class="container-fluid px-0">
+                  <div id="separador-hamburguesas" class="row">
                     <div class="col-12 px-0">
-                       <div class="owl-carousel owl-theme ">
-                         
-                        <div class="card mb-3">
-                            <div class="card-body">
-                                <img src="../imgs/fullstack.png" alt="Full Stack">
-                                <h3 class="card-title">La "Full Stack"</h3>
-                                <p class="card-text">PAN DE SÉSAMO - MEDALLÓN VEGANO x2 - CHEDDAR VEGANO x3 - CEBOLLA - LECHUGA - PEPINILLOS - SALSA BUP. INCLUYE PAPAS FRITAS.</p>
-                                <h4 class="card-text">Precio: $12.900</h4>
-                                <div class="d-flex align-items-center justify-content-center my-2">
-                                    <button class="btn btn-secondary btn-sm remove-one" data-name="Full Stack" data-price="12900">-</button>
-                                    <span class="mx-2 quantity" data-name="Full Stack">0</span>
-                                    <button class="btn btn-secondary btn-sm add-one" data-name="Full Stack" data-price="12900">+</button>
-                                  </div>
-                                  
-                            </div>
-                        </div>
-                    
+                      <div class="text-center py-0">
                         
+                        <h2>Veggie</h2>
                         
-                        <div class="card mb-3">
-                            <div class="card-body">
-                                <img src="../imgs/echoburger.png" alt="Echo Burger">
-                                <h3 class="card-title">Echo Burger</h3>
-                                <p class="card-text">PAN VEGANO - PASTA DE ARVEJAS SIMIL POLLO APANADO EN PANKO - GUACAMOLE - TOMATE - CEBOLLA CARAMELIZADA - CHEDDAR VEGANO x2. INCLUYE PAPAS FRITAS.</p>
-                                <h4 class="card-text">Precio: $11.900</h4>
-                                <div class="d-flex align-items-center justify-content-center my-2">
-                                    <button class="btn btn-secondary btn-sm remove-one" data-name="Echo Burger" data-price="11900">-</button>
-                                    <span class="mx-2 quantity" data-name="Echo Burger">0</span>
-                                    <button class="btn btn-secondary btn-sm add-one" data-name="Echo Burger" data-price="11900">+</button>
-                                  </div>
-                                  
-                            </div>
-                        </div>
-                        <div class="card mb-3">
-                            <div class="card-body">
-                                <img src="../imgs/Proxy Paty.png" alt="Proxy Paty">
-                                <h3 class="card-title">Proxy Paty</h3>
-                                <p class="card-text">PAN VEGANO - MEDALLÓN VEGANO 80GR x2 - CHEDDAR VEGANO x2 - BASTÓN DE MUZZALMENDRA - SALSA DE TOMATE. INCLUYE PAPAS FRITAS.</p>
-                                <h4 class="card-text">Precio: $12.900</h4>
-                                <div class="d-flex align-items-center justify-content-center my-2">
-                                    <button class="btn btn-secondary btn-sm remove-one" data-name="Proxy Paty" data-price="12900">-</button>
-                                    <span class="mx-2 quantity" data-name="Proxy Paty">0</span>
-                                    <button class="btn btn-secondary btn-sm add-one" data-name="Proxy Paty" data-price="12900">+</button>
-                                  </div>
-                                  
-                            </div>
-                        </div>
-                        <div class="card mb-3">
-                            <div class="card-body">
-                                <img src="../imgs/Burguer.png" alt="La Veggie Kernel">
-                                <h3 class="card-title">La Veggie Kernel</h3>
-                                <p class="card-text">PAN VEGANO - SMASH VEGANO x2 - CHEDDAR VEGANO x4 - BACON VEGANO. INCLUYE PAPAS FRITAS.</p>
-                                <h4 class="card-text">Precio: $12.900</h4>
-                                <div class="d-flex align-items-center justify-content-center my-2">
-                                    <button class="btn btn-secondary btn-sm remove-one" data-name="La Veggie Kernel" data-price="12900">-</button>
-                                    <span class="mx-2 quantity" data-name="La Veggie Kernel">0</span>
-                                    <button class="btn btn-secondary btn-sm add-one" data-name="La Veggie Kernel" data-price="12900">+</button>
-                                  </div>
-                                  
-                            </div>
-                        </div>
-                        
-                        
-                         
-                       </div>
-                       <button  type="button" class="btn boton-ver-mas btn-primary">Ver más</button>
-                       <div class="row align-items-center" id="extra-cards" style="display: none;">
-                        <!-- Más tarjetas de productos aquí -->
-                        <div class="container my-5">
-                            <div class="row justify-content-center" id="product-cards">
-                                <!-- Tarjeta 1 -->
-                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
-                                    <div class="extra-card text-center h-100 card-body">
-                                        <img src="../imgs/SOLID.png" alt="Veggie SOLID">
-                                        <h3 class="card-title">Veggie SOLID</h3>
-                                        <p class="card-text">PAN VEGANO - SMASH VEGANO x2 - CHEDDAR VEGANO x4 - BACON VEGANO - CEBOLLA CRISPY - ALIOLI VEGANO. INCLUYE PAPAS FRITAS.</p>
-                                        <h4 class="card-text">Precio: $11.900</h4>
-                                        <div class="d-flex align-items-center justify-content-center my-2">
-                                            <button class="btn btn-secondary btn-sm remove-one" data-name="Veggie SOLID" data-price="11900">-</button>
-                                            <span class="mx-2 quantity" data-name="Veggie SOLID">0</span>
-                                            <button class="btn btn-secondary btn-sm add-one" data-name="Veggie SOLID" data-price="11900">+</button>
-                                          </div>
-                                          
-                                    </div>
-                                </div>
-                                
-                                
-                        
-                                <!-- Tarjeta 2 -->
-                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
-                                    <div class="extra-card text-center h-100 card-body">
-                                        <img src="..//imgs/Cheeseburguer++.png" alt="Veggie Chesseburger++">
-                                        <h3 class="card-title">Veggie Chesseburger++</h3>
-                                        <p class="card-text">PAN DE QUESO VEGANO - SMASH VEGANO x2 - CHEDDAR VEGANO x4. INCLUYE PAPAS FRITAS.</p>
-                                        <h4 class="card-text">Precio: $10.900</h4>
-                                        <div class="d-flex align-items-center justify-content-center my-2">
-                                            <button class="btn btn-secondary btn-sm remove-one" data-name="Veggie Chesseburger++" data-price="10900">-</button>
-                                            <span class="mx-2 quantity" data-name="Veggie Chesseburger++">0</span>
-                                            <button class="btn btn-secondary btn-sm add-one" data-name="Veggie Chesseburger++" data-price="10900">+</button>
-                                          </div>
-                                          
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
-                                    <div class="extra-card text-center h-100 card-body">
-                                        <img src="../imgs/fullstack.png" alt="Full Stack">
-                                        <h3 class="card-title">La "Full Stack"</h3>
-                                        <p class="card-text">PAN DE SÉSAMO - MEDALLÓN VEGANO x2 - CHEDDAR VEGANO x3 - CEBOLLA - LECHUGA - PEPINILLOS - SALSA BUP. INCLUYE PAPAS FRITAS.</p>
-                                        <h4 class="card-text">Precio: $12.900</h4>
-                                        <div class="d-flex align-items-center justify-content-center my-2">
-                                            <button class="btn btn-secondary btn-sm remove-one" data-name="Full Stack" data-price="12900">-</button>
-                                            <span class="mx-2 quantity" data-name="Full Stack">0</span>
-                                            <button class="btn btn-secondary btn-sm add-one" data-name="Full Stack" data-price="12900">+</button>
-                                          </div>
-                                          
-                                    </div>
-                                </div>
-                            
-                               
-                                <!-- Tarjeta 1 -->
-                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
-                                    <div class="extra-card text-center h-100 card-body">
-                                        <img src="../imgs/echoburger.png" alt="Echo Burger">
-                                        <h3 class="card-title">Echo Burger</h3>
-                                        <p class="card-text">PAN VEGANO - PASTA DE ARVEJAS SIMIL POLLO APANADO EN PANKO - GUACAMOLE - TOMATE - CEBOLLA CARAMELIZADA - CHEDDAR VEGANO x2. INCLUYE PAPAS FRITAS.</p>
-                                        <h4 class="card-text">Precio: $11.900</h4>
-                                        <div class="d-flex align-items-center justify-content-center my-2">
-                                            <button class="btn btn-secondary btn-sm remove-one" data-name="Echo Burger" data-price="11900">-</button>
-                                            <span class="mx-2 quantity" data-name="Echo Burger">0</span>
-                                            <button class="btn btn-secondary btn-sm add-one" data-name="Echo Burger" data-price="11900">+</button>
-                                          </div>
-                                          
-                                    </div>
-                                </div>
-                            
-                                <!-- Tarjeta 2 -->
-                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
-                                    <div class="extra-card text-center h-100 card-body">
-                                        <img src="../imgs/Proxy Paty.png" alt="Proxy Paty">
-                                        <h3 class="card-title">Proxy Paty</h3>
-                                        <p class="card-text">PAN VEGANO - MEDALLÓN VEGANO 80GR x2 - CHEDDAR VEGANO x2 - BASTÓN DE MUZZALMENDRA - SALSA DE TOMATE. INCLUYE PAPAS FRITAS.</p>
-                                        <h4 class="card-text">Precio: $12.900</h4>
-                                        <div class="d-flex align-items-center justify-content-center my-2">
-                                            <button class="btn btn-secondary btn-sm remove-one" data-name="Proxy Paty" data-price="12900">-</button>
-                                            <span class="mx-2 quantity" data-name="Proxy Paty">0</span>
-                                            <button class="btn btn-secondary btn-sm add-one" data-name="Proxy Paty" data-price="12900">+</button>
-                                          </div>
-                                          
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
-                                    <div class="extra-card text-center h-100 card-body">
-                                        <img src="../imgs/Burguer.png" alt="La Veggie Kernel">
-                                        <h3 class="card-title">La Veggie Kernel</h3>
-                                        <p class="card-text">PAN VEGANO - SMASH VEGANO x2 - CHEDDAR VEGANO x4 - BACON VEGANO. INCLUYE PAPAS FRITAS.</p>
-                                        h4 class="card-text">Precio: $12.900</h4>
-                                        <div class="d-flex align-items-center justify-content-center my-2">
-                                            <button class="btn btn-secondary btn-sm remove-one" data-name="La Veggie Kernel" data-price="12900">-</button>
-                                            <span class="mx-2 quantity" data-name="La Veggie Kernel">0</span>
-                                            <button class="btn btn-secondary btn-sm add-one" data-name="La Veggie Kernel" data-price="12900">+</button>
-                                          </div>
-                                          
-                                    </div>
-                                </div>
-                                
-                            
-        
-                       </div>
-        
+                      </div>
                     </div>
-        
                 </div>
-        
+                <div class="container-fluid">
+                    <div id="hamburguesas-carrusel" class="row align-items-center ">
+                        <div class="col-12 px-0">
+                           <div class="owl-carousel owl-theme ">
+                             
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <img src="../imgs/fullstack.png" alt="Full Stack">
+                                    <h3 class="card-title">La "Full Stack"</h3>
+                                    <p class="card-text">PAN DE SÉSAMO - MEDALLÓN VEGANO x2 - CHEDDAR VEGANO x3 - CEBOLLA - LECHUGA - PEPINILLOS - SALSA BUP. INCLUYE PAPAS FRITAS.</p>
+                                    <h4 class="card-text">Precio: $12.900</h4>
+                                    <div class="d-flex align-items-center justify-content-center my-2">
+                                        <button class="btn btn-secondary btn-sm remove-one" data-name="Full Stack" data-price="12900">-</button>
+                                        <span class="mx-2 quantity" data-name="Full Stack">0</span>
+                                        <button class="btn btn-secondary btn-sm add-one" data-name="Full Stack" data-price="12900">+</button>
+                                      </div>
+                                      
+                                </div>
+                            </div>
+                        
+                            
+                            
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <img src="../imgs/echoburger.png" alt="Echo Burger">
+                                    <h3 class="card-title">Echo Burger</h3>
+                                    <p class="card-text">PAN VEGANO - PASTA DE ARVEJAS SIMIL POLLO APANADO EN PANKO - GUACAMOLE - TOMATE - CEBOLLA CARAMELIZADA - CHEDDAR VEGANO x2. INCLUYE PAPAS FRITAS.</p>
+                                    <h4 class="card-text">Precio: $11.900</h4>
+                                    <div class="d-flex align-items-center justify-content-center my-2">
+                                        <button class="btn btn-secondary btn-sm remove-one" data-name="Echo Burger" data-price="11900">-</button>
+                                        <span class="mx-2 quantity" data-name="Echo Burger">0</span>
+                                        <button class="btn btn-secondary btn-sm add-one" data-name="Echo Burger" data-price="11900">+</button>
+                                      </div>
+                                      
+                                </div>
+                            </div>
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <img src="../imgs/Proxy Paty.png" alt="Proxy Paty">
+                                    <h3 class="card-title">Proxy Paty</h3>
+                                    <p class="card-text">PAN VEGANO - MEDALLÓN VEGANO 80GR x2 - CHEDDAR VEGANO x2 - BASTÓN DE MUZZALMENDRA - SALSA DE TOMATE. INCLUYE PAPAS FRITAS.</p>
+                                    <h4 class="card-text">Precio: $12.900</h4>
+                                    <div class="d-flex align-items-center justify-content-center my-2">
+                                        <button class="btn btn-secondary btn-sm remove-one" data-name="Proxy Paty" data-price="12900">-</button>
+                                        <span class="mx-2 quantity" data-name="Proxy Paty">0</span>
+                                        <button class="btn btn-secondary btn-sm add-one" data-name="Proxy Paty" data-price="12900">+</button>
+                                      </div>
+                                      
+                                </div>
+                            </div>
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <img src="../imgs/Burguer.png" alt="La Veggie Kernel">
+                                    <h3 class="card-title">La Veggie Kernel</h3>
+                                    <p class="card-text">PAN VEGANO - SMASH VEGANO x2 - CHEDDAR VEGANO x4 - BACON VEGANO. INCLUYE PAPAS FRITAS.</p>
+                                    <h4 class="card-text">Precio: $12.900</h4>
+                                    <div class="d-flex align-items-center justify-content-center my-2">
+                                        <button class="btn btn-secondary btn-sm remove-one" data-name="La Veggie Kernel" data-price="12900">-</button>
+                                        <span class="mx-2 quantity" data-name="La Veggie Kernel">0</span>
+                                        <button class="btn btn-secondary btn-sm add-one" data-name="La Veggie Kernel" data-price="12900">+</button>
+                                      </div>
+                                      
+                                </div>
+                            </div>
+                            
+                            
+                             
+                           </div>
+                           <button  type="button" class="btn boton-ver-mas btn-primary">Ver más</button>
+                           <div class="row align-items-center" id="extra-cards" style="display: none;">
+                            <!-- Más tarjetas de productos aquí -->
+                            <div class="container my-5">
+                                <div class="row justify-content-center" id="product-cards">
+                                    <!-- Tarjeta 1 -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
+                                        <div class="extra-card text-center h-100 card-body">
+                                            <img src="../imgs/SOLID.png" alt="Veggie SOLID">
+                                            <h3 class="card-title">Veggie SOLID</h3>
+                                            <p class="card-text">PAN VEGANO - SMASH VEGANO x2 - CHEDDAR VEGANO x4 - BACON VEGANO - CEBOLLA CRISPY - ALIOLI VEGANO. INCLUYE PAPAS FRITAS.</p>
+                                            <h4 class="card-text">Precio: $11.900</h4>
+                                            <div class="d-flex align-items-center justify-content-center my-2">
+                                                <button class="btn btn-secondary btn-sm remove-one" data-name="Veggie SOLID" data-price="11900">-</button>
+                                                <span class="mx-2 quantity" data-name="Veggie SOLID">0</span>
+                                                <button class="btn btn-secondary btn-sm add-one" data-name="Veggie SOLID" data-price="11900">+</button>
+                                              </div>
+                                              
+                                        </div>
+                                    </div>
+                                    
+                                    
+                            
+                                    <!-- Tarjeta 2 -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
+                                        <div class="extra-card text-center h-100 card-body">
+                                            <img src="..//imgs/Cheeseburguer++.png" alt="Veggie Chesseburger++">
+                                            <h3 class="card-title">Veggie Chesseburger++</h3>
+                                            <p class="card-text">PAN DE QUESO VEGANO - SMASH VEGANO x2 - CHEDDAR VEGANO x4. INCLUYE PAPAS FRITAS.</p>
+                                            <h4 class="card-text">Precio: $10.900</h4>
+                                            <div class="d-flex align-items-center justify-content-center my-2">
+                                                <button class="btn btn-secondary btn-sm remove-one" data-name="Veggie Chesseburger++" data-price="10900">-</button>
+                                                <span class="mx-2 quantity" data-name="Veggie Chesseburger++">0</span>
+                                                <button class="btn btn-secondary btn-sm add-one" data-name="Veggie Chesseburger++" data-price="10900">+</button>
+                                              </div>
+                                              
+                                        </div>
+                                    </div>
+                                    <!-- Tarjeta 3 -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
+                                        <div class="extra-card text-center h-100 card-body">
+                                            <img src="../imgs/fullstack.png" alt="Full Stack">
+                                            <h3 class="card-title">La "Full Stack"</h3>
+                                            <p class="card-text">PAN DE SÉSAMO - MEDALLÓN VEGANO x2 - CHEDDAR VEGANO x3 - CEBOLLA - LECHUGA - PEPINILLOS - SALSA BUP. INCLUYE PAPAS FRITAS.</p>
+                                            <h4 class="card-text">Precio: $12.900</h4>
+                                            <div class="d-flex align-items-center justify-content-center my-2">
+                                                <button class="btn btn-secondary btn-sm remove-one" data-name="Full Stack" data-price="12900">-</button>
+                                                <span class="mx-2 quantity" data-name="Full Stack">0</span>
+                                                <button class="btn btn-secondary btn-sm add-one" data-name="Full Stack" data-price="12900">+</button>
+                                              </div>
+                                              
+                                        </div>
+                                    </div>
+                                
+                                   
+                                    <!-- Tarjeta 4 -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
+                                        <div class="extra-card text-center h-100 card-body">
+                                            <img src="../imgs/echoburger.png" alt="Echo Burger">
+                                            <h3 class="card-title">Echo Burger</h3>
+                                            <p class="card-text">PAN VEGANO - PASTA DE ARVEJAS SIMIL POLLO APANADO EN PANKO - GUACAMOLE - TOMATE - CEBOLLA CARAMELIZADA - CHEDDAR VEGANO x2. INCLUYE PAPAS FRITAS.</p>
+                                            <h4 class="card-text">Precio: $11.900</h4>
+                                            <div class="d-flex align-items-center justify-content-center my-2">
+                                                <button class="btn btn-secondary btn-sm remove-one" data-name="Echo Burger" data-price="11900">-</button>
+                                                <span class="mx-2 quantity" data-name="Echo Burger">0</span>
+                                                <button class="btn btn-secondary btn-sm add-one" data-name="Echo Burger" data-price="11900">+</button>
+                                              </div>
+                                              
+                                        </div>
+                                    </div>
+                                
+                                    <!-- Tarjeta 5 -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
+                                        <div class="extra-card text-center h-100 card-body">
+                                            <img src="../imgs/Proxy Paty.png" alt="Proxy Paty">
+                                            <h3 class="card-title">Proxy Paty</h3>
+                                            <p class="card-text">PAN VEGANO - MEDALLÓN VEGANO 80GR x2 - CHEDDAR VEGANO x2 - BASTÓN DE MUZZALMENDRA - SALSA DE TOMATE. INCLUYE PAPAS FRITAS.</p>
+                                            <h4 class="card-text">Precio: $12.900</h4>
+                                            <div class="d-flex align-items-center justify-content-center my-2">
+                                                <button class="btn btn-secondary btn-sm remove-one" data-name="Proxy Paty" data-price="12900">-</button>
+                                                <span class="mx-2 quantity" data-name="Proxy Paty">0</span>
+                                                <button class="btn btn-secondary btn-sm add-one" data-name="Proxy Paty" data-price="12900">+</button>
+                                              </div>
+                                              
+                                        </div>
+                                    </div>
+                                    <!-- Tarjeta 6 -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
+                                        <div class="extra-card text-center h-100 card-body">
+                                            <img src="../imgs/Burguer.png" alt="La Veggie Kernel">
+                                            <h3 class="card-title">La Veggie Kernel</h3>
+                                            <p class="card-text">PAN VEGANO - SMASH VEGANO x2 - CHEDDAR VEGANO x4 - BACON VEGANO. INCLUYE PAPAS FRITAS.</p>
+                                            h4 class="card-text">Precio: $12.900</h4>
+                                            <div class="d-flex align-items-center justify-content-center my-2">
+                                                <button class="btn btn-secondary btn-sm remove-one" data-name="La Veggie Kernel" data-price="12900">-</button>
+                                                <span class="mx-2 quantity" data-name="La Veggie Kernel">0</span>
+                                                <button class="btn btn-secondary btn-sm add-one" data-name="La Veggie Kernel" data-price="12900">+</button>
+                                              </div>
+                                              
+                                        </div>
+                                    </div>
+                                    
+                                
             
+                           </div>
             
-          </section>
-          <section id="bebidas">
-            <div class="container-fluid px-0">
-              <div id="separador-hamburguesas" class="row">
-                <div class="col-12 px-0">
-                  <div class="text-center py-0">
-                    
-                    <h2>Bebidas</h2>
-                    
-                  </div>
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div id="hamburguesas-carrusel" class="row align-items-center ">
+                        </div>
+            
+                    </div>
+            
+                
+                
+              </section>
+              <section id="bebidas">
+                <div class="container-fluid px-0">
+                  <div id="separador-hamburguesas" class="row">
                     <div class="col-12 px-0">
-                       <div class="owl-carousel owl-theme ">
-                         
-                        <div class="card mb-3">
-                            <div class="card-body">
-                                <img src="../imgs/coca-cola.webp" alt="Coca-Cola">
-                                <h3 class="card-title">Coca-Cola</h3>
-                                <p class="card-text">500 ml</p>
-                                <h4 class="card-text">Precio: $3.900</h4>
-                                <div class="d-flex align-items-center justify-content-center my-2">
-                                    <button class="btn btn-secondary btn-sm remove-one" data-name="Coca-Cola" data-price="3900">-</button>
-                                    <span class="mx-2 quantity" data-name="Coca-Cola">0</span>
-                                    <button class="btn btn-secondary btn-sm add-one" data-name="Coca-Colae" data-price="3900">+</button>
-                                  </div>
-                                  
-                            </div>
-                        </div>
-                    
+                      <div class="text-center py-0">
                         
+                        <h2>Bebidas</h2>
                         
-                        <div class="card mb-3">
-                            <div class="card-body">
-                                <img src="../imgs/sprite.webp" alt="prite ZERO">
-                                <h3 class="card-title">Sprite ZERO</h3>
-                                <p class="card-text">500 ml</p>
-                                <h4 class="card-text">Precio: $3.900</h4>
-                                <div class="d-flex align-items-center justify-content-center my-2">
-                                    <button class="btn btn-secondary btn-sm remove-one" data-name="prite ZERO" data-price="3900">-</button>
-                                    <span class="mx-2 quantity" data-name="prite ZERO">0</span>
-                                    <button class="btn btn-secondary btn-sm add-one" data-name="prite ZERO" data-price="3900">+</button>
-                                  </div>
-                                  
-                            </div>
-                        </div>
-                        <div class="card mb-3">
-                            <div class="card-body">
-                                <img src="../imgs/fanta.jpg" alt="Fanta">
-                                <h3 class="card-title">Fanta</h3>
-                                <p class="card-text">500 ml</p>
-                                <h4 class="card-text">Precio: $3.900</h4>
-                                <div class="d-flex align-items-center justify-content-center my-2">
-                                    <button class="btn btn-secondary btn-sm remove-one" data-name="Fanta" data-price="3900">-</button>
-                                    <span class="mx-2 quantity" data-name="Fanta">0</span>
-                                    <button class="btn btn-secondary btn-sm add-one" data-name="Fanta" data-price="3900">+</button>
-                                  </div>
-                                  
-                            </div>
-                        </div>
-                        <div class="card mb-3">
-                            <div class="card-body">
-                                <img src="../imgs/agua.jpg" alt="Villavicencio">
-                                <h3 class="card-title">Agua mineral "Villavicencio"</h3>
-                                <p class="card-text">500 ml</p>
-                                <h4 class="card-text">Precio: $3.900</h4>
-                                <div class="d-flex align-items-center justify-content-center my-2">
-                                    <button class="btn btn-secondary btn-sm remove-one" data-name="Villavicencio" data-price="3900">-</button>
-                                    <span class="mx-2 quantity" data-name="Villavicencio">0</span>
-                                    <button class="btn btn-secondary btn-sm add-one" data-name="Villavicencio" data-price="3900">+</button>
-                                  </div>
-                                  
-                            </div>
-                        </div>
-                        
-                        
-                         
-                       </div>
-                       <button  type="button" class="btn boton-ver-mas btn-primary">Ver más</button>
-                       <div class="row align-items-center" id="extra-cards" style="display: none;">
-                        <!-- Más tarjetas de productos aquí -->
-                        <div class="container my-5">
-                            <div class="row justify-content-center" id="product-cards">
-                                <!-- Tarjeta 1 -->
-                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
-                                    <div class="extra-card text-center h-100 card-body">
-                                        <img src="../imgs/cerveza.jpg" alt="Heineken">
-                                        <h3 class="card-title">Cerveza "Heineken"</h3>
-                                        <p class="card-text">473 cm3</p>
-                                        <h4 class="card-text">Precio: $4.900</h4>
-                                        <div class="d-flex align-items-center justify-content-center my-2">
-                                            <button class="btn btn-secondary btn-sm remove-one" data-name="Heineken" data-price="4900">-</button>
-                                            <span class="mx-2 quantity" data-name="Heineken">0</span>
-                                            <button class="btn btn-secondary btn-sm add-one" data-name="Heineken" data-price="4900">+</button>
-                                          </div>
-                                          
-                                    </div>
-                                </div>
-                                
-                                
-                        
-                                <!-- Tarjeta 2 -->
-                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
-                                    <div class="extra-card text-center h-100 card-body">
-                                        <img src="../imgs/brahma.jpg" alt="Brahma">
-                                        <h3 class="card-title">Cerveza "Brahma"</h3>
-                                        <p class="card-text">473 cm3</p>
-                                        <h4 class="card-text">Precio: $4.000</h4>
-                                        <div class="d-flex align-items-center justify-content-center my-2">
-                                            <button class="btn btn-secondary btn-sm remove-one" data-name="Brahma" data-price="4000">-</button>
-                                            <span class="mx-2 quantity" data-name="Brahma">0</span>
-                                            <button class="btn btn-secondary btn-sm add-one" data-name="Brahma" data-price="4000">+</button>
-                                          </div>
-                                          
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
-                                    <div class="extra-card text-center h-100 card-body">
-                                        <img src="../imgs/coca-cola.webp" alt="Coca-Cola">
-                                        <h3 class="card-title">Coca-Cola</h3>
-                                        <p class="card-text">500 ml</p>
-                                        <h4 class="card-text">Precio: $3.900</h4>
-                                        <div class="d-flex align-items-center justify-content-center my-2">
-                                            <button class="btn btn-secondary btn-sm remove-one" data-name="Coca-Cola" data-price="3900">-</button>
-                                            <span class="mx-2 quantity" data-name="Coca-Cola">0</span>
-                                            <button class="btn btn-secondary btn-sm add-one" data-name="Coca-Cola" data-price="3900">+</button>
-                                          </div>
-                                          
-                                    </div>
-                                </div>
-                            
-                               
-                                <!-- Tarjeta 1 -->
-                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
-                                    <div class="extra-card text-center h-100 card-body">
-                                        <img src="../imgs/sprite.webp" alt="Sprite ZERO">
-                                        <h3 class="card-title">Sprite ZERO</h3>
-                                        <p class="card-text">500 ml</p>
-                                        <h4 class="card-text">Precio: $3.900</h4>
-                                        <div class="d-flex align-items-center justify-content-center my-2">
-                                            <button class="btn btn-secondary btn-sm remove-one" data-name="Sprite ZERO" data-price="3900">-</button>
-                                            <span class="mx-2 quantity" data-name="Sprite ZERO">0</span>
-                                            <button class="btn btn-secondary btn-sm add-one" data-name="Sprite ZERO" data-price="3900">+</button>
-                                          </div>
-                                          
-                                    </div>
-                                </div>
-                            
-                                <!-- Tarjeta 2 -->
-                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
-                                    <div class="extra-card text-center h-100 card-body">
-                                        <img src="../imgs/fanta.jpg" alt="Fanta">
-                                        <h3 class="card-title">Fanta</h3>
-                                        <p class="card-text">500 ml</p>
-                                        <h4 class="card-text">Precio: $3.900</h4>
-                                        <div class="d-flex align-items-center justify-content-center my-2">
-                                            <button class="btn btn-secondary btn-sm remove-one" data-name="Fanta" data-price="3900">-</button>
-                                            <span class="mx-2 quantity" data-name="Fanta">0</span>
-                                            <button class="btn btn-secondary btn-sm add-one" data-name="Fanta" data-price="3900">+</button>
-                                          </div>
-                                          
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
-                                    <div class="extra-card text-center h-100 card-body">
-                                        <img src="../imgs/agua.jpg" alt="Villavicencio">
-                                        <h3 class="card-title">Agua mineral "Villavicencio"</h3>
-                                        <p class="card-text">500 ml</p>
-                                        <h4 class="card-text">Precio: $3.900</h4>
-                                        <div class="d-flex align-items-center justify-content-center my-2">
-                                            <button class="btn btn-secondary btn-sm remove-one" data-name="Villavicencio" data-price="3900">-</button>
-                                            <span class="mx-2 quantity" data-name="Villavicencio">0</span>
-                                            <button class="btn btn-secondary btn-sm add-one" data-name="Villavicencio" data-price="3900">+</button>
-                                          </div>
-                                          
-                                    </div>
-                                </div>
-                            
-        
-                       </div>
-        
+                      </div>
                     </div>
-        
                 </div>
+                <div class="container-fluid">
+                    <div id="hamburguesas-carrusel" class="row align-items-center ">
+                        <div class="col-12 px-0">
+                           <div class="owl-carousel owl-theme ">
+                             
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <img src="../imgs/coca-cola.webp" alt="Coca-Cola">
+                                    <h3 class="card-title">Coca-Cola</h3>
+                                    <p class="card-text">500 ml</p>
+                                    <h4 class="card-text">Precio: $3.900</h4>
+                                    <div class="d-flex align-items-center justify-content-center my-2">
+                                        <button class="btn btn-secondary btn-sm remove-one" data-name="Coca-Cola" data-price="3900">-</button>
+                                        <span class="mx-2 quantity" data-name="Coca-Cola">0</span>
+                                        <button class="btn btn-secondary btn-sm add-one" data-name="Coca-Colae" data-price="3900">+</button>
+                                      </div>
+                                      
+                                </div>
+                            </div>
+                        
+                            
+                            
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <img src="../imgs/sprite.webp" alt="prite ZERO">
+                                    <h3 class="card-title">Sprite ZERO</h3>
+                                    <p class="card-text">500 ml</p>
+                                    <h4 class="card-text">Precio: $3.900</h4>
+                                    <div class="d-flex align-items-center justify-content-center my-2">
+                                        <button class="btn btn-secondary btn-sm remove-one" data-name="prite ZERO" data-price="3900">-</button>
+                                        <span class="mx-2 quantity" data-name="prite ZERO">0</span>
+                                        <button class="btn btn-secondary btn-sm add-one" data-name="prite ZERO" data-price="3900">+</button>
+                                      </div>
+                                      
+                                </div>
+                            </div>
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <img src="../imgs/fanta.jpg" alt="Fanta">
+                                    <h3 class="card-title">Fanta</h3>
+                                    <p class="card-text">500 ml</p>
+                                    <h4 class="card-text">Precio: $3.900</h4>
+                                    <div class="d-flex align-items-center justify-content-center my-2">
+                                        <button class="btn btn-secondary btn-sm remove-one" data-name="Fanta" data-price="3900">-</button>
+                                        <span class="mx-2 quantity" data-name="Fanta">0</span>
+                                        <button class="btn btn-secondary btn-sm add-one" data-name="Fanta" data-price="3900">+</button>
+                                      </div>
+                                      
+                                </div>
+                            </div>
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <img src="../imgs/agua.jpg" alt="Villavicencio">
+                                    <h3 class="card-title">Agua mineral "Villavicencio"</h3>
+                                    <p class="card-text">500 ml</p>
+                                    <h4 class="card-text">Precio: $3.900</h4>
+                                    <div class="d-flex align-items-center justify-content-center my-2">
+                                        <button class="btn btn-secondary btn-sm remove-one" data-name="Villavicencio" data-price="3900">-</button>
+                                        <span class="mx-2 quantity" data-name="Villavicencio">0</span>
+                                        <button class="btn btn-secondary btn-sm add-one" data-name="Villavicencio" data-price="3900">+</button>
+                                      </div>
+                                      
+                                </div>
+                            </div>
+                            
+                            
+                             
+                           </div>
+                           <button  type="button" class="btn boton-ver-mas btn-primary">Ver más</button>
+                           <div class="row align-items-center" id="extra-cards" style="display: none;">
+                            <!-- Más tarjetas de productos aquí -->
+                            <div class="container my-5">
+                                <div class="row justify-content-center" id="product-cards">
+                                    <!-- Tarjeta 1 -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
+                                        <div class="extra-card text-center h-100 card-body">
+                                            <img src="../imgs/cerveza.jpg" alt="Heineken">
+                                            <h3 class="card-title">Cerveza "Heineken"</h3>
+                                            <p class="card-text">473 cm3</p>
+                                            <h4 class="card-text">Precio: $4.900</h4>
+                                            <div class="d-flex align-items-center justify-content-center my-2">
+                                                <button class="btn btn-secondary btn-sm remove-one" data-name="Heineken" data-price="4900">-</button>
+                                                <span class="mx-2 quantity" data-name="Heineken">0</span>
+                                                <button class="btn btn-secondary btn-sm add-one" data-name="Heineken" data-price="4900">+</button>
+                                              </div>
+                                              
+                                        </div>
+                                    </div>
+                                    
+                                    
+                            
+                                    <!-- Tarjeta 2 -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
+                                        <div class="extra-card text-center h-100 card-body">
+                                            <img src="../imgs/brahma.jpg" alt="Brahma">
+                                            <h3 class="card-title">Cerveza "Brahma"</h3>
+                                            <p class="card-text">473 cm3</p>
+                                            <h4 class="card-text">Precio: $4.000</h4>
+                                            <div class="d-flex align-items-center justify-content-center my-2">
+                                                <button class="btn btn-secondary btn-sm remove-one" data-name="Brahma" data-price="4000">-</button>
+                                                <span class="mx-2 quantity" data-name="Brahma">0</span>
+                                                <button class="btn btn-secondary btn-sm add-one" data-name="Brahma" data-price="4000">+</button>
+                                              </div>
+                                              
+                                        </div>
+                                    </div>
+                                    <!-- Tarjeta 3 -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
+                                        <div class="extra-card text-center h-100 card-body">
+                                            <img src="../imgs/coca-cola.webp" alt="Coca-Cola">
+                                            <h3 class="card-title">Coca-Cola</h3>
+                                            <p class="card-text">500 ml</p>
+                                            <h4 class="card-text">Precio: $3.900</h4>
+                                            <div class="d-flex align-items-center justify-content-center my-2">
+                                                <button class="btn btn-secondary btn-sm remove-one" data-name="Coca-Cola" data-price="3900">-</button>
+                                                <span class="mx-2 quantity" data-name="Coca-Cola">0</span>
+                                                <button class="btn btn-secondary btn-sm add-one" data-name="Coca-Cola" data-price="3900">+</button>
+                                              </div>
+                                              
+                                        </div>
+                                    </div>
+                                
+                                   
+                                    <!-- Tarjeta 4 -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
+                                        <div class="extra-card text-center h-100 card-body">
+                                            <img src="../imgs/sprite.webp" alt="Sprite ZERO">
+                                            <h3 class="card-title">Sprite ZERO</h3>
+                                            <p class="card-text">500 ml</p>
+                                            <h4 class="card-text">Precio: $3.900</h4>
+                                            <div class="d-flex align-items-center justify-content-center my-2">
+                                                <button class="btn btn-secondary btn-sm remove-one" data-name="Sprite ZERO" data-price="3900">-</button>
+                                                <span class="mx-2 quantity" data-name="Sprite ZERO">0</span>
+                                                <button class="btn btn-secondary btn-sm add-one" data-name="Sprite ZERO" data-price="3900">+</button>
+                                              </div>
+                                              
+                                        </div>
+                                    </div>
+                                
+                                    <!-- Tarjeta 5 -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
+                                        <div class="extra-card text-center h-100 card-body">
+                                            <img src="../imgs/fanta.jpg" alt="Fanta">
+                                            <h3 class="card-title">Fanta</h3>
+                                            <p class="card-text">500 ml</p>
+                                            <h4 class="card-text">Precio: $3.900</h4>
+                                            <div class="d-flex align-items-center justify-content-center my-2">
+                                                <button class="btn btn-secondary btn-sm remove-one" data-name="Fanta" data-price="3900">-</button>
+                                                <span class="mx-2 quantity" data-name="Fanta">0</span>
+                                                <button class="btn btn-secondary btn-sm add-one" data-name="Fanta" data-price="3900">+</button>
+                                              </div>
+                                              
+                                        </div>
+                                    </div>
+                                    <!-- Tarjeta 6 -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3  card-column d-none">
+                                        <div class="extra-card text-center h-100 card-body">
+                                            <img src="../imgs/agua.jpg" alt="Villavicencio">
+                                            <h3 class="card-title">Agua mineral "Villavicencio"</h3>
+                                            <p class="card-text">500 ml</p>
+                                            <h4 class="card-text">Precio: $3.900</h4>
+                                            <div class="d-flex align-items-center justify-content-center my-2">
+                                                <button class="btn btn-secondary btn-sm remove-one" data-name="Villavicencio" data-price="3900">-</button>
+                                                <span class="mx-2 quantity" data-name="Villavicencio">0</span>
+                                                <button class="btn btn-secondary btn-sm add-one" data-name="Villavicencio" data-price="3900">+</button>
+                                              </div>
+                                              
+                                        </div>
+                                    </div>
+                                
+            
+                           </div>
+            
+                        </div>
+            
+                    </div>
+            
+                
+                
+              </section>
+            </div>
+            </main>
         
-            
-            
-          </section>
-        </main>
+        
+    
         <!-- Footer -->
-    <footer class="footer-section">
-        <div>
-            <div class="row align-items-center justify-content-center text-center">
-                <!-- Logo de la marca -->
-                <div class="col-md-4 mb-3">
-                    <img src="../imgs/Bichito 1.png" alt="Logo" class="footer-logo" style="width: 50%;">
-                </div>
-    
-                <!-- Información de contacto -->
-                <div class="col-md-4 mb-3">
-                    <p><strong>Dirección:</strong><br>Av. Alvarez Jonte 1500,<br>Paternal City<br>Capital Federal, Argentina</p>
-                    <div class="d-flex justify-content-center gap-3">
-                        
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-twitter"></i></a>
+        <footer class="footer-section">
+            <div class="container">
+                <div class="row align-items-center justify-content-center text-center">
+                    <!-- Logo de la marca -->
+                    <div class="col-md-4 mb-3">
+                        <img src="../imgs/Bichito 1.png" alt="Logo" class="footer-logo" style="width: 50%;">
+                    </div>
+        
+                    <!-- Información de contacto -->
+                    <div class="col-md-4 mb-3">
+                        <p><strong>Dirección:</strong><br>Av. Alvarez Jonte 1500,<br>Paternal City<br>Capital Federal, Argentina</p>
+                        <div class="d-flex justify-content-center gap-3">
+                            
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                        </div>
+                    </div>
+        
+                    <!-- Redes sociales -->
+                    <div class="col-md-4 mb-3">
+                        <p><i class="bi bi-instagram"></i> @KernelBurger</p>
                     </div>
                 </div>
-    
-                <!-- Redes sociales -->
-                <div class="col-md-4 mb-3">
-                    <p><i class="bi bi-instagram"></i> @KernelBurger</p>
+        
+                <!-- Texto inferior adicional -->
+                <div class="text-center mt-3">
+                    <p>Dirección General de Defensa y Protección al Consumidor. Para consultas y/o denuncias, <a href="https://buenosaires.gob.ar/defensaconsumidor/direccion-general" target="_blank">ingrese aquí</a></p>
                 </div>
             </div>
-    
-            <!-- Texto inferior adicional -->
-            <div class="text-center mt-3">
-                <p>Dirección General de Defensa y Protección al Consumidor. Para consultas y/o denuncias, <a href="https://buenosaires.gob.ar/defensaconsumidor/direccion-general" target="_blank">ingrese aquí</a></p>
-            </div>
-        </div>
-    </footer>
-
+        </footer>
+        
+   
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
