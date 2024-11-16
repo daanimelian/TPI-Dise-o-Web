@@ -1,3 +1,4 @@
+/* Estilos generales para el cuerpo de la página */
 body {
   margin: 0;
   padding: 0;
@@ -8,6 +9,7 @@ body {
   font-style: normal;
 }
 
+/* Estilos del Navbar */
 nav ul {
   list-style-type: none;
   display: flex;
@@ -19,6 +21,21 @@ nav a {
   text-decoration: none;
 }
 
+.nav-link {
+  font-weight: bold;
+}
+
+.navbar .btn-outline-primary {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.navbar .btn-outline-primary:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Controles del usuario (Login, Carrito) */
 .user-controls {
   display: flex;
   gap: 10px;
@@ -32,6 +49,7 @@ button {
   cursor: pointer;
 }
 
+/* Estilos del contenido principal */
 main {
   padding: 20px;
   text-align: center;
@@ -51,10 +69,12 @@ main {
   align-items: center;
 }
 
+/* Estilos de la galería */
 .gallery {
   margin-bottom: 40px;
 }
 
+/* Estilos de la sección del mapa */
 .map-section {
   margin-bottom: 40px;
   margin-top: 40px;
@@ -62,10 +82,11 @@ main {
 
 #map {
   width: 100%;
-  height: 300px;
+  height: 80%;
   background-color: #ddd;
 }
 
+/* Estilos del pie de página */
 .footer-section {
   background-color: #ebebeb; /* Fondo claro */
   color: #fff; /* Color de texto blanco */
@@ -91,34 +112,15 @@ main {
   text-decoration: underline;
 }
 
-.bi-instagram {
-  font-size: 1.5rem;
-  color: #007bff; /* Color dorado */
-}
-
-.bi-facebook {
-  font-size: 1.5rem;
-  color: #007bff; /* Color dorado */
-}
-
+/* Iconos sociales */
+.bi-instagram,
+.bi-facebook,
 .bi-twitter {
   font-size: 1.5rem;
   color: #007bff; /* Color dorado */
 }
 
-.nav-link {
-  font-weight: bold;
-}
-
-.navbar .btn-outline-primary {
-  border-color: #007bff;
-  color: #007bff;
-}
-
-.navbar .btn-outline-primary:hover {
-  background-color: #007bff;
-  color: #fff;
-}
+/* Estilos para las secciones de hamburguesas */
 .our-burgers {
   width: 100%;
   overflow: hidden;
@@ -134,18 +136,16 @@ main {
   overflow: hidden;
 }
 
-/* Cuando la clase 'active' está presente y la dirección es 'derecha' */
+/* Efectos para las secciones activas */
 .burger-section.active .burger-text.derecha {
   opacity: 1;
   transform: translateX(0%); /* Se mueve del centro hacia la derecha */
 }
 
-/* Cuando la clase 'active' está presente y la dirección es 'izquierda' */
 .burger-section.active .burger-text.izquierda {
   opacity: 1;
   transform: translateX(-100%); /* Se mueve del centro hacia la izquierda */
 }
-
 
 .burger-text {
   position: absolute;
@@ -162,7 +162,8 @@ main {
   margin: 2%;
 }
 
-.principal-text h2{
+/* Estilos del texto principal */
+.principal-text h2 {
   color: white;
   text-align: center;
   padding: 10px;
@@ -172,7 +173,7 @@ main {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.principal-text p{
+.principal-text p {
   color: white;
   text-align: center;
   border-radius: 5px;
@@ -182,7 +183,7 @@ main {
   font-weight: bolder;
 }
 
-/* Estilo de la imagen */
+/* Estilos de las imágenes de las hamburguesas */
 .burger-image {
   position: absolute;
   width: 60%;
@@ -192,23 +193,20 @@ main {
   z-index: 1;
 }
 
-/* Estilo para la imagen específica */
 .burger-image img {
   width: 60%;
   height: 80%;
   object-fit: cover;
   transition: transform 0.8s ease-out;
-  border: 5px;
-  border-color: white;
-  border-style: solid;
+  border: 5px solid white;
 }
-
 
 .burger-section.active .burger-image img {
   transform: scale(1.05); /* Zoom suave en la imagen al hacer scroll */
   opacity: 1;
 }
 
+/* Estilos de fondo de las secciones */
 .principal {
   background: url(../imgs/principal.png) no-repeat fixed;
   background-size: cover;
