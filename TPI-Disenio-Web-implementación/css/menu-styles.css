@@ -102,7 +102,7 @@ body {
 
 header {
   position: sticky;
-  top: 0;
+
   z-index: 1000 !important;
 }
 
@@ -212,14 +212,6 @@ main .btn {
 
 /* Configuración general */
 /* Mantiene el carrito al extremo derecho y el menú hamburguesa a la izquierda */
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
-/* Estilos generales */
 .navbar {
   display: flex;
   align-items: center;
