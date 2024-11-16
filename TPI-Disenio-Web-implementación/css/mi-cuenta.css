@@ -14,8 +14,7 @@ body {
     background-color: var(--background-color);
 }
 
-/* Navbar */
-/* Header styles */
+
 nav ul {
     list-style-type: none;
     display: flex;
@@ -32,13 +31,16 @@ nav ul {
   }
   
   .navbar .btn-outline-primary {
-    border-color: #007bff;
-    color: #007bff;
+    border-color: var(--primary-color); /* Borde azul */
+    background-color: var(--secondary-color); /* Fondo blanco */
+    color: var(--primary-color); /* Texto azul */
+    padding: 5px 10px;
+    margin-right: 10px;
   }
   
   .navbar .btn-outline-primary:hover {
-    background-color: #007bff;
-    color: #fff;
+    background-color: var(--primary-color); /* Fondo azul al hacer hover */
+    color: var(--secondary-color); /* Texto blanco al hacer hover */
   }
   
   header {
