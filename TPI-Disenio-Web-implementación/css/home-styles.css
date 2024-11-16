@@ -134,12 +134,24 @@ main {
   overflow: hidden;
 }
 
-/* Estilo del texto */
+/* Cuando la clase 'active' está presente y la dirección es 'derecha' */
+.burger-section.active .burger-text.derecha {
+  opacity: 1;
+  transform: translateX(0%); /* Se mueve del centro hacia la derecha */
+}
+
+/* Cuando la clase 'active' está presente y la dirección es 'izquierda' */
+.burger-section.active .burger-text.izquierda {
+  opacity: 1;
+  transform: translateX(-100%); /* Se mueve del centro hacia la izquierda */
+}
+
+
 .burger-text {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  opacity: 0;
+  opacity: 0; /* Comienza con opacidad 0 */
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
   z-index: 2;
   color: white;
@@ -191,17 +203,6 @@ main {
   border-style: solid;
 }
 
-/* Cuando la clase 'active' está presente y la dirección es 'derecha' */
-.burger-section.active .burger-text.derecha {
-  opacity: 1;
-  transform: translateX(0%); /* Se mueve del centro hacia la derecha */
-}
-
-/* Cuando la clase 'active' está presente y la dirección es 'izquierda' */
-.burger-section.active .burger-text.izquierda {
-  opacity: 1;
-  transform: translateX(-100%); /* Se mueve del centro hacia la izquierda */
-}
 
 .burger-section.active .burger-image img {
   transform: scale(1.05); /* Zoom suave en la imagen al hacer scroll */
