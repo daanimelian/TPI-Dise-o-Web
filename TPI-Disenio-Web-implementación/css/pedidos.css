@@ -66,48 +66,6 @@ main {
 /* HASTA ACA ES DEL HEADER */
 
 
-/* FOOTER */
-
-footer {
-  background-color: #ebebeb;
-  color: #000;
-  padding: 20px 0;
-}
-
-.footer-section {
-  background-color: #ebebeb; /* Fondo claro */
-  color: #fff; /* Color de texto blanco */
-  padding: 20px 0;
-}
-
-.footer-logo {
-  max-width: 200px;
-  margin: 0 auto;
-}
-
-.footer-section p {
-  margin: 5px 0;
-  color: black;
-}
-
-.footer-section a {
-  color: var(--blue); /* Color dorado para enlaces */
-  text-decoration: none;
-}
-
-.footer-section a:hover {
-  text-decoration: underline;
-}
-
-/* Iconos sociales */
-.bi-instagram,
-.bi-facebook,
-.bi-twitter {
-  font-size: 1.5rem;
-  color: var(--blue); /* Color dorado */
-}
-
-
 .opinion-box {
   margin-top: 10px;
 }

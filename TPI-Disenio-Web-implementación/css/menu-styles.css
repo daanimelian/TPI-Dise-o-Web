@@ -3,14 +3,14 @@
   margin-bottom: 0;
 }
 #barra-busqueda {
-  max-width: 110px;
+  max-width: 120px;
 }
 
 .hidden {
   display: none;
 }
 #btn-filtros {
-  max-width: 110px;
+  max-width: 120px;
 }
 
 .owl-prev,
@@ -29,6 +29,12 @@
   left: -40px;
 }
 
+/* Controles del usuario (Login, Carrito) */
+.user-controls {
+  display: flex;
+  gap: 10px;
+}
+
 .owl-next {
   right: -40px;
 }
@@ -39,13 +45,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center; /* Asegura que el texto esté centrado */
-  width: 100%; /* Asegura que el contenedor tome el ancho completo */
-  margin: 0 auto; /* Centra el contenedor si tiene un ancho fijo */
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
 }
 #separador-hamburguesas h2 {
-  /* Asegúrate de que tu texto esté en un elemento adecuado */
-  margin: 0; /* Elimina cualquier margen en el texto */
+  margin: 0;
   padding: 0;
 }
 
@@ -57,7 +62,7 @@
 }
 .card img {
   width: 100%;
-  height: auto; /* Mantiene la proporción de la imagen */
+  height: auto;
 }
 
 #hamburguesas-carrusel .card {
@@ -100,7 +105,7 @@
 
 header {
   position: sticky;
-
+  top: 0;
   z-index: 1000 !important;
 }
 
@@ -111,30 +116,10 @@ header {
 }
 
 /* Estilos para los botones de cantidad (- y +) */
-.d-flex.align-items-center.mb-2 {
+.add-one .remove.one {
   justify-content: center;
   gap: 5px;
-}
-
-/* Botones agregar y eliminar en la fila de botones */
-.d-flex.justify-content-center {
-  margin-top: 8px;
-}
-
-/* Estilo para todos los botones */
-.btn {
-  font-size: 0.9rem;
-}
-
-main .btn {
-  max-width: 100%; /* Hacer que los botones ocupen el ancho completo del contenedor */
-  margin-top: 5px;
-  max-width: 150px; /* Tamaño máximo */
-  border: 1px solid #0f0e0e;
-  border-radius: 10px;
-  padding: 10px;
-  font-size: 1rem;
-  background-color: var(--button-color); /* Color azul personalizado */
+  border-radius: 30%;
 }
 
 main .btn {
@@ -143,6 +128,13 @@ main .btn {
 
 .card-body img {
   max-height: 350px;
+}
+.card-body p {
+  color: #555555;
+  font-weight: bold;
+}
+.card-body span {
+  font-weight: bold;
 }
 
 .extra-card {
@@ -189,61 +181,18 @@ main .btn {
   margin-bottom: 10px;
 }
 
-.footer-section {
-  background-color: #ebebeb;
-  color: #fff;
-  padding: 20px 0;
+#burguer-btn {
+  margin-left: 90px;
 }
 
-.footer-logo {
-  max-width: 200px;
-  margin: 0 auto;
-}
-
-.footer-section p {
-  margin: 5px 0;
-  color: black;
-}
-
-.footer-section a:hover {
-  text-decoration: underline;
-}
-
-/* Configuración general */
-/* Mantiene el carrito al extremo derecho y el menú hamburguesa a la izquierda */
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
-/* Alineación del carrito junto al menú hamburguesa en pantallas pequeñas y medianas */
-@media (max-width: 991.98px) {
-  #menu-hamburguesa-carrito {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Espacio entre el menú hamburguesa y el carrito */
-  }
-
-  .navbar-toggler {
-    order: 1; /* Coloca el menú hamburguesa al inicio */
-  }
-
-  #contenedor-carrito {
-    order: 2; /* Asegura que el carrito esté a la derecha del menú hamburguesa */
+@media (width > 700px) {
+  #burguer-btn {
+    margin-left: 350px;
   }
 }
-/* General Styles */
-.navbar-brand {
-  display: flex; /* Asegura que el contenedor del logo sea flexible */
-  align-items: center; /* Centra verticalmente el logo */
-  max-width: 100%; /* Evita que crezca fuera del contenedor */
-}
 
-/* Imagen del logo */
-.logo {
-  max-width: 5%; /* Ajusta el ancho de la imagen al contenedor */
-  height: auto; /* Mantiene la proporción de la imagen */
-  max-height: 35%; /* Controla la altura máxima en pantallas grandes */
+@media (width > 1000px) {
+  .navbar-brand {
+    margin-right: 186px;
+  }
 }

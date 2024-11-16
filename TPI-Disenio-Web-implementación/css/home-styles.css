@@ -75,7 +75,7 @@ main {
   background-color: #ddd;
 }
 
-/* Estilos del pie de página */
+/* Footer styles */
 .footer-section {
   background-color: #ebebeb; /* Fondo claro */
   color: #fff; /* Color de texto blanco */
@@ -101,9 +101,11 @@ main {
   text-decoration: underline;
 }
 
-/* Iconos sociales */
-.bi-instagram,
-.bi-facebook,
+.bi-facebook {
+  font-size: 1.5rem;
+  color: #007bff; /* Color dorado */
+}
+
 .bi-twitter {
   font-size: 1.5rem;
   color: #007bff; /* Color dorado */
