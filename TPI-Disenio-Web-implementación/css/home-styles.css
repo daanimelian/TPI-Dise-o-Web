@@ -152,7 +152,8 @@ main {
   margin: 2%;
   max-width: 80%;
   padding: 1% 3%; 
-  text-align: center; 
+  text-align: center;
+  word-wrap: break-word;  
 }
 
 .burger-text h2 {
@@ -172,6 +173,8 @@ main {
   margin: 2%;
   font-size: 6vw;
   text-shadow:  0.2em 0.2em 0.5em rgba(0, 0, 0, 0.5);
+  max-width: 90%;
+  word-wrap: break-word;  
 }
 
 .principal-text p {
@@ -182,6 +185,8 @@ main {
   font-size: 3vw;
   text-shadow:  0.2em 0.2em 0.5em rgba(0, 0, 0, 0.5);
   font-weight: bolder;
+  max-width: 90%;
+  word-wrap: break-word;  
 }
 
 /* Estilos de las imágenes de las hamburguesas */
