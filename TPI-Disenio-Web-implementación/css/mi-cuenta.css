@@ -1,53 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+  }
 
 :root {
-    --primary-color: #003eb1; 
-    --secondary-color: #ffffff; 
-    --background-color: #ebebeb; 
-    --button-color: #1d54b9; 
-    --text-color: #000000; 
-}
+    --primary-color: #003eb1;
+    --secondary-color: #ffffff;
+    --background-color: #ebebeb;
+    --button-color: #1d54b9;
+    --text-color: #000000;
+  }
 
 
-body {
-    font-family: 'Roboto', sans-serif;
-    color: var(--text-color);   
-    background-color: var(--background-color);
-}
-
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-    gap: 15px;
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .nav-link {
-    font-weight: bold;
-  }
-  
-  .navbar .btn-outline-primary {
-    border-color: var(--primary-color); /* Borde azul */
-    background-color: var(--secondary-color); /* Fondo blanco */
-    color: var(--primary-color); /* Texto azul */
-    padding: 5px 10px;
-    margin-right: 10px;
-  }
-  
-  .navbar .btn-outline-primary:hover {
-    background-color: var(--primary-color); /* Fondo azul al hacer hover */
-    color: var(--secondary-color); /* Texto blanco al hacer hover */
-  }
-  
-  header {
-    position: sticky;
-    top: 0;
-    z-index: 1000 !important;
-  }
   
   /* Login container styles */
   .login-container {
@@ -79,28 +48,6 @@ nav ul {
   }
 
 
-/* Encabezados principales */
-h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    color: #333;
-    letter-spacing: 0.5px;
-    margin-bottom: 10px;
-}
-
-h4 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: #444;
-    margin-bottom: 5px;
-}
-
-/* Subtítulos y textos secundarios */
-p {
-    font-size: 1rem;
-    color: #666;
-    line-height: 1.5;
-}
 
 /* Texto de información de usuario */
 .user-info h4 {
@@ -228,17 +175,7 @@ p {
 }
 
 /* Botones uniformes */
-.btn {
-    max-width: 100%; /* Hacer que los botones ocupen el ancho completo del contenedor */
-    margin-top: 5px;
-    max-width: 150px; /* Tamaño máximo */
-    border: 1px solid #0f0e0e;
-    border-radius: 10px;
-    padding: 10px;
-    font-size: 1rem;
-    background-color: var(--button-color); /* Color azul personalizado */
-    color: #fff;
-}
+
 
 .btn:hover {
     background-color: #3b73d7; /* Ajuste de hover para un tono más claro */
@@ -267,6 +204,7 @@ p {
     transition: background-color 0.3s ease;
     border-radius: 8px;
     padding: 10px;
+    font-family: "Geist Mono", monospace;
 }
 
 .profile-buttons .btn:hover {
@@ -343,42 +281,3 @@ p {
     margin-bottom: 1rem;
 }
 
-
-
-
-
-/* Footer styles */
-.footer-section {
-    background-color: #ebebeb; /* Fondo claro */
-    color: #fff; /* Color de texto blanco */
-    padding: 20px 0;
-  }
-  
-  .footer-logo {
-    max-width: 200px;
-    margin: 0 auto;
-  }
-  
-  .footer-section p {
-    margin: 5px 0;
-    color: black;
-  }
-  
-  .footer-section a {
-    color: #007bff; /* Color dorado para enlaces */
-    text-decoration: none;
-  }
-  
-  .footer-section a:hover {
-    text-decoration: underline;
-  }
-  
-  .bi-facebook {
-    font-size: 1.5rem;
-    color: #007bff; /* Color dorado */
-  }
-  
-  .bi-twitter {
-    font-size: 1.5rem;
-    color: #007bff; /* Color dorado */
-  }
