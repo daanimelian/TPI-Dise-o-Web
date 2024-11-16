@@ -20,15 +20,19 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
         <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="../imgs/Bichito 2.png" alt="Logo" style="width: 80px" />
+          <a class="navbar-brand" href="../html/home.html">
+            <img
+              src="../imgs/Bichito 2.png"
+              alt="Logo"
+              style="max-width: 35%"
+            />
             <!-- Ajusta el tamaño del logo -->
           </a>
           <button
             class="navbar-toggler"
             type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
             aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
@@ -67,26 +71,29 @@
             <div class="navbar-nav">
               <div class="nav-item dropdown">
                 <a
-                  class="btn btn-outline-primary dropdown-toggle mr-2"
+                  class="btn btn-outline-primary dropdown-toggle me-2"
                   href="#"
                   id="loginDropdown"
                   role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
+                  data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Login
                 </a>
-                <div class="dropdown-menu" aria-labelledby="loginDropdown">
-                  <a class="dropdown-item" href="./login.html"
-                    >Iniciar Sesión</a
-                  >
-                  <a class="dropdown-item" href="../html/registro.html"
-                    >Registrarse</a
-                  >
-                </div>
+                <ul class="dropdown-menu" aria-labelledby="loginDropdown">
+                  <li>
+                    <a class="dropdown-item" href="./login.html"
+                      >Iniciar Sesión</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../html/registro.html"
+                      >Registrarse</a
+                    >
+                  </li>
+                </ul>
               </div>
-              <a class="btn btn-outline-primary mr-2" href="#">Carrito</a>
+              <a class="btn btn-outline-primary me-2" href="#">Carrito</a>
             </div>
           </div>
         </div>

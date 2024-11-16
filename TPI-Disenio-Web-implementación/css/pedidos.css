@@ -4,94 +4,112 @@
   --background-color: #ebebeb;
 }
 
+
+/* Estilos generales para el cuerpo de la página */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "Geist Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
 }
 
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+/* Estilos del Navbar */
+nav ul {
+  list-style-type: none;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: white;
-  padding: 1rem 2rem;
-  border-bottom: 1px solid #ddd;
-  z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  gap: 15px;
 }
 
-.navbar-brand img {
-  width: 100px;
-}
-
-main {
-  padding: 8rem 4rem 4rem;
-  background-color: var(--background-color);
-}
-
-.navbar-toggler {
-  display: none;
-  font-size: 1.5rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: var(--blue);
-}
-
-.navbar-menu {
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.navbar-nav {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-item {
-  margin-right: 30px;
+nav a {
+  color: white;
+  text-decoration: none;
 }
 
 .nav-link {
   font-weight: bold;
-  color: var(--blue);
-  text-decoration: none;
+}
+
+.navbar .btn-outline-primary {
+  border-color: var(--blue);
+  color: #007bff;
+}
+
+.navbar .btn-outline-primary:hover {
+  background-color: var(--blue);
+  color: #fff;
+}
+
+/* Controles del usuario (Login, Carrito) */
+.user-controls {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+
+/* Estilos del contenido principal */
+main {
+  padding: 50px;
   text-align: center;
 }
 
-.nav-link:hover {
-  color: var(--blue);
+/* HASTA ACA ES DEL HEADER */
+
+
+/* FOOTER */
+
+footer {
+  background-color: #ebebeb;
+  color: #000;
+  padding: 20px 0;
 }
 
-.navbar-buttons {
-  display: flex;
-  gap: 0.5rem;
+.footer-section {
+  background-color: #ebebeb; /* Fondo claro */
+  color: #fff; /* Color de texto blanco */
+  padding: 20px 0;
 }
 
-.btn-login,
-.btn-cart {
-  padding: 0.5rem 1rem;
-  background-color: white;
-  color: var(--blue);
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
+.footer-logo {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.footer-section p {
+  margin: 5px 0;
+  color: black;
+}
+
+.footer-section a {
+  color: var(--blue); /* Color dorado para enlaces */
   text-decoration: none;
-  font-weight: bold;
-  border: var(--blue);
 }
 
-.btn-login:hover,
-.btn-cart:hover {
-  background-color: var(--blue);
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+/* Iconos sociales */
+.bi-instagram,
+.bi-facebook,
+.bi-twitter {
+  font-size: 1.5rem;
+  color: var(--blue); /* Color dorado */
+}
+
+
+.opinion-box {
+  margin-top: 10px;
 }
 
 .current-order {
@@ -106,6 +124,7 @@ main {
   flex-direction: column;
   transition: all 0.3s ease-in-out;
 }
+
 
 .current-order:hover {
   transform: translateY(-5px);
@@ -136,6 +155,7 @@ main {
 
 .current-order .order-status p {
   margin: 0.5rem 0;
+  font-size: 1.2rem;
 }
 
 .current-order .time {
@@ -149,19 +169,6 @@ main {
 .current-order .time .icon {
   margin-right: 0.75rem;
   font-size: 1.5rem;
-}
-
-.current-order .order-status p {
-  font-size: 1.2rem;
-}
-
-.current-order .order-status .time span {
-  color: #333;
-}
-
-.current-order .order-status p,
-.current-order .time span {
-  transition: color 0.3s ease-in-out;
 }
 
 .order-history h2 {
@@ -196,15 +203,9 @@ main {
   font-weight: 500;
 }
 
-.order-card p strong {
-  font-weight: bold;
-}
-
 .order-card .actions {
   display: flex;
   gap: 0.8rem;
-  justify-content: flex-start;
-  align-items: center;
   margin-top: 1rem;
 }
 
@@ -217,7 +218,7 @@ main {
 }
 
 .order-card .action-link:hover {
-  color: #003eb1;
+  color: var(--blue);
   text-decoration: underline;
 }
 
@@ -228,88 +229,6 @@ main {
 
 .order-card .action-link.reorder:before {
   content: "🔁";
-}
-
-#noOrdersMessage {
-  text-align: center;
-  font-size: 1.2rem;
-  color: #888;
-  padding: 2rem;
-}
-
-#orderHistoryContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  padding: 0 2rem;
-  margin-top: 1rem;
-}
-
-.order-card .time {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: #555;
-  font-size: 1rem;
-  font-weight: 400;
-}
-
-.order-card .time .icon {
-  font-size: 1.3rem;
-}
-
-@media (max-width: 768px) {
-  .navbar-toggler {
-    display: block;
-  }
-
-  .navbar-menu {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: white;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    border-bottom: 1px solid #ddd;
-  }
-
-  .navbar-menu.active {
-    display: flex;
-  }
-
-  .navbar-nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav-item {
-    margin: 1rem 0;
-  }
-
-  .navbar-buttons {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-}
-
-.nav-link:hover {
-  color: #0a58ca;
-}
-
-.btn-login:hover,
-.btn-cart:hover {
-  background-color: var(--blue);
-  color: white;
-}
-
-.action-link[style*="pointer-events: none"] {
-  color: #aaa;
-  text-decoration: none;
-}
-
-.opinion-box {
-  margin-top: 10px;
 }
 
 textarea {
@@ -377,196 +296,4 @@ button.submit-opinion:hover {
 .step.completed span {
   color: green; /* Color verde para todos los pasos completados */
   font-weight: bold;
-}
-
-.navbar .btn-outline-primary {
-  border-color: #007bff;
-}
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-  gap: 15px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-.nav-link {
-  font-weight: bold;
-}
-
-.navbar .btn-outline-primary {
-  border-color: #007bff;
-  color: #007bff;
-}
-
-.navbar .btn-outline-primary:hover {
-  background-color: #007bff;
-  color: #fff;
-}
-.bi-instagram {
-  font-size: 1.5rem;
-  color: var(--footer-link-color);
-}
-
-
-/* Header styles */
-nav ul {
-  list-style-type: none;
-  display: flex;
-  gap: 15px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-.nav-link {
-  font-weight: bold;
-}
-
-.navbar .btn-outline-primary {
-  border-color: #007bff;
-  color: #007bff;
-}
-
-.navbar .btn-outline-primary:hover {
-  background-color: #007bff;
-  color: #fff;
-}
-
-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000 !important;
-}
-
-/* Login container styles */
-.login-container {
-  align-items: center;
-  justify-content: center;
-  max-width: 400px;
-  margin: 50px auto;
-  padding: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  background-color: #ffffff;
-}
-
-.login-container .form-control {
-  border-radius: 5px;
-}
-
-.login-container .btn-primary {
-  width: 100%;
-  border-radius: 5px;
-}
-
-.login-container img {
-  max-width: 380px;
-}
-
-#btn-ingresar {
-  margin-top: 10px;
-}
-
-/* Footer styles */
-.footer-section {
-  background-color: #ebebeb; /* Fondo claro */
-  color: #fff; /* Color de texto blanco */
-  padding: 20px 0;
-}
-
-.footer-logo {
-  max-width: 200px;
-  margin: 0 auto;
-}
-
-.footer-section p {
-  margin: 5px 0;
-  color: black;
-}
-
-.footer-section a {
-  color: #007bff; /* Color dorado para enlaces */
-  text-decoration: none;
-}
-
-.footer-section a:hover {
-  text-decoration: underline;
-}
-
-.bi-facebook {
-  font-size: 1.5rem;
-  color: #007bff; /* Color dorado */
-}
-
-.bi-twitter {
-  font-size: 1.5rem;
-  color: #007bff; /* Color dorado */
-}
-
-/* Estilo general del footer */
-.footer-section {
-    background-color: #ebebeb; /* Fondo claro */
-    color: #333; /* Texto oscuro */
-    padding: 20px 0;
-    font-family: "Geist Mono", monospace;
-}
-
-/* Logo */
-.footer-logo {
-    max-width: 150px;
-}
-
-/* Texto del footer */
-.footer-section p {
-    font-size: 14px;
-    line-height: 1.6;
-    margin: 5px 0;
-}
-
-/* Enlaces */
-.footer-section a {
-    color: #007bff; /* Color azul */
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.footer-section a:hover {
-    text-decoration: underline;
-}
-
-/* Íconos */
-.bi-instagram, .bi-facebook, .bi-twitter {
-    font-size: 1.5rem;
-    color: #007bff;
-    margin: 0 10px;
-    transition: color 0.3s;
-}
-
-.bi-instagram:hover, .bi-facebook:hover, .bi-twitter:hover {
-    color: #0056b3; /* Color azul más oscuro */
-}
-
-/* Ajustes de alineación */
-.text-start {
-    text-align: left; /* Alineación a la izquierda */
-}
-
-.text-end {
-    text-align: right; /* Alineación a la derecha */
-}
-
-.text-center {
-    text-align: center; /* Alineación centrada */
-}
-
-.d-flex.gap-3 {
-    justify-content: center;
-    margin-top: 10px;
 }

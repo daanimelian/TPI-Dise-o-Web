@@ -262,3 +262,4 @@ function updateStatusColor() {
       statusElement.style.color = "black"; // Color por defecto
   }
 }
+
