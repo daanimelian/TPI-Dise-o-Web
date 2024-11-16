@@ -18,7 +18,7 @@
 }
 
 .login-container img {
-  max-width: 380px;
+  max-width: 250px;
 }
 
 #btn-ingresar {
@@ -46,11 +46,6 @@
   border-radius: 5px;
 }
 
-.login-container img {
-  max-width: 380px;
-}
-
 #btn-ingresar {
   margin-top: 10px;
 }
-
