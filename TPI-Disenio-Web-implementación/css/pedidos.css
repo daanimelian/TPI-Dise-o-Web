@@ -4,6 +4,8 @@
   --background-color: #ebebeb;
 }
 
+
+/* Estilos generales para el cuerpo de la página */
 body {
   margin: 0;
   padding: 0;
@@ -14,7 +16,7 @@ body {
   font-style: normal;
 }
 
-
+/* Estilos del Navbar */
 nav ul {
   list-style-type: none;
   display: flex;
@@ -26,6 +28,21 @@ nav a {
   text-decoration: none;
 }
 
+.nav-link {
+  font-weight: bold;
+}
+
+.navbar .btn-outline-primary {
+  border-color: var(--blue);
+  color: #007bff;
+}
+
+.navbar .btn-outline-primary:hover {
+  background-color: var(--blue);
+  color: #fff;
+}
+
+/* Controles del usuario (Login, Carrito) */
 .user-controls {
   display: flex;
   gap: 10px;
@@ -39,24 +56,17 @@ button {
   cursor: pointer;
 }
 
-.navbar .btn-outline-primary {
-  border-color: var(--blue);
-  color: var(--blue);
+
+/* Estilos del contenido principal */
+main {
+  padding: 50px;
+  text-align: center;
 }
 
-.navbar .btn-outline-primary:hover {
-  background-color: var(--blue);
-  color: white;
-}
+/* HASTA ACA ES DEL HEADER */
 
-.navbar-nav {
-  display: flex;
-  gap: 15px;
-}
 
-.navbar-nav .nav-item .nav-link {
-  font-weight: bold;
-}
+/* FOOTER */
 
 footer {
   background-color: #ebebeb;
@@ -89,26 +99,14 @@ footer {
   text-decoration: underline;
 }
 
-.bi-instagram {
-  font-size: 1.5rem;
-  color: var(--blue); /* Color dorado */
-}
-
-.bi-facebook {
-  font-size: 1.5rem;
-  color: var(--blue); /* Color dorado */
-}
-
+/* Iconos sociales */
+.bi-instagram,
+.bi-facebook,
 .bi-twitter {
   font-size: 1.5rem;
   color: var(--blue); /* Color dorado */
 }
 
-
-main {
-  padding: 8rem 4rem 4rem;
-  background-color: var(--background-color);
-}
 
 .opinion-box {
   margin-top: 10px;
@@ -298,270 +296,4 @@ button.submit-opinion:hover {
 .step.completed span {
   color: green; /* Color verde para todos los pasos completados */
   font-weight: bold;
-}
-
-.nav-link {
-  font-weight: bold;
-}
-
-.navbar .btn-outline-primary {
-  border-color: var(--blue);
-  color: var(--blue);
-}
-
-.navbar .btn-outline-primary:hover {
-  background-color: var(--blue);
-  color: #fff;
-}
-
-button.submit-opinion {
-  padding: 10px 20px;
-  background-color: #28a745;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-button.submit-opinion:hover {
-  background-color: #218838;
-}
-
-.opinion-sent {
-  color: #aaa;
-  font-style: italic;
-  pointer-events: none;
-}
-
-.order-steps {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 1rem;
-  padding: 1rem 0;
-  background-color: #F9F9F9;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-}
-
-.step {
-  display: flex;
-  align-items: center;
-  flex-direction: column; /* Para mantener el icono encima del texto */
-  flex: 1;
-  text-align: center;
-  position: relative;
-  padding: 10px;
-}
-
-.step:not(:last-child)::after {
-  content: '';
-  width: 100%;
-  height: 4px;
-  background: #ddd; /* Línea divisoria entre pasos */
-  position: absolute;
-  top: 50%;
-  right: -50%; /* Mueve la línea a la derecha de cada paso */
-  z-index: -1; /* Asegura que la línea esté detrás */
-}
-
-
-.step .icon {
-  font-size: 1.5rem;
-}
-
-.step.completed .icon,
-.step.completed span {
-  color: green; /* Color verde para todos los pasos completados */
-  font-weight: bold;
-}
-
-.navbar .btn-outline-primary {
-  border-color: #007bff;
-}
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-  gap: 15px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-.nav-link {
-  font-weight: bold;
-}
-
-.navbar .btn-outline-primary {
-  border-color: #007bff;
-  color: #007bff;
-}
-
-.navbar .btn-outline-primary:hover {
-  background-color: #007bff;
-  color: #fff;
-}
-.bi-instagram {
-  font-size: 1.5rem;
-  color: var(--footer-link-color);
-}
-
-
-/* Header styles */
-nav ul {
-  list-style-type: none;
-  display: flex;
-  gap: 15px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-.nav-link {
-  font-weight: bold;
-}
-
-.navbar .btn-outline-primary {
-  border-color: #007bff;
-  color: #007bff;
-}
-
-.navbar .btn-outline-primary:hover {
-  background-color: #007bff;
-  color: #fff;
-}
-
-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000 !important;
-}
-
-/* Login container styles */
-.login-container {
-  align-items: center;
-  justify-content: center;
-  max-width: 400px;
-  margin: 50px auto;
-  padding: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  background-color: #ffffff;
-}
-
-.login-container .form-control {
-  border-radius: 5px;
-}
-
-.login-container .btn-primary {
-  width: 100%;
-  border-radius: 5px;
-}
-
-.login-container img {
-  max-width: 380px;
-}
-
-#btn-ingresar {
-  margin-top: 10px;
-}
-
-/* Footer styles */
-.footer-section {
-  background-color: #ebebeb; /* Fondo claro */
-  color: #fff; /* Color de texto blanco */
-  padding: 20px 0;
-}
-
-.footer-logo {
-  max-width: 200px;
-  margin: 0 auto;
-}
-
-.footer-section p {
-  margin: 5px 0;
-  color: black;
-}
-
-.footer-section a {
-  color: #007bff; /* Color dorado para enlaces */
-  text-decoration: none;
-}
-
-.footer-section a:hover {
-  text-decoration: underline;
-}
-
-.bi-facebook {
-  font-size: 1.5rem;
-  color: #007bff; /* Color dorado */
-}
-
-.bi-twitter {
-  font-size: 1.5rem;
-  color: #007bff; /* Color dorado */
-}
-
-/* Estilo general del footer */
-.footer-section {
-    background-color: #ebebeb; /* Fondo claro */
-    color: #333; /* Texto oscuro */
-    padding: 20px 0;
-    font-family: "Geist Mono", monospace;
-}
-
-/* Logo */
-.footer-logo {
-    max-width: 150px;
-}
-
-/* Texto del footer */
-.footer-section p {
-    font-size: 14px;
-    line-height: 1.6;
-    margin: 5px 0;
-}
-
-/* Enlaces */
-.footer-section a {
-    color: #007bff; /* Color azul */
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.footer-section a:hover {
-    text-decoration: underline;
-}
-
-/* Íconos */
-.bi-instagram, .bi-facebook, .bi-twitter {
-    font-size: 1.5rem;
-    color: #007bff;
-    margin: 0 10px;
-    transition: color 0.3s;
-}
-
-.bi-instagram:hover, .bi-facebook:hover, .bi-twitter:hover {
-    color: #0056b3; /* Color azul más oscuro */
-}
-
-/* Ajustes de alineación */
-.text-start {
-    text-align: left; /* Alineación a la izquierda */
-}
-
-.text-end {
-    text-align: right; /* Alineación a la derecha */
-}
-
-.text-center {
-    text-align: center; /* Alineación centrada */
-}
-
-.d-flex.gap-3 {
-    justify-content: center;
-    margin-top: 10px;
 }
