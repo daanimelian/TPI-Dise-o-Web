@@ -9,15 +9,14 @@
   --footer-link-color: #007bff; /* Color de los enlaces en el footer */
 }
 
-
 /* Contenedor principal de los formularios (login y registro) */
 .form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 500px;
   max-width: 500px;
+
   margin: 50px auto;
   padding: 20px;
   background-color: var(--primary-color);
@@ -26,12 +25,10 @@
 }
 
 /* Campos de entrada en el formulario */
-.form-container .form-control {
-  max-width: 100%;
+.form-container .form-group {
+  max-width: 397px;
   border-radius: 5px;
   margin-bottom: 15px; /* Espacio entre campos */
-  max-width: 380px;
-  width: 380px;
 }
 
 /* Botón principal en el formulario */
@@ -53,7 +50,7 @@
 
 /* Imagen en el formulario */
 .form-container img {
-  max-width: 100%;
+  max-width: 250px;
   margin-bottom: 20px;
   border-radius: 5px;
 }
@@ -68,15 +65,10 @@
   text-decoration: underline;
 }
 
-
-
 /* Responsive Design */
 @media (max-width: 576px) {
   .form-container {
     max-width: 100%;
     padding: 15px;
-  }
-  .navbar-brand img {
-    width: 60px;
   }
 }
