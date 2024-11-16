@@ -1,12 +1,12 @@
 /* Colores y fuentes principales */
 :root {
-  --primary-color: #f4a261; /* Fondo principal de los formularios */
-  --button-color: #003eb1; /* Color de los botones */
-  --button-hover-color: #FF7A0D; /* Color de hover en los botones */
+  --primary-color: #ffffff; /* Fondo principal de los formularios */
+  --button-color: #007bff; /* Color de los botones */
+  --button-hover-color: #007bff; /* Color de hover en los botones */
   --text-color: #333; /* Color de texto principal */
   --footer-bg-color: #ebebeb; /* Fondo claro para el footer */
   --footer-text-color: #000; /* Color de texto en el footer */
-  --footer-link-color: #FF7A0D; /* Color de los enlaces en el footer */
+  --footer-link-color: #007bff; /* Color de los enlaces en el footer */
 }
 
 body {

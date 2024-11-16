@@ -1,13 +1,13 @@
-/* Colores de la paleta */
+
 :root {
-    --primary-color: #003eb1; /* Color azul del header */
-    --secondary-color: #ffffff; /* Naranja para fondo de la sección */
-    --background-color: #ebebeb; /* Color crema de fondo */
-    --button-color: #1d54b9; /* Azul de los botones */
-    --text-color: #000000; /* Color de texto negro */
+    --primary-color: #003eb1; 
+    --secondary-color: #ffffff; 
+    --background-color: #ebebeb; 
+    --button-color: #1d54b9; 
+    --text-color: #000000; 
 }
 
-/* Estilo global para el color de texto y fondo */
+
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--text-color);   
@@ -15,41 +15,65 @@ body {
 }
 
 /* Navbar */
-.navbar {
-    background-color: var(--primary-color);
-    padding: 0rem 4.1rem; /* Ajuste de padding para la barra */
-}
-
-.navbar .navbar-brand, .navbar-nav .nav-link {
-    color: var(--text-color) !important;
-}
-
-.navbar .navbar-brand img {
-    width: 100px;
-}
-
-.navbar-nav .nav-link {
-    font-size: 1rem; /* Tamaño de texto uniforme en la navbar */
-}
-
-.nav-link {
+/* Header styles */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-link {
     font-weight: bold;
   }
   
   .navbar .btn-outline-primary {
     border-color: #007bff;
-    color: white !important;
+    color: #007bff;
   }
   
   .navbar .btn-outline-primary:hover {
     background-color: #007bff;
     color: #fff;
   }
-
-header {
+  
+  header {
     position: sticky;
     top: 0;
     z-index: 1000 !important;
+  }
+  
+  /* Login container styles */
+  .login-container {
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #ffffff;
+  }
+  
+  .login-container .form-control {
+    border-radius: 5px;
+  }
+  
+  .login-container .btn-primary {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .login-container img {
+    max-width: 380px;
+  }
+  
+  #btn-ingresar {
+    margin-top: 10px;
   }
 
 
@@ -321,42 +345,38 @@ p {
 
 
 
-/* Ajustes para el footer */
+/* Footer styles */
 .footer-section {
     background-color: #ebebeb; /* Fondo claro */
     color: #fff; /* Color de texto blanco */
     padding: 20px 0;
-}
-
-.footer-logo {
+  }
+  
+  .footer-logo {
     max-width: 200px;
     margin: 0 auto;
-}
-
-.footer-section p {
+  }
+  
+  .footer-section p {
     margin: 5px 0;
-}
-
-.footer-section a {
-    color: #003eb1; /* Color dorado para enlaces */
+    color: black;
+  }
+  
+  .footer-section a {
+    color: #007bff; /* Color dorado para enlaces */
     text-decoration: none;
-}
-
-.footer-section a:hover {
+  }
+  
+  .footer-section a:hover {
     text-decoration: underline;
-}
-
-.bi-instagram {
+  }
+  
+  .bi-facebook {
     font-size: 1.5rem;
-    color: #003eb1; /* Color dorado */
-}
-
-.bi-facebook {
+    color: #007bff; /* Color dorado */
+  }
+  
+  .bi-twitter {
     font-size: 1.5rem;
-    color: #003eb1; /* Color dorado */
-}
-
-.bi-twitter {
-    font-size: 1.5rem;
-    color: #003eb1; /* Color dorado */
-}
+    color: #007bff; /* Color dorado */
+  }

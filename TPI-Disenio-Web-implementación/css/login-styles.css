@@ -6,7 +6,7 @@
   padding: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  background-color: #f4a261;
+  background-color: #ffffff;
 }
 
 .login-container .form-control {
@@ -47,7 +47,7 @@ header {
 }
 
 .footer-section a {
-  color: #ff7a0d; /* Color dorado para enlaces */
+  color: #007bff; /* Color dorado para enlaces */
   text-decoration: none;
 }
 
@@ -55,17 +55,111 @@ header {
   text-decoration: underline;
 }
 
-.bi-instagram {
-  font-size: 1.5rem;
-  color: #ff7a0d; /* Color dorado */
-}
+
 
 .bi-facebook {
   font-size: 1.5rem;
-  color: #ff7a0d; /* Color dorado */
+  color: #007bff; /* Color dorado */
 }
 
 .bi-twitter {
   font-size: 1.5rem;
-  color: #ff7a0d; /* Color dorado */
+  color: #007bff; /* Color dorado */
+}
+
+/* Header styles */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link {
+  font-weight: bold;
+}
+
+.navbar .btn-outline-primary {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.navbar .btn-outline-primary:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000 !important;
+}
+
+/* Login container styles */
+.login-container {
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.login-container .form-control {
+  border-radius: 5px;
+}
+
+.login-container .btn-primary {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.login-container img {
+  max-width: 380px;
+}
+
+#btn-ingresar {
+  margin-top: 10px;
+}
+
+/* Footer styles */
+.footer-section {
+  background-color: #ebebeb; /* Fondo claro */
+  color: #fff; /* Color de texto blanco */
+  padding: 20px 0;
+}
+
+.footer-logo {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.footer-section p {
+  margin: 5px 0;
+  color: black;
+}
+
+.footer-section a {
+  color: #007bff; /* Color dorado para enlaces */
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.bi-facebook {
+  font-size: 1.5rem;
+  color: #007bff; /* Color dorado */
+}
+
+.bi-twitter {
+  font-size: 1.5rem;
+  color: #007bff; /* Color dorado */
 }
