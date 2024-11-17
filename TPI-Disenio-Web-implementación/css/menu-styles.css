@@ -191,7 +191,7 @@ main .btn {
   }
 }
 
-@media (width > 1000px) {
+@media (width > 1050px) {
   .navbar-brand {
     margin-right: 186px;
   }
